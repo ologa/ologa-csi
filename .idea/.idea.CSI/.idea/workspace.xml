@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="53676ffa-3e7b-462a-82dc-ef66bab3dac0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Domain/AuditedEntity.cs" afterPath="$PROJECT_DIR$/Domain/AuditedEntity.cs" />
+      <change beforePath="$PROJECT_DIR$/Domain/IAuditedEntity.cs" afterPath="$PROJECT_DIR$/Domain/IAuditedEntity.cs" />
+      <change beforePath="$PROJECT_DIR$/Domain/Site.cs" afterPath="$PROJECT_DIR$/Domain/Site.cs" />
+      <change beforePath="$PROJECT_DIR$/Domain/SyncableEntity.cs" afterPath="$PROJECT_DIR$/Domain/SyncableEntity.cs" />
+      <change beforePath="$PROJECT_DIR$/EFDataAccess/ApplicationDbContext.cs" afterPath="$PROJECT_DIR$/EFDataAccess/ApplicationDbContext.cs" />
+      <change beforePath="$PROJECT_DIR$/EFDataAccess/Migrations/Configuration.cs" afterPath="$PROJECT_DIR$/EFDataAccess/Migrations/Configuration.cs" />
+      <change beforePath="$PROJECT_DIR$/MAC/Web.config" afterPath="$PROJECT_DIR$/MAC/Web.config" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AgreggatedReportsController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MAC/Controllers/AgreggatedReportsController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3623">
+              <caret line="854" column="9" lean-forward="false" selection-start-line="854" selection-start-column="9" selection-end-line="854" selection-end-column="9" />
+              <folding>
+                <marker date="1519150546000" expanded="false" signature="6:402" ph="..." />
+                <marker date="1519150546000" expanded="true" signature="451:44107" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="531:44105" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="1182:1229" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="1239:1357" ph="/* GlobalReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="1411:1701" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="1908:2283" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="2294:2437" ph="/* Relatórios Agregado de Activistas 1 ... */" />
+                <marker date="1519150546000" expanded="true" signature="2498:2785" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="3021:4981" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="3906:4558" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="3968:4544" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="4387:4526" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="4991:5133" ph="/* Relatórios Agregado de Activistas 2 ... */" />
+                <marker date="1519150546000" expanded="true" signature="5199:5487" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="5732:7687" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="6612:7264" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="6674:7250" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="7093:7232" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="7699:7833" ph="/* InitialRecordSummaryReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="7901:8304" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="8550:11949" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="9443:10223" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="9505:10209" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="9998:10137" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="10818:11542" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="10880:11528" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="11317:11456" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="11959:12102" ph="/* AgreggatedRoutineVisitSummaryReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="12169:12596" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="12852:16420" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="13854:14631" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="13916:14617" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="14406:14545" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="15237:16014" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="15299:16000" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="15789:15928" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="16431:16570" ph="/* AgreggatedReferencesSummaryReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="16635:17018" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="17267:25061" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="19699:19956" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="20055:20792" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="20117:20778" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="20567:20706" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="20862:21599" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="20924:21585" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="21374:21513" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="21684:21934" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="21797:21920" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="22810:23546" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="22872:23532" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="23321:23460" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="23616:24353" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="23678:24339" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="24128:24267" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="24438:24657" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="24540:24643" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="25072:25209" ph="/* AgreggatedMonthlyProgressReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="25272:25559" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="25804:28272" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="26759:26953" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="27029:27334" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="27108:27169" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="28284:28422" ph="/* AgreggatedHIVStatusChangesReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="28486:30148" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="30434:33757" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="31323:31974" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="31385:31960" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="31803:31942" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="33769:33916" ph="/* AgreggatedBeneficiariesAndHIVStatusReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="33989:35544" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="35810:39173" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="36868:37536" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="36930:37522" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="37365:37504" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="39185:39322" ph="/* AgreggatedLastChildStatusReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="39385:40364" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="40617:43057" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="41493:42153" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="41555:42139" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="41982:42121" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="43117:44099" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChildrenController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MAC/Controllers/ChildrenController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14790">
+              <caret line="1001" column="0" lean-forward="false" selection-start-line="1001" selection-start-column="0" selection-end-line="1001" selection-end-column="0" />
+              <folding>
+                <marker date="1519150546000" expanded="false" signature="6:389" ph="..." />
+                <marker date="1519150546000" expanded="true" signature="416:45251" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="487:45249" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="896:1026" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="1107:1437" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="1145:1249" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="1328:1395" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="1507:1651" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="1661:1872" ph="/* POST: Children/Create ... */" />
+                <marker date="1519150546000" expanded="true" signature="2598:2955" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="2644:2796" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="3030:3476" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="3068:3172" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="3251:3318" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="3486:3697" ph="/* POST: Children/Edit/5 ... */" />
+                <marker date="1519150546000" expanded="true" signature="4421:4799" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="4467:4641" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="4878:5208" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="4916:5020" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="5099:5166" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="5372:5555" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="5612:5754" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="5649:5707" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="5764:5937" ph="/* ChildQuestionReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="5995:6659" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="6897:8852" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="7831:8082" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="7944:8067" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="8863:9046" ph="/* AgreggatedChildQuestionReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="9114:9833" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="10116:12059" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="10790:11224" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="11086:11209" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="12070:12245" ph="/* ChildByQuestionReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="12298:13622" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="13857:16498" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="14825:15076" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="14938:15061" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="16510:16695" ph="/* AgreggatedChildByQuestionReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="16758:18132" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="18388:20987" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="19068:19502" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="19364:19487" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="21001:21180" ph="/* LastChildStatusReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="21233:21583" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="21810:23388" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="22739:22989" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="22852:22975" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="23399:23588" ph="/* AgreggatedLastChildStatusReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="23651:24002" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="24250:26213" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="24934:25217" ph="/* foreach (var refType in data) ... */" />
+                <marker date="1519150546000" expanded="true" signature="25264:25750" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="26225:26403" ph="/* BeforeAndActualChildStatusReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="26467:26767" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="26988:28567" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="27906:28156" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="28019:28142" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="28578:28764" ph="/* AgreggatedBeforeAndActualChildStatusReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="28838:30140" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="30449:33874" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="31192:31912" ph="/* foreach (var d in AgreggatedData) ... */" />
+                <marker date="1519150546000" expanded="true" signature="31960:32394" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="32256:32379" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="33886:34069" ph="/* InitialAndActualChildStatusReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="34134:34432" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="34676:35993" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="35333:35583" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="35446:35569" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="36003:36174" ph="/* CarePlanChildReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="36225:36523" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="36749:38014" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="37367:37617" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="37480:37603" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="38024:38205" ph="/* AgreggatedCarePlanChildReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="38266:38615" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="38886:40870" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="39757:40412" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="39819:40398" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="40241:40380" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="40880:41072" ph="/* AgreggatedChildrenWithouAssistenceReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="41144:41494" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="41759:43242" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="42392:42773" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="43253:43444" ph="/* ChildrenWithouAssistenceIn3MonthsReport ... */" />
+                <marker date="1519150546000" expanded="true" signature="43516:43807" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="44040:45241" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="44661:44912" ph="{...}" />
+                <marker date="1519150546000" expanded="true" signature="44774:44897" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MAC/Controllers/AgreggatedReportsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MAC/Controllers/ChildrenController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BookWise/Adult.vb" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="CSI (14 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/4.5/xsp4.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--address=127.0.0.1 --port=5000" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MAC" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MAC/MAC.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Web" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
+      <browser url="http://127.0.0.1:5000" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53676ffa-3e7b-462a-82dc-ef66bab3dac0" name="Default" comment="" />
+      <created>1519656387571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519656387571</updated>
+      <workItem from="1519656390457" duration="759000" />
+      <workItem from="1521667040023" duration="277000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1036000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.252" sideWeight="0.3529762" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.252" sideWeight="0.6470238" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MAC/Controllers/AgreggatedReportsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12585">
+          <caret line="854" column="9" lean-forward="true" selection-start-line="854" selection-start-column="9" selection-end-line="854" selection-end-column="9" />
+          <folding>
+            <marker date="1519150546000" expanded="false" signature="6:402" ph="..." />
+            <marker date="1519150546000" expanded="true" signature="451:44107" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="531:44105" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1182:1229" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1239:1357" ph="/* GlobalReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="1411:1701" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1908:2283" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="2294:2437" ph="/* Relatórios Agregado de Activistas 1 ... */" />
+            <marker date="1519150546000" expanded="true" signature="2498:2785" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3021:4981" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3906:4558" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3968:4544" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4387:4526" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4991:5133" ph="/* Relatórios Agregado de Activistas 2 ... */" />
+            <marker date="1519150546000" expanded="true" signature="5199:5487" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5732:7687" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="6612:7264" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="6674:7250" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="7093:7232" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="7699:7833" ph="/* InitialRecordSummaryReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="7901:8304" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="8550:11949" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="9443:10223" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="9505:10209" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="9998:10137" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="10818:11542" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="10880:11528" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="11317:11456" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="11959:12102" ph="/* AgreggatedRoutineVisitSummaryReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="12169:12596" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="12852:16420" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="13854:14631" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="13916:14617" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="14406:14545" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="15237:16014" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="15299:16000" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="15789:15928" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="16431:16570" ph="/* AgreggatedReferencesSummaryReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="16635:17018" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="17267:25061" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="19699:19956" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20055:20792" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20117:20778" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20567:20706" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20862:21599" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20924:21585" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21374:21513" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21684:21934" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21797:21920" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="22810:23546" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="22872:23532" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="23321:23460" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="23616:24353" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="23678:24339" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24128:24267" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24438:24657" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24540:24643" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="25072:25209" ph="/* AgreggatedMonthlyProgressReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="25272:25559" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="25804:28272" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="26759:26953" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="27029:27334" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="27108:27169" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="28284:28422" ph="/* AgreggatedHIVStatusChangesReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="28486:30148" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="30434:33757" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="31323:31974" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="31385:31960" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="31803:31942" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="33769:33916" ph="/* AgreggatedBeneficiariesAndHIVStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="33989:35544" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="35810:39173" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="36868:37536" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="36930:37522" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="37365:37504" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="39185:39322" ph="/* AgreggatedLastChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="39385:40364" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="40617:43057" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="41493:42153" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="41555:42139" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="41982:42121" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="43117:44099" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MAC/Controllers/ChildrenController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14790">
+          <caret line="1001" column="0" lean-forward="true" selection-start-line="1001" selection-start-column="0" selection-end-line="1001" selection-end-column="0" />
+          <folding>
+            <marker date="1519150546000" expanded="false" signature="6:389" ph="..." />
+            <marker date="1519150546000" expanded="true" signature="416:45251" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="487:45249" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="896:1026" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1107:1437" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1145:1249" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1328:1395" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1507:1651" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1661:1872" ph="/* POST: Children/Create ... */" />
+            <marker date="1519150546000" expanded="true" signature="2598:2955" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="2644:2796" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3030:3476" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3068:3172" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3251:3318" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3486:3697" ph="/* POST: Children/Edit/5 ... */" />
+            <marker date="1519150546000" expanded="true" signature="4421:4799" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4467:4641" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4878:5208" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4916:5020" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5099:5166" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5372:5555" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5612:5754" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5649:5707" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5764:5937" ph="/* ChildQuestionReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="5995:6659" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="6897:8852" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="7831:8082" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="7944:8067" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="8863:9046" ph="/* AgreggatedChildQuestionReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="9114:9833" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="10116:12059" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="10790:11224" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="11086:11209" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="12070:12245" ph="/* ChildByQuestionReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="12298:13622" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="13857:16498" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="14825:15076" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="14938:15061" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="16510:16695" ph="/* AgreggatedChildByQuestionReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="16758:18132" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="18388:20987" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="19068:19502" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="19364:19487" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21001:21180" ph="/* LastChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="21233:21583" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21810:23388" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="22739:22989" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="22852:22975" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="23399:23588" ph="/* AgreggatedLastChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="23651:24002" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24250:26213" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24934:25217" ph="/* foreach (var refType in data) ... */" />
+            <marker date="1519150546000" expanded="true" signature="25264:25750" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="26225:26403" ph="/* BeforeAndActualChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="26467:26767" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="26988:28567" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="27906:28156" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="28019:28142" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="28578:28764" ph="/* AgreggatedBeforeAndActualChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="28838:30140" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="30449:33874" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="31192:31912" ph="/* foreach (var d in AgreggatedData) ... */" />
+            <marker date="1519150546000" expanded="true" signature="31960:32394" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="32256:32379" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="33886:34069" ph="/* InitialAndActualChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="34134:34432" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="34676:35993" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="35333:35583" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="35446:35569" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="36003:36174" ph="/* CarePlanChildReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="36225:36523" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="36749:38014" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="37367:37617" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="37480:37603" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="38024:38205" ph="/* AgreggatedCarePlanChildReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="38266:38615" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="38886:40870" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="39757:40412" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="39819:40398" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="40241:40380" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="40880:41072" ph="/* AgreggatedChildrenWithouAssistenceReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="41144:41494" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="41759:43242" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="42392:42773" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="43253:43444" ph="/* ChildrenWithouAssistenceIn3MonthsReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="43516:43807" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="44040:45241" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="44661:44912" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="44774:44897" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookWise/Adult.vb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="73" column="15" lean-forward="false" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MAC/Controllers/ChildrenController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14790">
+          <caret line="1001" column="0" lean-forward="false" selection-start-line="1001" selection-start-column="0" selection-end-line="1001" selection-end-column="0" />
+          <folding>
+            <marker date="1519150546000" expanded="false" signature="6:389" ph="..." />
+            <marker date="1519150546000" expanded="true" signature="416:45251" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="487:45249" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="896:1026" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1107:1437" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1145:1249" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1328:1395" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1507:1651" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1661:1872" ph="/* POST: Children/Create ... */" />
+            <marker date="1519150546000" expanded="true" signature="2598:2955" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="2644:2796" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3030:3476" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3068:3172" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3251:3318" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3486:3697" ph="/* POST: Children/Edit/5 ... */" />
+            <marker date="1519150546000" expanded="true" signature="4421:4799" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4467:4641" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4878:5208" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4916:5020" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5099:5166" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5372:5555" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5612:5754" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5649:5707" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5764:5937" ph="/* ChildQuestionReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="5995:6659" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="6897:8852" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="7831:8082" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="7944:8067" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="8863:9046" ph="/* AgreggatedChildQuestionReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="9114:9833" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="10116:12059" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="10790:11224" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="11086:11209" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="12070:12245" ph="/* ChildByQuestionReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="12298:13622" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="13857:16498" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="14825:15076" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="14938:15061" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="16510:16695" ph="/* AgreggatedChildByQuestionReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="16758:18132" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="18388:20987" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="19068:19502" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="19364:19487" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21001:21180" ph="/* LastChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="21233:21583" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21810:23388" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="22739:22989" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="22852:22975" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="23399:23588" ph="/* AgreggatedLastChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="23651:24002" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24250:26213" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24934:25217" ph="/* foreach (var refType in data) ... */" />
+            <marker date="1519150546000" expanded="true" signature="25264:25750" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="26225:26403" ph="/* BeforeAndActualChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="26467:26767" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="26988:28567" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="27906:28156" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="28019:28142" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="28578:28764" ph="/* AgreggatedBeforeAndActualChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="28838:30140" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="30449:33874" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="31192:31912" ph="/* foreach (var d in AgreggatedData) ... */" />
+            <marker date="1519150546000" expanded="true" signature="31960:32394" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="32256:32379" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="33886:34069" ph="/* InitialAndActualChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="34134:34432" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="34676:35993" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="35333:35583" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="35446:35569" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="36003:36174" ph="/* CarePlanChildReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="36225:36523" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="36749:38014" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="37367:37617" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="37480:37603" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="38024:38205" ph="/* AgreggatedCarePlanChildReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="38266:38615" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="38886:40870" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="39757:40412" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="39819:40398" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="40241:40380" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="40880:41072" ph="/* AgreggatedChildrenWithouAssistenceReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="41144:41494" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="41759:43242" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="42392:42773" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="43253:43444" ph="/* ChildrenWithouAssistenceIn3MonthsReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="43516:43807" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="44040:45241" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="44661:44912" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="44774:44897" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MAC/Controllers/AgreggatedReportsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3623">
+          <caret line="854" column="9" lean-forward="false" selection-start-line="854" selection-start-column="9" selection-end-line="854" selection-end-column="9" />
+          <folding>
+            <marker date="1519150546000" expanded="false" signature="6:402" ph="..." />
+            <marker date="1519150546000" expanded="true" signature="451:44107" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="531:44105" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1182:1229" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1239:1357" ph="/* GlobalReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="1411:1701" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="1908:2283" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="2294:2437" ph="/* Relatórios Agregado de Activistas 1 ... */" />
+            <marker date="1519150546000" expanded="true" signature="2498:2785" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3021:4981" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3906:4558" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="3968:4544" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4387:4526" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="4991:5133" ph="/* Relatórios Agregado de Activistas 2 ... */" />
+            <marker date="1519150546000" expanded="true" signature="5199:5487" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="5732:7687" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="6612:7264" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="6674:7250" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="7093:7232" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="7699:7833" ph="/* InitialRecordSummaryReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="7901:8304" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="8550:11949" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="9443:10223" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="9505:10209" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="9998:10137" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="10818:11542" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="10880:11528" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="11317:11456" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="11959:12102" ph="/* AgreggatedRoutineVisitSummaryReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="12169:12596" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="12852:16420" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="13854:14631" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="13916:14617" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="14406:14545" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="15237:16014" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="15299:16000" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="15789:15928" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="16431:16570" ph="/* AgreggatedReferencesSummaryReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="16635:17018" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="17267:25061" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="19699:19956" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20055:20792" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20117:20778" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20567:20706" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20862:21599" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="20924:21585" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21374:21513" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21684:21934" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="21797:21920" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="22810:23546" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="22872:23532" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="23321:23460" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="23616:24353" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="23678:24339" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24128:24267" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24438:24657" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="24540:24643" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="25072:25209" ph="/* AgreggatedMonthlyProgressReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="25272:25559" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="25804:28272" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="26759:26953" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="27029:27334" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="27108:27169" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="28284:28422" ph="/* AgreggatedHIVStatusChangesReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="28486:30148" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="30434:33757" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="31323:31974" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="31385:31960" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="31803:31942" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="33769:33916" ph="/* AgreggatedBeneficiariesAndHIVStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="33989:35544" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="35810:39173" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="36868:37536" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="36930:37522" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="37365:37504" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="39185:39322" ph="/* AgreggatedLastChildStatusReport ... */" />
+            <marker date="1519150546000" expanded="true" signature="39385:40364" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="40617:43057" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="41493:42153" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="41555:42139" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="41982:42121" ph="{...}" />
+            <marker date="1519150546000" expanded="true" signature="43117:44099" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

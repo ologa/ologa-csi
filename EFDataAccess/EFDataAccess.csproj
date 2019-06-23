@@ -1,0 +1,2147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6DDA654-F584-4DD7-8600-BD40C3A686AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFDataAccess</RootNamespace>
+    <AssemblyName>EFDataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.25.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.25.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.25.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.25.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.25.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.25.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.25.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.25.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.25.0.862, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v3.1.25.0.862\lib\net45\Google.Apis.Drive.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.25.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.25.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=3.0.7.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Quartz.3.0.7\lib\net452\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.4.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, PublicKeyToken=431cba815f6a8b5b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\Charts\ChartDefinitionDTO.cs" />
+    <Compile Include="DTO\Charts\ChartSerie.cs" />
+    <Compile Include="DTO\Charts\ChartSerieDataObject.cs" />
+    <Compile Include="DTO\HouseholdSupportPlanDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\NonGraduatedBeneficiaryV2DTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\NonGraduatedBeneficiaryDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\ReferenceGroupV2DTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\ReferenceGroupDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\RoutineVisitGroupDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\HIVGroupDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\ReferenceOriginDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\AgreggatedMEDataDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\FieldsDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\AgeGroupDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\ISiteNameReportDTO.cs" />
+    <Compile Include="DTO\ListingReportsDTOs\BeneficiariesListingWithYellowActiveOrInactiveStatusDTO.cs" />
+    <Compile Include="DTO\ListingReportsDTOs\HouseholdSupportPlanListingDTO.cs" />
+    <Compile Include="DTO\MonthlyActiveBeneficiariesSummaryReportDTO.cs" />
+    <Compile Include="DTO\ListingReportsDTOs\ReferencesListWithStatusDTO.cs" />
+    <Compile Include="DTO\RoutineVisitMonthlyDTO.cs" />
+    <Compile Include="DTO\BigReportsDTOs\RoutineVisitGroupV2DTO.cs" />
+    <Compile Include="DTO\ServiceTypeDTO.cs" />
+    <Compile Include="DTO\HIVStatusByPartnerReportDTO.cs" />
+    <Compile Include="DTO\SummaryReportsDTOs\MonthlyGraduatedBeneficiariesSummaryDTO.cs" />
+    <Compile Include="DTO\SummaryReportsDTOs\MonthlyActiveBeneficiariesSummaryDTO.cs" />
+    <Compile Include="DTO\SummaryReportsDTOs\NewBeneficiariesSummaryReportDTO.cs" />
+    <Compile Include="DTO\UserInfo.cs" />
+    <Compile Include="DTO\BeneficiaryHIVStatusDTO.cs" />
+    <Compile Include="DTO\BeneficiaryStatusDTO.cs" />
+    <Compile Include="DTO\IAgreggatedReportDTO.cs" />
+    <Compile Include="DTO\SeriesDataComulative2.cs" />
+    <Compile Include="DTO\SeriesDataBeneficiaryStates.cs" />
+    <Compile Include="DTO\CounterReferencesSummaryByRefTypeReportDTO.cs" />
+    <Compile Include="DTO\AgreggatedInitialRecordSummaryReportDTO.cs" />
+    <Compile Include="DTO\AgreggatedLastChildStatusReportDTO.cs" />
+    <Compile Include="DTO\AgreggatedDTO\AgreggatedGlobalReportDTO.cs" />
+    <Compile Include="Conventions\ForeignKeyNamingConvention.cs" />
+    <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="CSIDatabaseInitializer.cs" />
+    <Compile Include="CustomQueryObject\HouseholdCQO.cs" />
+    <Compile Include="CustomQuery\ChildDomainReport.cs" />
+    <Compile Include="CustomQuery\ChildListForDashboard.cs" />
+    <Compile Include="CustomQuery\CustomQueryExecutor.cs" />
+    <Compile Include="CustomQuery\ScoreAverageInfo.cs" />
+    <Compile Include="DTO\AgreggatedDTO\AgreggatedInitialRecordSummaryReportDTO.cs" />
+    <Compile Include="DTO\AgreggatedDTO\AgreggatedRoutineVisitSummaryReportDTO.cs" />
+    <Compile Include="DTO\AgreggatedBeforeAndActualChildStatusReportDTO.cs" />
+    <Compile Include="DTO\BeneficiariesAndHIVStatusDTO.cs" />
+    <Compile Include="DTO\AgreggatedChildByQuestionReportDTO.cs" />
+    <Compile Include="DTO\ActivistReferencesSummaryByRefTypeReportDTO.cs" />
+    <Compile Include="DTO\SeriesDecimalData.cs" />
+    <Compile Include="DTO\TemporaryReportListingsDTO\BeneficiarieswithIndeterminatedStatusListingDTO.cs" />
+    <Compile Include="DTO\TemporaryReportListingsDTO\HouseholdwithIndeterminatedStatusListingDTO.cs" />
+    <Compile Include="DTO\TemporaryReportListingsDTO\BasicBeneficiaryListingDTO.cs" />
+    <Compile Include="DTO\TemporaryReportListingsDTO\BeneficiaryListingForReferenceServiceReportDTO.cs" />
+    <Compile Include="DTO\TemporaryReportListingsDTO\BeneficiaryListingForRoutineVisitReportDTO.cs" />
+    <Compile Include="DTO\TemporaryReportListingsDTO\PartnersWithSameCollabRolesLevelReportDTO.cs" />
+    <Compile Include="DTO\TemporaryReportListingsDTO\HouseholdListingWithOriginReferenceReportDTO.cs" />
+    <Compile Include="DTO\TemporaryReportListingsDTO\BeneficiaryListingForInitialReportDTO.cs" />
+    <Compile Include="DTO\FilterWidgetData.cs" />
+    <Compile Include="DTO\ChildByQuestionReportDTO.cs" />
+    <Compile Include="DTO\RoutineVisitChildDTO.cs" />
+    <Compile Include="DTO\HIVStatusDTO.cs" />
+    <Compile Include="DTO\InitialAndFinalHIVStatusDTO.cs" />
+    <Compile Include="DTO\InitialAndActualChildStatusReportDTO.cs" />
+    <Compile Include="DTO\BeforeAndActualChildStatusReportDTO.cs" />
+    <Compile Include="DTO\GraduatedAdultReportDTO.cs" />
+    <Compile Include="DTO\GlobalReportDTO.cs" />
+    <Compile Include="DTO\AgreggatedBaseDataDTO.cs" />
+    <Compile Include="DTO\ISummaryReportDTO.cs" />
+    <Compile Include="DTO\SeriesDataDynamic.cs" />
+    <Compile Include="DTO\SeriesDataFamilyOrigin.cs" />
+    <Compile Include="DTO\SeriesDataChildsTotalInitialGraduatedAdultsNonGraduated.cs" />
+    <Compile Include="DTO\SeriesDataComulative.cs" />
+    <Compile Include="DTO\SeriesData.cs" />
+    <Compile Include="DTO\BeneficiariesWithoutServicesDTO.cs" />
+    <Compile Include="DTO\UserRecordCountingReportDTO.cs" />
+    <Compile Include="DTO\LastChildStatusReportDTO.cs" />
+    <Compile Include="DTO\ChildQuestionSummaryReportDTO.cs" />
+    <Compile Include="DTO\InitialRecordSummaryReportDTO.cs" />
+    <Compile Include="DTO\HIVStatusChangesDTO.cs" />
+    <Compile Include="DTO\ReferencesSummaryByAgeReportDTO.cs" />
+    <Compile Include="DTO\ReferencesSummaryByRefTypeReportDTO.cs" />
+    <Compile Include="DTO\CarePlanChildDTO.cs" />
+    <Compile Include="DTO\RoutineVisitSummaryReportDTO.cs" />
+    <Compile Include="EFConstants.cs" />
+    <Compile Include="Exceptions\DuplicatedObjectException.cs" />
+    <Compile Include="Interceptors\DbCommandLoggingInterceptor.cs" />
+    <Compile Include="Interceptors\TransientErrorsInterceptor.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Migrations\201712031646294_AddAuditFieldsOnEntities.cs" />
+    <Compile Include="Migrations\201712031646294_AddAuditFieldsOnEntities.Designer.cs">
+      <DependentUpon>201712031646294_AddAuditFieldsOnEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712051812193_HouseholdSyncFields.cs" />
+    <Compile Include="Migrations\201712051812193_HouseholdSyncFields.Designer.cs">
+      <DependentUpon>201712051812193_HouseholdSyncFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712052218470_Sync_AuditedEntity_for_Household_Adult.cs" />
+    <Compile Include="Migrations\201712052218470_Sync_AuditedEntity_for_Household_Adult.Designer.cs">
+      <DependentUpon>201712052218470_Sync_AuditedEntity_for_Household_Adult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712052233449_Sync_AuditedEntityForAid.cs" />
+    <Compile Include="Migrations\201712052233449_Sync_AuditedEntityForAid.Designer.cs">
+      <DependentUpon>201712052233449_Sync_AuditedEntityForAid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712181025207_HouseholdIndexesAndDBGeneratedGuid.cs" />
+    <Compile Include="Migrations\201712181025207_HouseholdIndexesAndDBGeneratedGuid.Designer.cs">
+      <DependentUpon>201712181025207_HouseholdIndexesAndDBGeneratedGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712211050119_ChildSyncChanges.cs" />
+    <Compile Include="Migrations\201712211050119_ChildSyncChanges.Designer.cs">
+      <DependentUpon>201712211050119_ChildSyncChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712211549481_RoutineVisitSyncChanges.cs" />
+    <Compile Include="Migrations\201712211549481_RoutineVisitSyncChanges.Designer.cs">
+      <DependentUpon>201712211549481_RoutineVisitSyncChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712270945122_AddKinshipToFamilyHeadOnChildAndAdult.cs" />
+    <Compile Include="Migrations\201712270945122_AddKinshipToFamilyHeadOnChildAndAdult.Designer.cs">
+      <DependentUpon>201712270945122_AddKinshipToFamilyHeadOnChildAndAdult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712271834220_DatabaseGeneratedGuidOnChild.cs" />
+    <Compile Include="Migrations\201712271834220_DatabaseGeneratedGuidOnChild.Designer.cs">
+      <DependentUpon>201712271834220_DatabaseGeneratedGuidOnChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801021645098_ChangeAnswerIndexOnCSIDomainScore.cs" />
+    <Compile Include="Migrations\201801021645098_ChangeAnswerIndexOnCSIDomainScore.Designer.cs">
+      <DependentUpon>201801021645098_ChangeAnswerIndexOnCSIDomainScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801031441247_NewAuditedEntities.cs" />
+    <Compile Include="Migrations\201801031441247_NewAuditedEntities.Designer.cs">
+      <DependentUpon>201801031441247_NewAuditedEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801081026137_RenameQuestionIndexOnCSIDomainScore.cs" />
+    <Compile Include="Migrations\201801081026137_RenameQuestionIndexOnCSIDomainScore.Designer.cs">
+      <DependentUpon>201801081026137_RenameQuestionIndexOnCSIDomainScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801090016177_SyncronizationPremisses.cs" />
+    <Compile Include="Migrations\201801090016177_SyncronizationPremisses.Designer.cs">
+      <DependentUpon>201801090016177_SyncronizationPremisses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801090051117_RenameSupportServiceTypeIDOnCarePlanDomainSupportService.cs" />
+    <Compile Include="Migrations\201801090051117_RenameSupportServiceTypeIDOnCarePlanDomainSupportService.Designer.cs">
+      <DependentUpon>201801090051117_RenameSupportServiceTypeIDOnCarePlanDomainSupportService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801241225565_AddAudtiFieldsOnSiteGoals.cs" />
+    <Compile Include="Migrations\201801241225565_AddAudtiFieldsOnSiteGoals.Designer.cs">
+      <DependentUpon>201801241225565_AddAudtiFieldsOnSiteGoals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151132262_RenameIndexesOnChildTable.cs" />
+    <Compile Include="Migrations\201802151132262_RenameIndexesOnChildTable.Designer.cs">
+      <DependentUpon>201802151132262_RenameIndexesOnChildTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802160457362_RenameIndexesOnChildAndAdult.cs" />
+    <Compile Include="Migrations\201802160457362_RenameIndexesOnChildAndAdult.Designer.cs">
+      <DependentUpon>201802160457362_RenameIndexesOnChildAndAdult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802221042326_RenameAidIndexOnHouseholdTable.cs" />
+    <Compile Include="Migrations\201802221042326_RenameAidIndexOnHouseholdTable.Designer.cs">
+      <DependentUpon>201802221042326_RenameAidIndexOnHouseholdTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803251553031_Adult_in_ChildStatusHistory.cs" />
+    <Compile Include="Migrations\201803251553031_Adult_in_ChildStatusHistory.Designer.cs">
+      <DependentUpon>201803251553031_Adult_in_ChildStatusHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803251641308_Make_ChildID_in_ChildStatusHistory_be_Nullable.cs" />
+    <Compile Include="Migrations\201803251641308_Make_ChildID_in_ChildStatusHistory_be_Nullable.Designer.cs">
+      <DependentUpon>201803251641308_Make_ChildID_in_ChildStatusHistory_be_Nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803260054202_Add_Status_for_Old_Adults.cs" />
+    <Compile Include="Migrations\201803260054202_Add_Status_for_Old_Adults.Designer.cs">
+      <DependentUpon>201803260054202_Add_Status_for_Old_Adults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803281753592_AddUserRoleRelations.cs" />
+    <Compile Include="Migrations\201803281753592_AddUserRoleRelations.Designer.cs">
+      <DependentUpon>201803281753592_AddUserRoleRelations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803301004235_RenameRoleIDIndexOnUserTable.cs" />
+    <Compile Include="Migrations\201803301004235_RenameRoleIDIndexOnUserTable.Designer.cs">
+      <DependentUpon>201803301004235_RenameRoleIDIndexOnUserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804101458098_UpdateChildStatusHistoryToInheritFromAuditedEntity.cs" />
+    <Compile Include="Migrations\201804101458098_UpdateChildStatusHistoryToInheritFromAuditedEntity.Designer.cs">
+      <DependentUpon>201804101458098_UpdateChildStatusHistoryToInheritFromAuditedEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804151025227_RenameSiteIDIndexOnSite.cs" />
+    <Compile Include="Migrations\201804151025227_RenameSiteIDIndexOnSite.Designer.cs">
+      <DependentUpon>201804151025227_RenameSiteIDIndexOnSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804151908408_AlterSiteGoalCommentNotRequired.cs" />
+    <Compile Include="Migrations\201804151908408_AlterSiteGoalCommentNotRequired.Designer.cs">
+      <DependentUpon>201804151908408_AlterSiteGoalCommentNotRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804151943133_AlterSiteIncludePartnersAndUsers.cs" />
+    <Compile Include="Migrations\201804151943133_AlterSiteIncludePartnersAndUsers.Designer.cs">
+      <DependentUpon>201804151943133_AlterSiteIncludePartnersAndUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805021626315_change_Chass_to_Clinic_Partner.cs" />
+    <Compile Include="Migrations\201805021626315_change_Chass_to_Clinic_Partner.Designer.cs">
+      <DependentUpon>201805021626315_change_Chass_to_Clinic_Partner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805061649445_add_Child_and_Adult_To_ReferenceServiceTable.cs" />
+    <Compile Include="Migrations\201805061649445_add_Child_and_Adult_To_ReferenceServiceTable.Designer.cs">
+      <DependentUpon>201805061649445_add_Child_and_Adult_To_ReferenceServiceTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805070808479_AddColumn_QuestionVersion_on_QuestionTable.cs" />
+    <Compile Include="Migrations\201805070808479_AddColumn_QuestionVersion_on_QuestionTable.Designer.cs">
+      <DependentUpon>201805070808479_AddColumn_QuestionVersion_on_QuestionTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804220830206_RemoveUsersFromSite.cs" />
+    <Compile Include="Migrations\201804220830206_RemoveUsersFromSite.Designer.cs">
+      <DependentUpon>201804220830206_RemoveUsersFromSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804231017183_RenameUserRoles.cs" />
+    <Compile Include="Migrations\201804231017183_RenameUserRoles.Designer.cs">
+      <DependentUpon>201804231017183_RenameUserRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805070955033_AddStateFieldsOnAuditAndSyncEntity.cs" />
+    <Compile Include="Migrations\201805070955033_AddStateFieldsOnAuditAndSyncEntity.Designer.cs">
+      <DependentUpon>201805070955033_AddStateFieldsOnAuditAndSyncEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805081424049_add_new_MAC_Images_to_File_Table.cs" />
+    <Compile Include="Migrations\201805081424049_add_new_MAC_Images_to_File_Table.Designer.cs">
+      <DependentUpon>201805081424049_add_new_MAC_Images_to_File_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805081551332_add_new_Question_to_Question_Table.cs" />
+    <Compile Include="Migrations\201805081551332_add_new_Question_to_Question_Table.Designer.cs">
+      <DependentUpon>201805081551332_add_new_Question_to_Question_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805081555448_add_Answers_for_Version2_Questions_on_Answer_Table.cs" />
+    <Compile Include="Migrations\201805081555448_add_Answers_for_Version2_Questions_on_Answer_Table.Designer.cs">
+      <DependentUpon>201805081555448_add_Answers_for_Version2_Questions_on_Answer_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805111103201_AddDateOfBirthUnknownAndVisitRecordCode.cs" />
+    <Compile Include="Migrations\201805111103201_AddDateOfBirthUnknownAndVisitRecordCode.Designer.cs">
+      <DependentUpon>201805111103201_AddDateOfBirthUnknownAndVisitRecordCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805121127525_RestoreRoutineVisitMemberIDOnReferenceService.cs" />
+    <Compile Include="Migrations\201805121127525_RestoreRoutineVisitMemberIDOnReferenceService.Designer.cs">
+      <DependentUpon>201805121127525_RestoreRoutineVisitMemberIDOnReferenceService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805121226192_RequiredFieldsOnHousehold.cs" />
+    <Compile Include="Migrations\201805121226192_RequiredFieldsOnHousehold.Designer.cs">
+      <DependentUpon>201805121226192_RequiredFieldsOnHousehold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805132257554_EnableMandatoryFieldsOnBeneficiaries.cs" />
+    <Compile Include="Migrations\201805132257554_EnableMandatoryFieldsOnBeneficiaries.Designer.cs">
+      <DependentUpon>201805132257554_EnableMandatoryFieldsOnBeneficiaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805141744463_Add_RegistrationDate_for_Beneficiaries.cs" />
+    <Compile Include="Migrations\201805141744463_Add_RegistrationDate_for_Beneficiaries.Designer.cs">
+      <DependentUpon>201805141744463_Add_RegistrationDate_for_Beneficiaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805142022216_TrickEntityFramework.cs" />
+    <Compile Include="Migrations\201805142022216_TrickEntityFramework.Designer.cs">
+      <DependentUpon>201805142022216_TrickEntityFramework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805152332013_add_Other_References_CheckBoxes.cs" />
+    <Compile Include="Migrations\201805152332013_add_Other_References_CheckBoxes.Designer.cs">
+      <DependentUpon>201805152332013_add_Other_References_CheckBoxes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805162120367_add_Other_References_Check_Boxes_To_Activist.cs" />
+    <Compile Include="Migrations\201805162120367_add_Other_References_Check_Boxes_To_Activist.Designer.cs">
+      <DependentUpon>201805162120367_add_Other_References_Check_Boxes_To_Activist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805241956106_UpdateEmptyVisitRecordCode.cs" />
+    <Compile Include="Migrations\201805241956106_UpdateEmptyVisitRecordCode.Designer.cs">
+      <DependentUpon>201805241956106_UpdateEmptyVisitRecordCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805250654443_UpdateEmptySiteIDOnPartner.cs" />
+    <Compile Include="Migrations\201805250654443_UpdateEmptySiteIDOnPartner.Designer.cs">
+      <DependentUpon>201805250654443_UpdateEmptySiteIDOnPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805312159121_AddHIVTrackedOnAdultsAndChildren.cs" />
+    <Compile Include="Migrations\201805312159121_AddHIVTrackedOnAdultsAndChildren.Designer.cs">
+      <DependentUpon>201805312159121_AddHIVTrackedOnAdultsAndChildren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806101353338_insert_value_zero_to_otherReferences_CheckBoxes_on_existing_ReferenceServices.cs" />
+    <Compile Include="Migrations\201806101353338_insert_value_zero_to_otherReferences_CheckBoxes_on_existing_ReferenceServices.Designer.cs">
+      <DependentUpon>201806101353338_insert_value_zero_to_otherReferences_CheckBoxes_on_existing_ReferenceServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806101454182_Delete_Poverty_Proof_from_Others_in_Social_ReferenceService.cs" />
+    <Compile Include="Migrations\201806101454182_Delete_Poverty_Proof_from_Others_in_Social_ReferenceService.Designer.cs">
+      <DependentUpon>201806101454182_Delete_Poverty_Proof_from_Others_in_Social_ReferenceService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806102251405_ChangeRoutineVisitViewsAndAddBeneficiaryView.cs" />
+    <Compile Include="Migrations\201806102251405_ChangeRoutineVisitViewsAndAddBeneficiaryView.Designer.cs">
+      <DependentUpon>201806102251405_ChangeRoutineVisitViewsAndAddBeneficiaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806110937566_Add_PartnerID_relation_with_ReferenceService.cs" />
+    <Compile Include="Migrations\201806110937566_Add_PartnerID_relation_with_ReferenceService.Designer.cs">
+      <DependentUpon>201806110937566_Add_PartnerID_relation_with_ReferenceService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806121323153_Change_SocialAttendedDate_To_DateFormat_and_change_HealthAttendedDate_VBDate_to_NULL.cs" />
+    <Compile Include="Migrations\201806121323153_Change_SocialAttendedDate_To_DateFormat_and_change_HealthAttendedDate_VBDate_to_NULL.Designer.cs">
+      <DependentUpon>201806121323153_Change_SocialAttendedDate_To_DateFormat_and_change_HealthAttendedDate_VBDate_to_NULL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806121423064_Remove_MaitenanceState.cs" />
+    <Compile Include="Migrations\201806121423064_Remove_MaitenanceState.Designer.cs">
+      <DependentUpon>201806121423064_Remove_MaitenanceState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806131118504_InsertAdultStatusForAllAdults.cs" />
+    <Compile Include="Migrations\201806131118504_InsertAdultStatusForAllAdults.Designer.cs">
+      <DependentUpon>201806131118504_InsertAdultStatusForAllAdults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806131334127_RemoveRoutineVisitMemberFKFromReferenceService.cs" />
+    <Compile Include="Migrations\201806131334127_RemoveRoutineVisitMemberFKFromReferenceService.Designer.cs">
+      <DependentUpon>201806131334127_RemoveRoutineVisitMemberFKFromReferenceService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806151212158_AddBeneficiaryGuidOndHIVStatusAndChildStatusHistory.cs" />
+    <Compile Include="Migrations\201806151212158_AddBeneficiaryGuidOndHIVStatusAndChildStatusHistory.Designer.cs">
+      <DependentUpon>201806151212158_AddBeneficiaryGuidOndHIVStatusAndChildStatusHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806171045559_UpdateAllAdultsInAdultStatusToInitialStatus.cs" />
+    <Compile Include="Migrations\201806171045559_UpdateAllAdultsInAdultStatusToInitialStatus.Designer.cs">
+      <DependentUpon>201806171045559_UpdateAllAdultsInAdultStatusToInitialStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806181735568_FixHIVStatusWithWrongUndisclosedReasonsValues.cs" />
+    <Compile Include="Migrations\201806181735568_FixHIVStatusWithWrongUndisclosedReasonsValues.Designer.cs">
+      <DependentUpon>201806181735568_FixHIVStatusWithWrongUndisclosedReasonsValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806192228121_AddRoutineVisitDateAndBeneficiaryHasServicesOnRoutineVisitMember.cs" />
+    <Compile Include="Migrations\201806192228121_AddRoutineVisitDateAndBeneficiaryHasServicesOnRoutineVisitMember.Designer.cs">
+      <DependentUpon>201806192228121_AddRoutineVisitDateAndBeneficiaryHasServicesOnRoutineVisitMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806211505084_ReCreateSystemViews.cs" />
+    <Compile Include="Migrations\201806211505084_ReCreateSystemViews.Designer.cs">
+      <DependentUpon>201806211505084_ReCreateSystemViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806270549300_UpdateBeneficiaryHasServicesInRoutineVisitMember.cs" />
+    <Compile Include="Migrations\201806270549300_UpdateBeneficiaryHasServicesInRoutineVisitMember.Designer.cs">
+      <DependentUpon>201806270549300_UpdateBeneficiaryHasServicesInRoutineVisitMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807011650258_AddNIDOnHIVStatus.cs" />
+    <Compile Include="Migrations\201807011650258_AddNIDOnHIVStatus.Designer.cs">
+      <DependentUpon>201807011650258_AddNIDOnHIVStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807031034194_AddChildIDOnAdult.cs" />
+    <Compile Include="Migrations\201807031034194_AddChildIDOnAdult.Designer.cs">
+      <DependentUpon>201807031034194_AddChildIDOnAdult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807031035318_UpdateAdultToPenultimateChildStatus.cs" />
+    <Compile Include="Migrations\201807031035318_UpdateAdultToPenultimateChildStatus.Designer.cs">
+      <DependentUpon>201807031035318_UpdateAdultToPenultimateChildStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807031041223_UpdateChildIdOnSystemCreatedAdults.cs" />
+    <Compile Include="Migrations\201807031041223_UpdateChildIdOnSystemCreatedAdults.Designer.cs">
+      <DependentUpon>201807031041223_UpdateChildIdOnSystemCreatedAdults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807090530410_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryView.cs" />
+    <Compile Include="Migrations\201807090530410_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryView.Designer.cs">
+      <DependentUpon>201807090530410_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807091943335_AddIsPartSavingGroupOnBeneficiaryView.cs" />
+    <Compile Include="Migrations\201807091943335_AddIsPartSavingGroupOnBeneficiaryView.Designer.cs">
+      <DependentUpon>201807091943335_AddIsPartSavingGroupOnBeneficiaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807121039593_UpdateAllAdultsInAdultStatusToInitialStatus_part2.cs" />
+    <Compile Include="Migrations\201807121039593_UpdateAllAdultsInAdultStatusToInitialStatus_part2.Designer.cs">
+      <DependentUpon>201807121039593_UpdateAllAdultsInAdultStatusToInitialStatus_part2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807161833058_Add_UserID_into_HIVStatusTable.cs" />
+    <Compile Include="Migrations\201807161833058_Add_UserID_into_HIVStatusTable.Designer.cs">
+      <DependentUpon>201807161833058_Add_UserID_into_HIVStatusTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807171015072_Update_Existing_Beneficiary_in_StatusHistory_without_Correct_BeneficiaryGuid.cs" />
+    <Compile Include="Migrations\201807171015072_Update_Existing_Beneficiary_in_StatusHistory_without_Correct_BeneficiaryGuid.Designer.cs">
+      <DependentUpon>201807171015072_Update_Existing_Beneficiary_in_StatusHistory_without_Correct_BeneficiaryGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807250730227_DeleteOrphanHIVAndBeneficiaryStatus.cs" />
+    <Compile Include="Migrations\201807250730227_DeleteOrphanHIVAndBeneficiaryStatus.Designer.cs">
+      <DependentUpon>201807250730227_DeleteOrphanHIVAndBeneficiaryStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807250807063_InsertUndeterminedTypeForBeneficiaryAndHouseholdNewMandatoryFields.cs" />
+    <Compile Include="Migrations\201807250807063_InsertUndeterminedTypeForBeneficiaryAndHouseholdNewMandatoryFields.Designer.cs">
+      <DependentUpon>201807250807063_InsertUndeterminedTypeForBeneficiaryAndHouseholdNewMandatoryFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807251049458_EnableNewMandatoryFieldsForBeneficiaryAndHousehold.cs" />
+    <Compile Include="Migrations\201807251049458_EnableNewMandatoryFieldsForBeneficiaryAndHousehold.Designer.cs">
+      <DependentUpon>201807251049458_EnableNewMandatoryFieldsForBeneficiaryAndHousehold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807251501177_UpdateHIVStatusWithoutBeneficiaryGuid.cs" />
+    <Compile Include="Migrations\201807251501177_UpdateHIVStatusWithoutBeneficiaryGuid.Designer.cs">
+      <DependentUpon>201807251501177_UpdateHIVStatusWithoutBeneficiaryGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807251609556_EnableMandatoryFieldsForHIVStatus.cs" />
+    <Compile Include="Migrations\201807251609556_EnableMandatoryFieldsForHIVStatus.Designer.cs">
+      <DependentUpon>201807251609556_EnableMandatoryFieldsForHIVStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807281202023_Update_degree-of-kingship_Esposo_to_Code_06.cs" />
+    <Compile Include="Migrations\201807281202023_Update_degree-of-kingship_Esposo_to_Code_06.Designer.cs">
+      <DependentUpon>201807281202023_Update_degree-of-kingship_Esposo_to_Code_06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807281352524_UpdateReferenceServiceWithoutChildIDorAdultID.cs" />
+    <Compile Include="Migrations\201807281352524_UpdateReferenceServiceWithoutChildIDorAdultID.Designer.cs">
+      <DependentUpon>201807281352524_UpdateReferenceServiceWithoutChildIDorAdultID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807281908509_UpdateNullablePartnerIDOnReferenceServiceWithHouseholdPartnerID.cs" />
+    <Compile Include="Migrations\201807281908509_UpdateNullablePartnerIDOnReferenceServiceWithHouseholdPartnerID.Designer.cs">
+      <DependentUpon>201807281908509_UpdateNullablePartnerIDOnReferenceServiceWithHouseholdPartnerID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807291813048_InsertUndeterminatedHIVStatusForBeneficiariesWhoDontHaveIt.cs" />
+    <Compile Include="Migrations\201807291813048_InsertUndeterminatedHIVStatusForBeneficiariesWhoDontHaveIt.Designer.cs">
+      <DependentUpon>201807291813048_InsertUndeterminatedHIVStatusForBeneficiariesWhoDontHaveIt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807291815199_DeleteOrphanHIVAndBeneficiaryStatusV2.cs" />
+    <Compile Include="Migrations\201807291815199_DeleteOrphanHIVAndBeneficiaryStatusV2.Designer.cs">
+      <DependentUpon>201807291815199_DeleteOrphanHIVAndBeneficiaryStatusV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807291846591_EnableMandatoryFieldsOnBeneficiariesV1.cs" />
+    <Compile Include="Migrations\201807291846591_EnableMandatoryFieldsOnBeneficiariesV1.Designer.cs">
+      <DependentUpon>201807291846591_EnableMandatoryFieldsOnBeneficiariesV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808072014124_Update_Created_and_LastUpdated_Users_to_Original.cs" />
+    <Compile Include="Migrations\201808072014124_Update_Created_and_LastUpdated_Users_to_Original.Designer.cs">
+      <DependentUpon>201808072014124_Update_Created_and_LastUpdated_Users_to_Original.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808080802153_Update_Simple_Entity_to_Original.cs" />
+    <Compile Include="Migrations\201808080802153_Update_Simple_Entity_to_Original.Designer.cs">
+      <DependentUpon>201808080802153_Update_Simple_Entity_to_Original.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809240747216_AddBeneficiaryCodeOnBeneficiaries.cs" />
+    <Compile Include="Migrations\201809240747216_AddBeneficiaryCodeOnBeneficiaries.Designer.cs">
+      <DependentUpon>201809240747216_AddBeneficiaryCodeOnBeneficiaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809262118540_AddNewBeneficiaryStatus.cs" />
+    <Compile Include="Migrations\201809262118540_AddNewBeneficiaryStatus.Designer.cs">
+      <DependentUpon>201809262118540_AddNewBeneficiaryStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810081520379_AddCodeOnHouseholdAndPartner.cs" />
+    <Compile Include="Migrations\201810081520379_AddCodeOnHouseholdAndPartner.Designer.cs">
+      <DependentUpon>201810081520379_AddCodeOnHouseholdAndPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810121409051_ChangeAllServicesToValueOne.cs" />
+    <Compile Include="Migrations\201810121409051_ChangeAllServicesToValueOne.Designer.cs">
+      <DependentUpon>201810121409051_ChangeAllServicesToValueOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810131511518_Update_And_Order_BeneficiaryStatus_To_OriginalID.cs" />
+    <Compile Include="Migrations\201810131511518_Update_And_Order_BeneficiaryStatus_To_OriginalID.Designer.cs">
+      <DependentUpon>201810131511518_Update_And_Order_BeneficiaryStatus_To_OriginalID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810131932351_FixHIVStatus_And_BeneficiaryStatus_WithZero_BeneficiaryGuid.cs" />
+    <Compile Include="Migrations\201810131932351_FixHIVStatus_And_BeneficiaryStatus_WithZero_BeneficiaryGuid.Designer.cs">
+      <DependentUpon>201810131932351_FixHIVStatus_And_BeneficiaryStatus_WithZero_BeneficiaryGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810171409013_ReCreateRoutineVisitViewsWithDomainEntitySupportType.cs" />
+    <Compile Include="Migrations\201810171409013_ReCreateRoutineVisitViewsWithDomainEntitySupportType.Designer.cs">
+      <DependentUpon>201810171409013_ReCreateRoutineVisitViewsWithDomainEntitySupportType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810220950115_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryViewV2.cs" />
+    <Compile Include="Migrations\201810220950115_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryViewV2.Designer.cs">
+      <DependentUpon>201810220950115_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryViewV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810251357154_CreatedUser_LastUpdatedUser_For_Entities_with_AuditedEntity_Inheritance.cs" />
+    <Compile Include="Migrations\201810251357154_CreatedUser_LastUpdatedUser_For_Entities_with_AuditedEntity_Inheritance.Designer.cs">
+      <DependentUpon>201810251357154_CreatedUser_LastUpdatedUser_For_Entities_with_AuditedEntity_Inheritance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811081251093_Remove_Codes.cs" />
+    <Compile Include="Migrations\201811081251093_Remove_Codes.Designer.cs">
+      <DependentUpon>201811081251093_Remove_Codes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811112000453_AddAutomaticReportGeneratorTablesAndFields.cs" />
+    <Compile Include="Migrations\201811112000453_AddAutomaticReportGeneratorTablesAndFields.Designer.cs">
+      <DependentUpon>201811112000453_AddAutomaticReportGeneratorTablesAndFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811261225102_AddInitialAndFinalPositionDateForAutomaticGeneratedReports.cs" />
+    <Compile Include="Migrations\201811261225102_AddInitialAndFinalPositionDateForAutomaticGeneratedReports.Designer.cs">
+      <DependentUpon>201811261225102_AddInitialAndFinalPositionDateForAutomaticGeneratedReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811261226300_ChangeAdminPassword.cs" />
+    <Compile Include="Migrations\201811261226300_ChangeAdminPassword.Designer.cs">
+      <DependentUpon>201811261226300_ChangeAdminPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901021109357_Add_Fields_to_Report_Data_Model.cs" />
+    <Compile Include="Migrations\201901021109357_Add_Fields_to_Report_Data_Model.Designer.cs">
+      <DependentUpon>201901021109357_Add_Fields_to_Report_Data_Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901061456585_add-New-ReferenceServices.cs" />
+    <Compile Include="Migrations\201901061456585_add-New-ReferenceServices.Designer.cs">
+      <DependentUpon>201901061456585_add-New-ReferenceServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902171522079_AddBeneficiaryTable.cs" />
+    <Compile Include="Migrations\201902171522079_AddBeneficiaryTable.Designer.cs">
+      <DependentUpon>201902171522079_AddBeneficiaryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902171636262_AddSupportServiceFields.cs" />
+    <Compile Include="Migrations\201902171636262_AddSupportServiceFields.Designer.cs">
+      <DependentUpon>201902171636262_AddSupportServiceFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902181057383_AddVersionOnRoutineVisit.cs" />
+    <Compile Include="Migrations\201902181057383_AddVersionOnRoutineVisit.Designer.cs">
+      <DependentUpon>201902181057383_AddVersionOnRoutineVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902190910023_AddTypeDescriptionAndPopulateSupportServiceType.cs" />
+    <Compile Include="Migrations\201902190910023_AddTypeDescriptionAndPopulateSupportServiceType.Designer.cs">
+      <DependentUpon>201902190910023_AddTypeDescriptionAndPopulateSupportServiceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902211127211_AddHouseholdStatus.AddHouseholdSupportPlan.AddTARVInitialDate.cs" />
+    <Compile Include="Migrations\201902211127211_AddHouseholdStatus.AddHouseholdSupportPlan.AddTARVInitialDate.Designer.cs">
+      <DependentUpon>201902211127211_AddHouseholdStatus.AddHouseholdSupportPlan.AddTARVInitialDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902231038458_UpdateDomainIDOnCSIDomain.cs" />
+    <Compile Include="Migrations\201902231038458_UpdateDomainIDOnCSIDomain.Designer.cs">
+      <DependentUpon>201902231038458_UpdateDomainIDOnCSIDomain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902251338268_MakeHIVInTreatmentAndUndisclosedReasonNullable.cs" />
+    <Compile Include="Migrations\201902251338268_MakeHIVInTreatmentAndUndisclosedReasonNullable.Designer.cs">
+      <DependentUpon>201902251338268_MakeHIVInTreatmentAndUndisclosedReasonNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902260802583_Make_HIV_InformationDate_Non_Nullable.cs" />
+    <Compile Include="Migrations\201902260802583_Make_HIV_InformationDate_Non_Nullable.Designer.cs">
+      <DependentUpon>201902260802583_Make_HIV_InformationDate_Non_Nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902261307247_ReCreateBeneficiaryView.cs" />
+    <Compile Include="Migrations\201902261307247_ReCreateBeneficiaryView.Designer.cs">
+      <DependentUpon>201902261307247_ReCreateBeneficiaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902271155288_AddFilesForAdultMAC.cs" />
+    <Compile Include="Migrations\201902271155288_AddFilesForAdultMAC.Designer.cs">
+      <DependentUpon>201902271155288_AddFilesForAdultMAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902271158373_AddQuestionAndAnswerForAdultMac.cs" />
+    <Compile Include="Migrations\201902271158373_AddQuestionAndAnswerForAdultMac.Designer.cs">
+      <DependentUpon>201902271158373_AddQuestionAndAnswerForAdultMac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902271314458_AddReferenceColumnAndRowNumber.cs" />
+    <Compile Include="Migrations\201902271314458_AddReferenceColumnAndRowNumber.Designer.cs">
+      <DependentUpon>201902271314458_AddReferenceColumnAndRowNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902280518532_AddNewHouseholdStatus_And_InsertAllHouseholdsWithInitialState.cs" />
+    <Compile Include="Migrations\201902280518532_AddNewHouseholdStatus_And_InsertAllHouseholdsWithInitialState.Designer.cs">
+      <DependentUpon>201902280518532_AddNewHouseholdStatus_And_InsertAllHouseholdsWithInitialState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902280617068_orderMACv1Questions.cs" />
+    <Compile Include="Migrations\201902280617068_orderMACv1Questions.Designer.cs">
+      <DependentUpon>201902280617068_orderMACv1Questions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903050756309_AddNewSimpleentity_Degree_of_kinship_Proprio.cs" />
+    <Compile Include="Migrations\201903050756309_AddNewSimpleentity_Degree_of_kinship_Proprio.Designer.cs">
+      <DependentUpon>201903050756309_AddNewSimpleentity_Degree_of_kinship_Proprio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903071456129_UpdateReferenceTypesColumnsAndRowNumbers.cs" />
+    <Compile Include="Migrations\201903071456129_UpdateReferenceTypesColumnsAndRowNumbers.Designer.cs">
+      <DependentUpon>201903071456129_UpdateReferenceTypesColumnsAndRowNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903081109329_AddNewFieldsForBeneficiaryServiceStatus.cs" />
+    <Compile Include="Migrations\201903081109329_AddNewFieldsForBeneficiaryServiceStatus.Designer.cs">
+      <DependentUpon>201903081109329_AddNewFieldsForBeneficiaryServiceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903081233074_AddTableTrimesterAndLoadInitialData.cs" />
+    <Compile Include="Migrations\201903081233074_AddTableTrimesterAndLoadInitialData.Designer.cs">
+      <DependentUpon>201903081233074_AddTableTrimesterAndLoadInitialData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903081418003_AddFieldsToTrimesterModel.cs" />
+    <Compile Include="Migrations\201903081418003_AddFieldsToTrimesterModel.Designer.cs">
+      <DependentUpon>201903081418003_AddFieldsToTrimesterModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903081935312_ChangeTrimesterTableColumnOrderToTrimesterSequence.cs" />
+    <Compile Include="Migrations\201903081935312_ChangeTrimesterTableColumnOrderToTrimesterSequence.Designer.cs">
+      <DependentUpon>201903081935312_ChangeTrimesterTableColumnOrderToTrimesterSequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903081936148_AddBeneficiaryServicesStatusAndTrimestersDefinitions.cs" />
+    <Compile Include="Migrations\201903081936148_AddBeneficiaryServicesStatusAndTrimestersDefinitions.Designer.cs">
+      <DependentUpon>201903081936148_AddBeneficiaryServicesStatusAndTrimestersDefinitions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903092118069_ChangeTrimesterToTrimesterDefinition.cs" />
+    <Compile Include="Migrations\201903092118069_ChangeTrimesterToTrimesterDefinition.Designer.cs">
+      <DependentUpon>201903092118069_ChangeTrimesterToTrimesterDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903092122510_InitialDataForTrimesterDefinitions.cs" />
+    <Compile Include="Migrations\201903092122510_InitialDataForTrimesterDefinitions.Designer.cs">
+      <DependentUpon>201903092122510_InitialDataForTrimesterDefinitions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903101210003_ChangesToTrimesterModel.cs" />
+    <Compile Include="Migrations\201903101210003_ChangesToTrimesterModel.Designer.cs">
+      <DependentUpon>201903101210003_ChangesToTrimesterModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903131444006_SeqFieldInTrimesterModelIsNowMappedToDB.cs" />
+    <Compile Include="Migrations\201903131444006_SeqFieldInTrimesterModelIsNowMappedToDB.Designer.cs">
+      <DependentUpon>201903131444006_SeqFieldInTrimesterModelIsNowMappedToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903080910309_Make_PrincipalChiefName_And_ClosePlaceToHome_Required.cs" />
+    <Compile Include="Migrations\201903080910309_Make_PrincipalChiefName_And_ClosePlaceToHome_Required.Designer.cs">
+      <DependentUpon>201903080910309_Make_PrincipalChiefName_And_ClosePlaceToHome_Required.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903131357486_add_Selected_Reference_For_CheckboxList_in_Reference_Service.cs" />
+    <Compile Include="Migrations\201903131357486_add_Selected_Reference_For_CheckboxList_in_Reference_Service.Designer.cs">
+      <DependentUpon>201903131357486_add_Selected_Reference_For_CheckboxList_in_Reference_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903140708301_UpdateSyncState_To_NeverSynced_And_LastUpdatedDate_on_HouseholdStatusHistory.cs" />
+    <Compile Include="Migrations\201903140708301_UpdateSyncState_To_NeverSynced_And_LastUpdatedDate_on_HouseholdStatusHistory.Designer.cs">
+      <DependentUpon>201903140708301_UpdateSyncState_To_NeverSynced_And_LastUpdatedDate_on_HouseholdStatusHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903132006372_AlterServicesStatusDateToNullableOnBeneficiary.cs" />
+    <Compile Include="Migrations\201903132006372_AlterServicesStatusDateToNullableOnBeneficiary.Designer.cs">
+      <DependentUpon>201903132006372_AlterServicesStatusDateToNullableOnBeneficiary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903141249325_MigrationProblemRectifier.cs" />
+    <Compile Include="Migrations\201903141249325_MigrationProblemRectifier.Designer.cs">
+      <DependentUpon>201903141249325_MigrationProblemRectifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903150600252_orderMACv2Questions.cs" />
+    <Compile Include="Migrations\201903150600252_orderMACv2Questions.Designer.cs">
+      <DependentUpon>201903150600252_orderMACv2Questions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903181232223_RecreateSystemViewsForNewAproach.cs" />
+    <Compile Include="Migrations\201903181232223_RecreateSystemViewsForNewAproach.Designer.cs">
+      <DependentUpon>201903181232223_RecreateSystemViewsForNewAproach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903151617260_Add_Parceiros-de-Populacoes-Chave-As_Family_Origin.cs" />
+    <Compile Include="Migrations\201903151617260_Add_Parceiros-de-Populacoes-Chave-As_Family_Origin.Designer.cs">
+      <DependentUpon>201903151617260_Add_Parceiros-de-Populacoes-Chave-As_Family_Origin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903210833073_Adding_Order_To_Domain_And_SupportService.cs" />
+    <Compile Include="Migrations\201903210833073_Adding_Order_To_Domain_And_SupportService.Designer.cs">
+      <DependentUpon>201903210833073_Adding_Order_To_Domain_And_SupportService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903210903061_Setting_Order_Of_Domain_SupportService.cs" />
+    <Compile Include="Migrations\201903210903061_Setting_Order_Of_Domain_SupportService.Designer.cs">
+      <DependentUpon>201903210903061_Setting_Order_Of_Domain_SupportService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903202046309_Add_Fields_to_Report_Data_Model1.cs" />
+    <Compile Include="Migrations\201903202046309_Add_Fields_to_Report_Data_Model1.Designer.cs">
+      <DependentUpon>201903202046309_Add_Fields_to_Report_Data_Model1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903211215139_ScholarityLevel.cs" />
+    <Compile Include="Migrations\201903211215139_ScholarityLevel.Designer.cs">
+      <DependentUpon>201903211215139_ScholarityLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903211236527_MigrationProblemRectifier1.cs" />
+    <Compile Include="Migrations\201903211236527_MigrationProblemRectifier1.Designer.cs">
+      <DependentUpon>201903211236527_MigrationProblemRectifier1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903241517345_UpdateBeneficiariesStatusDescriptions.cs" />
+    <Compile Include="Migrations\201903241517345_UpdateBeneficiariesStatusDescriptions.Designer.cs">
+      <DependentUpon>201903241517345_UpdateBeneficiariesStatusDescriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903241949547_Update-missing-beneficiaryID-on-Entities.cs" />
+    <Compile Include="Migrations\201903241949547_Update-missing-beneficiaryID-on-Entities.Designer.cs">
+      <DependentUpon>201903241949547_Update-missing-beneficiaryID-on-Entities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903242119022_AddCounterReferenceDate.cs" />
+    <Compile Include="Migrations\201903242119022_AddCounterReferenceDate.Designer.cs">
+      <DependentUpon>201903242119022_AddCounterReferenceDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903281400090_AddNewFieldsInReportData.cs" />
+    <Compile Include="Migrations\201903281400090_AddNewFieldsInReportData.Designer.cs">
+      <DependentUpon>201903281400090_AddNewFieldsInReportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903290842078_RecreateReportDataFields.cs" />
+    <Compile Include="Migrations\201903290842078_RecreateReportDataFields.Designer.cs">
+      <DependentUpon>201903290842078_RecreateReportDataFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903290925286_InitialDataForTrimesterDefinitionDefinitionsV2.cs" />
+    <Compile Include="Migrations\201903290925286_InitialDataForTrimesterDefinitionDefinitionsV2.Designer.cs">
+      <DependentUpon>201903290925286_InitialDataForTrimesterDefinitionDefinitionsV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904021225459_UpdateBenefciaryModelAddServicesStatusID.cs" />
+    <Compile Include="Migrations\201904021225459_UpdateBenefciaryModelAddServicesStatusID.Designer.cs">
+      <DependentUpon>201904021225459_UpdateBenefciaryModelAddServicesStatusID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904021431108_DeleAllTrimesters.cs" />
+    <Compile Include="Migrations\201904021431108_DeleAllTrimesters.Designer.cs">
+      <DependentUpon>201904021431108_DeleAllTrimesters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904031741575_UpdateOldRoutineVisitDomainOrdersToMatchNewOnes.cs" />
+    <Compile Include="Migrations\201904031741575_UpdateOldRoutineVisitDomainOrdersToMatchNewOnes.Designer.cs">
+      <DependentUpon>201904031741575_UpdateOldRoutineVisitDomainOrdersToMatchNewOnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904031743547_UpdateAll_CheckBoxes_For_OldRoutineVisits_With_FE_and_HAB_Checked.cs" />
+    <Compile Include="Migrations\201904031743547_UpdateAll_CheckBoxes_For_OldRoutineVisits_With_FE_and_HAB_Checked.Designer.cs">
+      <DependentUpon>201904031743547_UpdateAll_CheckBoxes_For_OldRoutineVisits_With_FE_and_HAB_Checked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904031821256_Update_New_RoutineVisit_Description.cs" />
+    <Compile Include="Migrations\201904031821256_Update_New_RoutineVisit_Description.Designer.cs">
+      <DependentUpon>201904031821256_Update_New_RoutineVisit_Description.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904031857048_UpdateAll_CheckBoxes_For_NewRoutineVisits_With_Todos_in_Description.cs" />
+    <Compile Include="Migrations\201904031857048_UpdateAll_CheckBoxes_For_NewRoutineVisits_With_Todos_in_Description.Designer.cs">
+      <DependentUpon>201904031857048_UpdateAll_CheckBoxes_For_NewRoutineVisits_With_Todos_in_Description.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904041340158_AddNewBeneficiaryStatus1.cs" />
+    <Compile Include="Migrations\201904041340158_AddNewBeneficiaryStatus1.Designer.cs">
+      <DependentUpon>201904041340158_AddNewBeneficiaryStatus1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904041341156_InsertNewChildStatus_Based_on_No_Services.cs" />
+    <Compile Include="Migrations\201904041341156_InsertNewChildStatus_Based_on_No_Services.Designer.cs">
+      <DependentUpon>201904041341156_InsertNewChildStatus_Based_on_No_Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904041342216_InsertNewChildStatus_Based_on_GraduatedStatus.cs" />
+    <Compile Include="Migrations\201904041342216_InsertNewChildStatus_Based_on_GraduatedStatus.Designer.cs">
+      <DependentUpon>201904041342216_InsertNewChildStatus_Based_on_GraduatedStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904041345018_RemoveAdultStatusFromBeneficiaries.cs" />
+    <Compile Include="Migrations\201904041345018_RemoveAdultStatusFromBeneficiaries.Designer.cs">
+      <DependentUpon>201904041345018_RemoveAdultStatusFromBeneficiaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904060847377_FixRoutineVisitFalseValuesInDomainEtities.cs" />
+    <Compile Include="Migrations\201904060847377_FixRoutineVisitFalseValuesInDomainEtities.Designer.cs">
+      <DependentUpon>201904060847377_FixRoutineVisitFalseValuesInDomainEtities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904101412416_Add_FiscalYearVersion_To_TrimesterDefinition.cs" />
+    <Compile Include="Migrations\201904101412416_Add_FiscalYearVersion_To_TrimesterDefinition.Designer.cs">
+      <DependentUpon>201904101412416_Add_FiscalYearVersion_To_TrimesterDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904121427115_addServiceStatusForReport.cs" />
+    <Compile Include="Migrations\201904121427115_addServiceStatusForReport.Designer.cs">
+      <DependentUpon>201904121427115_addServiceStatusForReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904131446119_HIVStatusAnd_BeneficiariesStatusView.cs" />
+    <Compile Include="Migrations\201904131446119_HIVStatusAnd_BeneficiariesStatusView.Designer.cs">
+      <DependentUpon>201904131446119_HIVStatusAnd_BeneficiariesStatusView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904141848056_add-Trimester-Description.cs" />
+    <Compile Include="Migrations\201904141848056_add-Trimester-Description.Designer.cs">
+      <DependentUpon>201904141848056_add-Trimester-Description.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904180531015_RoutineVisitDate_Missing_in_RoutineVisitMember.cs" />
+    <Compile Include="Migrations\201904180531015_RoutineVisitDate_Missing_in_RoutineVisitMember.Designer.cs">
+      <DependentUpon>201904180531015_RoutineVisitDate_Missing_in_RoutineVisitMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904221256309_FixChildStatusHistoryData.cs" />
+    <Compile Include="Migrations\201904221256309_FixChildStatusHistoryData.Designer.cs">
+      <DependentUpon>201904221256309_FixChildStatusHistoryData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904221317103_changeOrangeActiveToYellowActive.cs" />
+    <Compile Include="Migrations\201904221317103_changeOrangeActiveToYellowActive.Designer.cs">
+      <DependentUpon>201904221317103_changeOrangeActiveToYellowActive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904221340305_FixHIVStatusData.cs" />
+    <Compile Include="Migrations\201904221340305_FixHIVStatusData.Designer.cs">
+      <DependentUpon>201904221340305_FixHIVStatusData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904230612009_FixMUAC_AgeInterval_Description.cs" />
+    <Compile Include="Migrations\201904230612009_FixMUAC_AgeInterval_Description.Designer.cs">
+      <DependentUpon>201904230612009_FixMUAC_AgeInterval_Description.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904281434535_Restructurate_SupportServiceType_Table.cs" />
+    <Compile Include="Migrations\201904281434535_Restructurate_SupportServiceType_Table.Designer.cs">
+      <DependentUpon>201904281434535_Restructurate_SupportServiceType_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905092208251_Add_Function_DateRange.cs" />
+    <Compile Include="Migrations\201905092208251_Add_Function_DateRange.Designer.cs">
+      <DependentUpon>201905092208251_Add_Function_DateRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905211127356_Update_Missing_BeneficiaryHasService.cs" />
+    <Compile Include="Migrations\201905211127356_Update_Missing_BeneficiaryHasService.Designer.cs">
+      <DependentUpon>201905211127356_Update_Missing_BeneficiaryHasService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905240820167_Add_New_RoutineVisit_View_and_MergedRoutineVisits_View.cs" />
+    <Compile Include="Migrations\201905240820167_Add_New_RoutineVisit_View_and_MergedRoutineVisits_View.Designer.cs">
+      <DependentUpon>201905240820167_Add_New_RoutineVisit_View_and_MergedRoutineVisits_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905280824177_ServicesStatusHistory.cs" />
+    <Compile Include="Migrations\201905280824177_ServicesStatusHistory.Designer.cs">
+      <DependentUpon>201905280824177_ServicesStatusHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\BeneficiaryService.cs" />
+    <Compile Include="Services\HouseholdSupportPlanService.cs" />
+    <Compile Include="Services\HouseholdStatusService.cs" />
+    <Compile Include="Services\ReportServices\Version_2019\ListingReports.cs" />
+    <Compile Include="Services\ReportServices\Version_2019\SummaryReports.cs" />
+    <Compile Include="Services\ReportDataServiceV2.cs" />
+    <Compile Include="Services\ReportGeneratorService.cs" />
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\AgreggatedServices\AgreggatedReportService.cs" />
+    <Compile Include="Services\BeneficiaryStatusService.cs" />
+    <Compile Include="Services\DashboardQueryService.cs" />
+    <Compile Include="Services\ReportDataServiceV1.cs" />
+    <Compile Include="Services\TemporaryReportService.cs" />
+    <Compile Include="Services\RoutineVisitService.cs" />
+    <Compile Include="Services\ReferenceServiceService.cs" />
+    <Compile Include="Services\TrimesterServices\ITrimesterQueryService.cs" />
+    <Compile Include="Services\TrimesterServices\TrimesterQueryService.cs" />
+    <Compile Include="Services\TrimesterServices\TrimesterService.cs" />
+    <Compile Include="Tasks\DataSyncGenerator.cs" />
+    <Compile Include="Tasks\ReportGenerator.cs" />
+    <Compile Include="Tasks\SchedulerFactory.cs" />
+    <Compile Include="Utilities\DatabaseHelper.cs" />
+    <Compile Include="Utilities\GoogleDriveCommunication.cs" />
+    <Compile Include="Services\DataSyncService.cs" />
+    <Compile Include="Utilities\StringUtils.cs" />
+    <Compile Include="LocalizationSeed.cs" />
+    <Compile Include="Migrations\201501291711466_IntitialCreate.cs" />
+    <Compile Include="Migrations\201501291711466_IntitialCreate.Designer.cs">
+      <DependentUpon>201501291711466_IntitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201501301040395_LegacyStoredProcedures.cs" />
+    <Compile Include="Migrations\201501301040395_LegacyStoredProcedures.Designer.cs">
+      <DependentUpon>201501301040395_LegacyStoredProcedures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502110606378_changeColumnsLenght.cs" />
+    <Compile Include="Migrations\201502110606378_changeColumnsLenght.Designer.cs">
+      <DependentUpon>201502110606378_changeColumnsLenght.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502131211191_addAnswertoCSIDomain.cs" />
+    <Compile Include="Migrations\201502131211191_addAnswertoCSIDomain.Designer.cs">
+      <DependentUpon>201502131211191_addAnswertoCSIDomain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504141156221_addUUID.cs" />
+    <Compile Include="Migrations\201504141156221_addUUID.Designer.cs">
+      <DependentUpon>201504141156221_addUUID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504151122132_autoGenerateGuidFields.cs" />
+    <Compile Include="Migrations\201504151122132_autoGenerateGuidFields.Designer.cs">
+      <DependentUpon>201504151122132_autoGenerateGuidFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506081444367_ConfigurationSitesEntities.cs" />
+    <Compile Include="Migrations\201506081444367_ConfigurationSitesEntities.Designer.cs">
+      <DependentUpon>201506081444367_ConfigurationSitesEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506111100253_addLastLoginDateOnUser.cs" />
+    <Compile Include="Migrations\201506111100253_addLastLoginDateOnUser.Designer.cs">
+      <DependentUpon>201506111100253_addLastLoginDateOnUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506151514232_addRoleEntity.cs" />
+    <Compile Include="Migrations\201506151514232_addRoleEntity.Designer.cs">
+      <DependentUpon>201506151514232_addRoleEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506170602380_addRoleToUser.cs" />
+    <Compile Include="Migrations\201506170602380_addRoleToUser.Designer.cs">
+      <DependentUpon>201506170602380_addRoleToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201506182127535_UpdateUserEntityAddInactiveDaysExceededDate.cs" />
+    <Compile Include="Migrations\201506182127535_UpdateUserEntityAddInactiveDaysExceededDate.Designer.cs">
+      <DependentUpon>201506182127535_UpdateUserEntityAddInactiveDaysExceededDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509152230079_AddFileClass.cs" />
+    <Compile Include="Migrations\201509152230079_AddFileClass.Designer.cs">
+      <DependentUpon>201509152230079_AddFileClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510132041124_ChangeGetStatusHistoryCompleteLegacyProcedure.cs" />
+    <Compile Include="Migrations\201510132041124_ChangeGetStatusHistoryCompleteLegacyProcedure.Designer.cs">
+      <DependentUpon>201510132041124_ChangeGetStatusHistoryCompleteLegacyProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510160929271_AddCutPointEntity.cs" />
+    <Compile Include="Migrations\201510160929271_AddCutPointEntity.Designer.cs">
+      <DependentUpon>201510160929271_AddCutPointEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511090317276_addFieldExludeFromReport.cs" />
+    <Compile Include="Migrations\201511090317276_addFieldExludeFromReport.Designer.cs">
+      <DependentUpon>201511090317276_addFieldExludeFromReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511090404423_AlterAnswerAddFieldExcludeFromReport.cs" />
+    <Compile Include="Migrations\201511090404423_AlterAnswerAddFieldExcludeFromReport.Designer.cs">
+      <DependentUpon>201511090404423_AlterAnswerAddFieldExcludeFromReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601130900492_addFile.cs" />
+    <Compile Include="Migrations\201601130900492_addFile.Designer.cs">
+      <DependentUpon>201601130900492_addFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602150803361_Task.cs" />
+    <Compile Include="Migrations\201602150803361_Task.Designer.cs">
+      <DependentUpon>201602150803361_Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602151633244_Task_Allow_nullable_CompleteDate.cs" />
+    <Compile Include="Migrations\201602151633244_Task_Allow_nullable_CompleteDate.Designer.cs">
+      <DependentUpon>201602151633244_Task_Allow_nullable_CompleteDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602240708504_freeTextSupportServices.cs" />
+    <Compile Include="Migrations\201602240708504_freeTextSupportServices.Designer.cs">
+      <DependentUpon>201602240708504_freeTextSupportServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603101510475_DomainOrderColumn.cs" />
+    <Compile Include="Migrations\201603101510475_DomainOrderColumn.Designer.cs">
+      <DependentUpon>201603101510475_DomainOrderColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603181335599_AddServiceProviderToCarePlan.cs" />
+    <Compile Include="Migrations\201603181335599_AddServiceProviderToCarePlan.Designer.cs">
+      <DependentUpon>201603181335599_AddServiceProviderToCarePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603181542349_Site_Logo.cs" />
+    <Compile Include="Migrations\201603181542349_Site_Logo.Designer.cs">
+      <DependentUpon>201603181542349_Site_Logo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603250957277_LocationConfigurations.cs" />
+    <Compile Include="Migrations\201603250957277_LocationConfigurations.Designer.cs">
+      <DependentUpon>201603250957277_LocationConfigurations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603272109469_PartnerSitesEnitities.cs" />
+    <Compile Include="Migrations\201603272109469_PartnerSitesEnitities.Designer.cs">
+      <DependentUpon>201603272109469_PartnerSitesEnitities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603291001354_AddGraduationCriteria.cs" />
+    <Compile Include="Migrations\201603291001354_AddGraduationCriteria.Designer.cs">
+      <DependentUpon>201603291001354_AddGraduationCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603291229372_changeScoreTypeDomainAndQuestionCriteria.cs" />
+    <Compile Include="Migrations\201603291229372_changeScoreTypeDomainAndQuestionCriteria.Designer.cs">
+      <DependentUpon>201603291229372_changeScoreTypeDomainAndQuestionCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603302136115_AddManyToManyRelationGraduatinCriteriaAndQuestion.cs" />
+    <Compile Include="Migrations\201603302136115_AddManyToManyRelationGraduatinCriteriaAndQuestion.Designer.cs">
+      <DependentUpon>201603302136115_AddManyToManyRelationGraduatinCriteriaAndQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604052034020_ServiceTrackingEntities.cs" />
+    <Compile Include="Migrations\201604052034020_ServiceTrackingEntities.Designer.cs">
+      <DependentUpon>201604052034020_ServiceTrackingEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604061404321_ServiceTrackingEntitiesNewField.cs" />
+    <Compile Include="Migrations\201604061404321_ServiceTrackingEntitiesNewField.Designer.cs">
+      <DependentUpon>201604061404321_ServiceTrackingEntitiesNewField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604132218445_AddColumnOrderToQuestionEntity.cs" />
+    <Compile Include="Migrations\201604132218445_AddColumnOrderToQuestionEntity.Designer.cs">
+      <DependentUpon>201604132218445_AddColumnOrderToQuestionEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604151030137_addFileToScoreType.cs" />
+    <Compile Include="Migrations\201604151030137_addFileToScoreType.Designer.cs">
+      <DependentUpon>201604151030137_addFileToScoreType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604201015526_HouseholdAndOrgUnitGraduationEntities.cs" />
+    <Compile Include="Migrations\201604201015526_HouseholdAndOrgUnitGraduationEntities.Designer.cs">
+      <DependentUpon>201604201015526_HouseholdAndOrgUnitGraduationEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604231724450_LinkChildToOrgUnit.cs" />
+    <Compile Include="Migrations\201604231724450_LinkChildToOrgUnit.Designer.cs">
+      <DependentUpon>201604231724450_LinkChildToOrgUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604232104437_AlterAdultEntity.cs" />
+    <Compile Include="Migrations\201604232104437_AlterAdultEntity.Designer.cs">
+      <DependentUpon>201604232104437_AlterAdultEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604232106487_AlterAdultProcedures.cs" />
+    <Compile Include="Migrations\201604232106487_AlterAdultProcedures.Designer.cs">
+      <DependentUpon>201604232106487_AlterAdultProcedures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604232111329_AlterGetAdultProcedure.cs" />
+    <Compile Include="Migrations\201604232111329_AlterGetAdultProcedure.Designer.cs">
+      <DependentUpon>201604232111329_AlterGetAdultProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604250948275_AlterHouseholdAndNewFields.cs" />
+    <Compile Include="Migrations\201604250948275_AlterHouseholdAndNewFields.Designer.cs">
+      <DependentUpon>201604250948275_AlterHouseholdAndNewFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251600378_AlterAdultNotAllowNullForIsheadColumn.cs" />
+    <Compile Include="Migrations\201604251600378_AlterAdultNotAllowNullForIsheadColumn.Designer.cs">
+      <DependentUpon>201604251600378_AlterAdultNotAllowNullForIsheadColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251622522_alterProcedureSearchAdults.cs" />
+    <Compile Include="Migrations\201604251622522_alterProcedureSearchAdults.Designer.cs">
+      <DependentUpon>201604251622522_alterProcedureSearchAdults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604290828584_AlterRelationGraduationCriteria.cs" />
+    <Compile Include="Migrations\201604290828584_AlterRelationGraduationCriteria.Designer.cs">
+      <DependentUpon>201604290828584_AlterRelationGraduationCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604300901438_AlterProcedureGetChildCountForDashboard.cs" />
+    <Compile Include="Migrations\201604300901438_AlterProcedureGetChildCountForDashboard.Designer.cs">
+      <DependentUpon>201604300901438_AlterProcedureGetChildCountForDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605252029157_LinkTaskToService.cs" />
+    <Compile Include="Migrations\201605252029157_LinkTaskToService.Designer.cs">
+      <DependentUpon>201605252029157_LinkTaskToService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606241151221_AddQuestionCodeForCarePlanDomainSupportServices.cs" />
+    <Compile Include="Migrations\201606241151221_AddQuestionCodeForCarePlanDomainSupportServices.Designer.cs">
+      <DependentUpon>201606241151221_AddQuestionCodeForCarePlanDomainSupportServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606271436463_AlterProcedureGetCarePlansForChild.cs" />
+    <Compile Include="Migrations\201606271436463_AlterProcedureGetCarePlansForChild.Designer.cs">
+      <DependentUpon>201606271436463_AlterProcedureGetCarePlansForChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607192048244_LinkServiceToDomain.cs" />
+    <Compile Include="Migrations\201607192048244_LinkServiceToDomain.Designer.cs">
+      <DependentUpon>201607192048244_LinkServiceToDomain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607270732019_LinkCarePlanDominSupportServiceWithQuestion.cs" />
+    <Compile Include="Migrations\201607270732019_LinkCarePlanDominSupportServiceWithQuestion.Designer.cs">
+      <DependentUpon>201607270732019_LinkCarePlanDominSupportServiceWithQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609261235027_Refactor_OrgUnit_Household.cs" />
+    <Compile Include="Migrations\201609261235027_Refactor_OrgUnit_Household.Designer.cs">
+      <DependentUpon>201609261235027_Refactor_OrgUnit_Household.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609261544034_Refactor_Household_allowNullable_registrationdate.cs" />
+    <Compile Include="Migrations\201609261544034_Refactor_Household_allowNullable_registrationdate.Designer.cs">
+      <DependentUpon>201609261544034_Refactor_Household_allowNullable_registrationdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609261547255_Refactor_Household_changeType_Block.cs" />
+    <Compile Include="Migrations\201609261547255_Refactor_Household_changeType_Block.Designer.cs">
+      <DependentUpon>201609261547255_Refactor_Household_changeType_Block.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610031142280_Add_Column_NID_Child.cs" />
+    <Compile Include="Migrations\201610031142280_Add_Column_NID_Child.Designer.cs">
+      <DependentUpon>201610031142280_Add_Column_NID_Child.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610031639054_obfuscation.cs" />
+    <Compile Include="Migrations\201610031639054_obfuscation.Designer.cs">
+      <DependentUpon>201610031639054_obfuscation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610032156043_User_Add_IsOCBUser.cs" />
+    <Compile Include="Migrations\201610032156043_User_Add_IsOCBUser.Designer.cs">
+      <DependentUpon>201610032156043_User_Add_IsOCBUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610101930093_RoutineVisitEntities.cs" />
+    <Compile Include="Migrations\201610101930093_RoutineVisitEntities.Designer.cs">
+      <DependentUpon>201610101930093_RoutineVisitEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610131946183_AddRoutineVisitLog.cs" />
+    <Compile Include="Migrations\201610131946183_AddRoutineVisitLog.Designer.cs">
+      <DependentUpon>201610131946183_AddRoutineVisitLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610132009481_LinkRoutineVisitWithHousehold.cs" />
+    <Compile Include="Migrations\201610132009481_LinkRoutineVisitWithHousehold.Designer.cs">
+      <DependentUpon>201610132009481_LinkRoutineVisitWithHousehold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610171312015_ChildExposeHouseholdIDKey.cs" />
+    <Compile Include="Migrations\201610171312015_ChildExposeHouseholdIDKey.Designer.cs">
+      <DependentUpon>201610171312015_ChildExposeHouseholdIDKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610171319515_ChildExposeHouseholdIDKeySetNull.cs" />
+    <Compile Include="Migrations\201610171319515_ChildExposeHouseholdIDKeySetNull.Designer.cs">
+      <DependentUpon>201610171319515_ChildExposeHouseholdIDKeySetNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611090627221_ReferenceServicesEntities.cs" />
+    <Compile Include="Migrations\201611090627221_ReferenceServicesEntities.Designer.cs">
+      <DependentUpon>201611090627221_ReferenceServicesEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611110453136_ExposeForeignKeyForRoutineEntities.cs" />
+    <Compile Include="Migrations\201611110453136_ExposeForeignKeyForRoutineEntities.Designer.cs">
+      <DependentUpon>201611110453136_ExposeForeignKeyForRoutineEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702150951221_Guid-Timestamp.cs" />
+    <Compile Include="Migrations\201702150951221_Guid-Timestamp.Designer.cs">
+      <DependentUpon>201702150951221_Guid-Timestamp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702231222230_HIV_SavingGroup_Fields.cs" />
+    <Compile Include="Migrations\201702231222230_HIV_SavingGroup_Fields.Designer.cs">
+      <DependentUpon>201702231222230_HIV_SavingGroup_Fields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702271154122_Role-Superior-Members.cs" />
+    <Compile Include="Migrations\201702271154122_Role-Superior-Members.Designer.cs">
+      <DependentUpon>201702271154122_Role-Superior-Members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703041840004_AddNewHouseHoldFields.cs" />
+    <Compile Include="Migrations\201703041840004_AddNewHouseHoldFields.Designer.cs">
+      <DependentUpon>201703041840004_AddNewHouseHoldFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703092102462_AddAidEntityAndCollaboratorRole.cs" />
+    <Compile Include="Migrations\201703092102462_AddAidEntityAndCollaboratorRole.Designer.cs">
+      <DependentUpon>201703092102462_AddAidEntityAndCollaboratorRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703221015492_KinshipToFamilyHead.cs" />
+    <Compile Include="Migrations\201703221015492_KinshipToFamilyHead.Designer.cs">
+      <DependentUpon>201703221015492_KinshipToFamilyHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704120447393_PartnerStateFields.cs" />
+    <Compile Include="Migrations\201704120447393_PartnerStateFields.Designer.cs">
+      <DependentUpon>201704120447393_PartnerStateFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704231711068_AddHIVStatus.cs" />
+    <Compile Include="Migrations\201704231711068_AddHIVStatus.Designer.cs">
+      <DependentUpon>201704231711068_AddHIVStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704250203460_AddSiteGoalsTableAndFamilyKitReceivedOnTableRoutineVisit.cs" />
+    <Compile Include="Migrations\201704250203460_AddSiteGoalsTableAndFamilyKitReceivedOnTableRoutineVisit.Designer.cs">
+      <DependentUpon>201704250203460_AddSiteGoalsTableAndFamilyKitReceivedOnTableRoutineVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705141008276_AddQuestionOnSupportServiceType.cs" />
+    <Compile Include="Migrations\201705141008276_AddQuestionOnSupportServiceType.Designer.cs">
+      <DependentUpon>201705141008276_AddQuestionOnSupportServiceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705170857516_AddFirstTimeSavingGroupMemberOnRoutineVisit.cs" />
+    <Compile Include="Migrations\201705170857516_AddFirstTimeSavingGroupMemberOnRoutineVisit.Designer.cs">
+      <DependentUpon>201705170857516_AddFirstTimeSavingGroupMemberOnRoutineVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706151408175_Add_NIDNumber_ToAdult.cs" />
+    <Compile Include="Migrations\201706151408175_Add_NIDNumber_ToAdult.Designer.cs">
+      <DependentUpon>201706151408175_Add_NIDNumber_ToAdult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706201855196_UpdateSupportServiceType.cs" />
+    <Compile Include="Migrations\201706201855196_UpdateSupportServiceType.Designer.cs">
+      <DependentUpon>201706201855196_UpdateSupportServiceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706231002134_AddColumn_OrderForRoutineVisit_in_Domain_Table.cs" />
+    <Compile Include="Migrations\201706231002134_AddColumn_OrderForRoutineVisit_in_Domain_Table.Designer.cs">
+      <DependentUpon>201706231002134_AddColumn_OrderForRoutineVisit_in_Domain_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707062206499_Add_Husband_or_Wife_into_KingshipToFamilyHead.cs" />
+    <Compile Include="Migrations\201707062206499_Add_Husband_or_Wife_into_KingshipToFamilyHead.Designer.cs">
+      <DependentUpon>201707062206499_Add_Husband_or_Wife_into_KingshipToFamilyHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707062232013_MAC_Reorder.cs" />
+    <Compile Include="Migrations\201707062232013_MAC_Reorder.Designer.cs">
+      <DependentUpon>201707062232013_MAC_Reorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707062303085_Add_FHI_AdminUser_for_VPTeam.cs" />
+    <Compile Include="Migrations\201707062303085_Add_FHI_AdminUser_for_VPTeam.Designer.cs">
+      <DependentUpon>201707062303085_Add_FHI_AdminUser_for_VPTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707110708143_ChangeHealthAttendedDateType.cs" />
+    <Compile Include="Migrations\201707110708143_ChangeHealthAttendedDateType.Designer.cs">
+      <DependentUpon>201707110708143_ChangeHealthAttendedDateType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707170952212_AlterColumn_ReferenceServiceID_To_Nullable.cs" />
+    <Compile Include="Migrations\201707170952212_AlterColumn_ReferenceServiceID_To_Nullable.Designer.cs">
+      <DependentUpon>201707170952212_AlterColumn_ReferenceServiceID_To_Nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707171114135_AlterColumn_ReferenceTypeID_To_Nullable.cs" />
+    <Compile Include="Migrations\201707171114135_AlterColumn_ReferenceTypeID_To_Nullable.Designer.cs">
+      <DependentUpon>201707171114135_AlterColumn_ReferenceTypeID_To_Nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707302315445_AddSiteOnPartnerAndOrgUnitOnSite.cs" />
+    <Compile Include="Migrations\201707302315445_AddSiteOnPartnerAndOrgUnitOnSite.Designer.cs">
+      <DependentUpon>201707302315445_AddSiteOnPartnerAndOrgUnitOnSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708082126217_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_RoutineVisit.cs" />
+    <Compile Include="Migrations\201708082126217_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_RoutineVisit.Designer.cs">
+      <DependentUpon>201708082126217_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_RoutineVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708090613000_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_ReferenceService.cs" />
+    <Compile Include="Migrations\201708090613000_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_ReferenceService.Designer.cs">
+      <DependentUpon>201708090613000_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_ReferenceService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708122150097_UpdateSiteOnPartnerAndOrgUnitOnSite.cs" />
+    <Compile Include="Migrations\201708122150097_UpdateSiteOnPartnerAndOrgUnitOnSite.Designer.cs">
+      <DependentUpon>201708122150097_UpdateSiteOnPartnerAndOrgUnitOnSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708122240044_CreateRoutineVisitSummaryViews.cs" />
+    <Compile Include="Migrations\201708122240044_CreateRoutineVisitSummaryViews.Designer.cs">
+      <DependentUpon>201708122240044_CreateRoutineVisitSummaryViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708122335313_AddOrgUnitIDOnSite.cs" />
+    <Compile Include="Migrations\201708122335313_AddOrgUnitIDOnSite.Designer.cs">
+      <DependentUpon>201708122335313_AddOrgUnitIDOnSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710092030507_AlterColumn_HealthAttendedDate_for_string_in_ReferenceService.cs" />
+    <Compile Include="Migrations\201710092030507_AlterColumn_HealthAttendedDate_for_string_in_ReferenceService.Designer.cs">
+      <DependentUpon>201710092030507_AlterColumn_HealthAttendedDate_for_string_in_ReferenceService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141559577_AddCSISyncGUIDOnCSI.cs" />
+    <Compile Include="Migrations\201710141559577_AddCSISyncGUIDOnCSI.Designer.cs">
+      <DependentUpon>201710141559577_AddCSISyncGUIDOnCSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141625132_AddUserSyncGUIDOnUser.cs" />
+    <Compile Include="Migrations\201710141625132_AddUserSyncGUIDOnUser.Designer.cs">
+      <DependentUpon>201710141625132_AddUserSyncGUIDOnUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141648359_AddAuditFieldsForUserAndCSI.cs" />
+    <Compile Include="Migrations\201710141648359_AddAuditFieldsForUserAndCSI.Designer.cs">
+      <DependentUpon>201710141648359_AddAuditFieldsForUserAndCSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141700013_AllowNullOnDateFieldsForUserAndCSI.cs" />
+    <Compile Include="Migrations\201710141700013_AllowNullOnDateFieldsForUserAndCSI.Designer.cs">
+      <DependentUpon>201710141700013_AllowNullOnDateFieldsForUserAndCSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141828066_AllowNullCSISyncGUIDEntityCSI.cs" />
+    <Compile Include="Migrations\201710141828066_AllowNullCSISyncGUIDEntityCSI.Designer.cs">
+      <DependentUpon>201710141828066_AllowNullCSISyncGUIDEntityCSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710142038494_AllowNullsOnDatesAndAddNewAuditFiels.cs" />
+    <Compile Include="Migrations\201710142038494_AllowNullsOnDatesAndAddNewAuditFiels.Designer.cs">
+      <DependentUpon>201710142038494_AllowNullsOnDatesAndAddNewAuditFiels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710281742358_AlterGuidAndSyncGuidOnCSITables.cs" />
+    <Compile Include="Migrations\201710281742358_AlterGuidAndSyncGuidOnCSITables.Designer.cs">
+      <DependentUpon>201710281742358_AlterGuidAndSyncGuidOnCSITables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711251747139_AlterHealthAttendedDateType.cs" />
+    <Compile Include="Migrations\201711251747139_AlterHealthAttendedDateType.Designer.cs">
+      <DependentUpon>201711251747139_AlterHealthAttendedDateType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711260832468_AuditAndSyncFieldsOnCarePlan.cs" />
+    <Compile Include="Migrations\201711260832468_AuditAndSyncFieldsOnCarePlan.Designer.cs">
+      <DependentUpon>201711260832468_AuditAndSyncFieldsOnCarePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711260912509_PopulateCarePlanDomainGuidOnCarePlanDomain.cs" />
+    <Compile Include="Migrations\201711260912509_PopulateCarePlanDomainGuidOnCarePlanDomain.Designer.cs">
+      <DependentUpon>201711260912509_PopulateCarePlanDomainGuidOnCarePlanDomain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711300852486_DatabaseGeneratedGuidOnCarePlan.cs" />
+    <Compile Include="Migrations\201711300852486_DatabaseGeneratedGuidOnCarePlan.Designer.cs">
+      <DependentUpon>201711300852486_DatabaseGeneratedGuidOnCarePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712011306567_AddCSIIDonCarePlan.cs" />
+    <Compile Include="Migrations\201712011306567_AddCSIIDonCarePlan.Designer.cs">
+      <DependentUpon>201712011306567_AddCSIIDonCarePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712011403250_AddIDsAndIndexesOnEntities.cs" />
+    <Compile Include="Migrations\201712011403250_AddIDsAndIndexesOnEntities.Designer.cs">
+      <DependentUpon>201712011403250_AddIDsAndIndexesOnEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Utilities\FileExporter.cs" />
+    <Compile Include="Utilities\FileImporter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\BaseRepository.cs" />
+    <Compile Include="Repository\ChildRepo.cs" />
+    <Compile Include="Repository\IRepoChild.cs" />
+    <Compile Include="Repository\IRepoQuestion.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\QuestionRepo.cs" />
+    <Compile Include="Services\CarePlanService.cs" />
+    <Compile Include="Services\ChildService.cs" />
+    <Compile Include="Services\AdultService.cs" />
+    <Compile Include="Services\HIVStatusService.cs" />
+    <Compile Include="Services\HIVStatusQueryService.cs" />
+    <Compile Include="Services\CSIService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\SiteGoalService.cs" />
+    <Compile Include="Services\SiteService.cs" />
+    <Compile Include="Services\ReportService.cs" />
+    <Compile Include="Services\HouseholdService.cs" />
+    <Compile Include="Services\PartnerService.cs" />
+    <Compile Include="UOW\UnitOfWork.cs" />
+    <Compile Include="UOW\IUnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{fd6349ac-51a3-4bf9-89cd-acf2209e1491}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201501291711466_IntitialCreate.resx">
+      <DependentUpon>201501291711466_IntitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501301040395_LegacyStoredProcedures.resx">
+      <DependentUpon>201501301040395_LegacyStoredProcedures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502110606378_changeColumnsLenght.resx">
+      <DependentUpon>201502110606378_changeColumnsLenght.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502131211191_addAnswertoCSIDomain.resx">
+      <DependentUpon>201502131211191_addAnswertoCSIDomain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504141156221_addUUID.resx">
+      <DependentUpon>201504141156221_addUUID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504151122132_autoGenerateGuidFields.resx">
+      <DependentUpon>201504151122132_autoGenerateGuidFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506081444367_ConfigurationSitesEntities.resx">
+      <DependentUpon>201506081444367_ConfigurationSitesEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506111100253_addLastLoginDateOnUser.resx">
+      <DependentUpon>201506111100253_addLastLoginDateOnUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506151514232_addRoleEntity.resx">
+      <DependentUpon>201506151514232_addRoleEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506170602380_addRoleToUser.resx">
+      <DependentUpon>201506170602380_addRoleToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506182127535_UpdateUserEntityAddInactiveDaysExceededDate.resx">
+      <DependentUpon>201506182127535_UpdateUserEntityAddInactiveDaysExceededDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509152230079_AddFileClass.resx">
+      <DependentUpon>201509152230079_AddFileClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510132041124_ChangeGetStatusHistoryCompleteLegacyProcedure.resx">
+      <DependentUpon>201510132041124_ChangeGetStatusHistoryCompleteLegacyProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510160929271_AddCutPointEntity.resx">
+      <DependentUpon>201510160929271_AddCutPointEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511090317276_addFieldExludeFromReport.resx">
+      <DependentUpon>201511090317276_addFieldExludeFromReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511090404423_AlterAnswerAddFieldExcludeFromReport.resx">
+      <DependentUpon>201511090404423_AlterAnswerAddFieldExcludeFromReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601130900492_addFile.resx">
+      <DependentUpon>201601130900492_addFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602150803361_Task.resx">
+      <DependentUpon>201602150803361_Task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602151633244_Task_Allow_nullable_CompleteDate.resx">
+      <DependentUpon>201602151633244_Task_Allow_nullable_CompleteDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602240708504_freeTextSupportServices.resx">
+      <DependentUpon>201602240708504_freeTextSupportServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603101510475_DomainOrderColumn.resx">
+      <DependentUpon>201603101510475_DomainOrderColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603181335599_AddServiceProviderToCarePlan.resx">
+      <DependentUpon>201603181335599_AddServiceProviderToCarePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603181542349_Site_Logo.resx">
+      <DependentUpon>201603181542349_Site_Logo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603250957277_LocationConfigurations.resx">
+      <DependentUpon>201603250957277_LocationConfigurations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603272109469_PartnerSitesEnitities.resx">
+      <DependentUpon>201603272109469_PartnerSitesEnitities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603291001354_AddGraduationCriteria.resx">
+      <DependentUpon>201603291001354_AddGraduationCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603291229372_changeScoreTypeDomainAndQuestionCriteria.resx">
+      <DependentUpon>201603291229372_changeScoreTypeDomainAndQuestionCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603302136115_AddManyToManyRelationGraduatinCriteriaAndQuestion.resx">
+      <DependentUpon>201603302136115_AddManyToManyRelationGraduatinCriteriaAndQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604052034020_ServiceTrackingEntities.resx">
+      <DependentUpon>201604052034020_ServiceTrackingEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604061404321_ServiceTrackingEntitiesNewField.resx">
+      <DependentUpon>201604061404321_ServiceTrackingEntitiesNewField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604132218445_AddColumnOrderToQuestionEntity.resx">
+      <DependentUpon>201604132218445_AddColumnOrderToQuestionEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604151030137_addFileToScoreType.resx">
+      <DependentUpon>201604151030137_addFileToScoreType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604201015526_HouseholdAndOrgUnitGraduationEntities.resx">
+      <DependentUpon>201604201015526_HouseholdAndOrgUnitGraduationEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604231724450_LinkChildToOrgUnit.resx">
+      <DependentUpon>201604231724450_LinkChildToOrgUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604232104437_AlterAdultEntity.resx">
+      <DependentUpon>201604232104437_AlterAdultEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604232106487_AlterAdultProcedures.resx">
+      <DependentUpon>201604232106487_AlterAdultProcedures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604232111329_AlterGetAdultProcedure.resx">
+      <DependentUpon>201604232111329_AlterGetAdultProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604250948275_AlterHouseholdAndNewFields.resx">
+      <DependentUpon>201604250948275_AlterHouseholdAndNewFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251600378_AlterAdultNotAllowNullForIsheadColumn.resx">
+      <DependentUpon>201604251600378_AlterAdultNotAllowNullForIsheadColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251622522_alterProcedureSearchAdults.resx">
+      <DependentUpon>201604251622522_alterProcedureSearchAdults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604290828584_AlterRelationGraduationCriteria.resx">
+      <DependentUpon>201604290828584_AlterRelationGraduationCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604300901438_AlterProcedureGetChildCountForDashboard.resx">
+      <DependentUpon>201604300901438_AlterProcedureGetChildCountForDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605252029157_LinkTaskToService.resx">
+      <DependentUpon>201605252029157_LinkTaskToService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606241151221_AddQuestionCodeForCarePlanDomainSupportServices.resx">
+      <DependentUpon>201606241151221_AddQuestionCodeForCarePlanDomainSupportServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606271436463_AlterProcedureGetCarePlansForChild.resx">
+      <DependentUpon>201606271436463_AlterProcedureGetCarePlansForChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607192048244_LinkServiceToDomain.resx">
+      <DependentUpon>201607192048244_LinkServiceToDomain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607270732019_LinkCarePlanDominSupportServiceWithQuestion.resx">
+      <DependentUpon>201607270732019_LinkCarePlanDominSupportServiceWithQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609261235027_Refactor_OrgUnit_Household.resx">
+      <DependentUpon>201609261235027_Refactor_OrgUnit_Household.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609261544034_Refactor_Household_allowNullable_registrationdate.resx">
+      <DependentUpon>201609261544034_Refactor_Household_allowNullable_registrationdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609261547255_Refactor_Household_changeType_Block.resx">
+      <DependentUpon>201609261547255_Refactor_Household_changeType_Block.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610031142280_Add_Column_NID_Child.resx">
+      <DependentUpon>201610031142280_Add_Column_NID_Child.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610031639054_obfuscation.resx">
+      <DependentUpon>201610031639054_obfuscation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610032156043_User_Add_IsOCBUser.resx">
+      <DependentUpon>201610032156043_User_Add_IsOCBUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610101930093_RoutineVisitEntities.resx">
+      <DependentUpon>201610101930093_RoutineVisitEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610131946183_AddRoutineVisitLog.resx">
+      <DependentUpon>201610131946183_AddRoutineVisitLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610132009481_LinkRoutineVisitWithHousehold.resx">
+      <DependentUpon>201610132009481_LinkRoutineVisitWithHousehold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610171312015_ChildExposeHouseholdIDKey.resx">
+      <DependentUpon>201610171312015_ChildExposeHouseholdIDKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610171319515_ChildExposeHouseholdIDKeySetNull.resx">
+      <DependentUpon>201610171319515_ChildExposeHouseholdIDKeySetNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611090627221_ReferenceServicesEntities.resx">
+      <DependentUpon>201611090627221_ReferenceServicesEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611110453136_ExposeForeignKeyForRoutineEntities.resx">
+      <DependentUpon>201611110453136_ExposeForeignKeyForRoutineEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702150951221_Guid-Timestamp.resx">
+      <DependentUpon>201702150951221_Guid-Timestamp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702231222230_HIV_SavingGroup_Fields.resx">
+      <DependentUpon>201702231222230_HIV_SavingGroup_Fields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702271154122_Role-Superior-Members.resx">
+      <DependentUpon>201702271154122_Role-Superior-Members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703041840004_AddNewHouseHoldFields.resx">
+      <DependentUpon>201703041840004_AddNewHouseHoldFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703092102462_AddAidEntityAndCollaboratorRole.resx">
+      <DependentUpon>201703092102462_AddAidEntityAndCollaboratorRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703221015492_KinshipToFamilyHead.resx">
+      <DependentUpon>201703221015492_KinshipToFamilyHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704120447393_PartnerStateFields.resx">
+      <DependentUpon>201704120447393_PartnerStateFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704231711068_AddHIVStatus.resx">
+      <DependentUpon>201704231711068_AddHIVStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704250203460_AddSiteGoalsTableAndFamilyKitReceivedOnTableRoutineVisit.resx">
+      <DependentUpon>201704250203460_AddSiteGoalsTableAndFamilyKitReceivedOnTableRoutineVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705141008276_AddQuestionOnSupportServiceType.resx">
+      <DependentUpon>201705141008276_AddQuestionOnSupportServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705170857516_AddFirstTimeSavingGroupMemberOnRoutineVisit.resx">
+      <DependentUpon>201705170857516_AddFirstTimeSavingGroupMemberOnRoutineVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706151408175_Add_NIDNumber_ToAdult.resx">
+      <DependentUpon>201706151408175_Add_NIDNumber_ToAdult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706201855196_UpdateSupportServiceType.resx">
+      <DependentUpon>201706201855196_UpdateSupportServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706231002134_AddColumn_OrderForRoutineVisit_in_Domain_Table.resx">
+      <DependentUpon>201706231002134_AddColumn_OrderForRoutineVisit_in_Domain_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707062206499_Add_Husband_or_Wife_into_KingshipToFamilyHead.resx">
+      <DependentUpon>201707062206499_Add_Husband_or_Wife_into_KingshipToFamilyHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707062232013_MAC_Reorder.resx">
+      <DependentUpon>201707062232013_MAC_Reorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707062303085_Add_FHI_AdminUser_for_VPTeam.resx">
+      <DependentUpon>201707062303085_Add_FHI_AdminUser_for_VPTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707110708143_ChangeHealthAttendedDateType.resx">
+      <DependentUpon>201707110708143_ChangeHealthAttendedDateType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707170952212_AlterColumn_ReferenceServiceID_To_Nullable.resx">
+      <DependentUpon>201707170952212_AlterColumn_ReferenceServiceID_To_Nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707171114135_AlterColumn_ReferenceTypeID_To_Nullable.resx">
+      <DependentUpon>201707171114135_AlterColumn_ReferenceTypeID_To_Nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708082126217_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_RoutineVisit.resx">
+      <DependentUpon>201708082126217_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_RoutineVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708090613000_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_ReferenceService.resx">
+      <DependentUpon>201708090613000_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_ReferenceService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707302315445_AddSiteOnPartnerAndOrgUnitOnSite.resx">
+      <DependentUpon>201707302315445_AddSiteOnPartnerAndOrgUnitOnSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708122150097_UpdateSiteOnPartnerAndOrgUnitOnSite.resx">
+      <DependentUpon>201708122150097_UpdateSiteOnPartnerAndOrgUnitOnSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708122240044_CreateRoutineVisitSummaryViews.resx">
+      <DependentUpon>201708122240044_CreateRoutineVisitSummaryViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708122335313_AddOrgUnitIDOnSite.resx">
+      <DependentUpon>201708122335313_AddOrgUnitIDOnSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710092030507_AlterColumn_HealthAttendedDate_for_string_in_ReferenceService.resx">
+      <DependentUpon>201710092030507_AlterColumn_HealthAttendedDate_for_string_in_ReferenceService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141559577_AddCSISyncGUIDOnCSI.resx">
+      <DependentUpon>201710141559577_AddCSISyncGUIDOnCSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141625132_AddUserSyncGUIDOnUser.resx">
+      <DependentUpon>201710141625132_AddUserSyncGUIDOnUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141648359_AddAuditFieldsForUserAndCSI.resx">
+      <DependentUpon>201710141648359_AddAuditFieldsForUserAndCSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141700013_AllowNullOnDateFieldsForUserAndCSI.resx">
+      <DependentUpon>201710141700013_AllowNullOnDateFieldsForUserAndCSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141828066_AllowNullCSISyncGUIDEntityCSI.resx">
+      <DependentUpon>201710141828066_AllowNullCSISyncGUIDEntityCSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710142038494_AllowNullsOnDatesAndAddNewAuditFiels.resx">
+      <DependentUpon>201710142038494_AllowNullsOnDatesAndAddNewAuditFiels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710281742358_AlterGuidAndSyncGuidOnCSITables.resx">
+      <DependentUpon>201710281742358_AlterGuidAndSyncGuidOnCSITables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711251747139_AlterHealthAttendedDateType.resx">
+      <DependentUpon>201711251747139_AlterHealthAttendedDateType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711260832468_AuditAndSyncFieldsOnCarePlan.resx">
+      <DependentUpon>201711260832468_AuditAndSyncFieldsOnCarePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711260912509_PopulateCarePlanDomainGuidOnCarePlanDomain.resx">
+      <DependentUpon>201711260912509_PopulateCarePlanDomainGuidOnCarePlanDomain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711300852486_DatabaseGeneratedGuidOnCarePlan.resx">
+      <DependentUpon>201711300852486_DatabaseGeneratedGuidOnCarePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712011306567_AddCSIIDonCarePlan.resx">
+      <DependentUpon>201712011306567_AddCSIIDonCarePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712011403250_AddIDsAndIndexesOnEntities.resx">
+      <DependentUpon>201712011403250_AddIDsAndIndexesOnEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712031646294_AddAuditFieldsOnEntities.resx">
+      <DependentUpon>201712031646294_AddAuditFieldsOnEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712051812193_HouseholdSyncFields.resx">
+      <DependentUpon>201712051812193_HouseholdSyncFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712052218470_Sync_AuditedEntity_for_Household_Adult.resx">
+      <DependentUpon>201712052218470_Sync_AuditedEntity_for_Household_Adult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712052233449_Sync_AuditedEntityForAid.resx">
+      <DependentUpon>201712052233449_Sync_AuditedEntityForAid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712181025207_HouseholdIndexesAndDBGeneratedGuid.resx">
+      <DependentUpon>201712181025207_HouseholdIndexesAndDBGeneratedGuid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712211050119_ChildSyncChanges.resx">
+      <DependentUpon>201712211050119_ChildSyncChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712211549481_RoutineVisitSyncChanges.resx">
+      <DependentUpon>201712211549481_RoutineVisitSyncChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712270945122_AddKinshipToFamilyHeadOnChildAndAdult.resx">
+      <DependentUpon>201712270945122_AddKinshipToFamilyHeadOnChildAndAdult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712271834220_DatabaseGeneratedGuidOnChild.resx">
+      <DependentUpon>201712271834220_DatabaseGeneratedGuidOnChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801021645098_ChangeAnswerIndexOnCSIDomainScore.resx">
+      <DependentUpon>201801021645098_ChangeAnswerIndexOnCSIDomainScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801031441247_NewAuditedEntities.resx">
+      <DependentUpon>201801031441247_NewAuditedEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801081026137_RenameQuestionIndexOnCSIDomainScore.resx">
+      <DependentUpon>201801081026137_RenameQuestionIndexOnCSIDomainScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801090016177_SyncronizationPremisses.resx">
+      <DependentUpon>201801090016177_SyncronizationPremisses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801090051117_RenameSupportServiceTypeIDOnCarePlanDomainSupportService.resx">
+      <DependentUpon>201801090051117_RenameSupportServiceTypeIDOnCarePlanDomainSupportService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801241225565_AddAudtiFieldsOnSiteGoals.resx">
+      <DependentUpon>201801241225565_AddAudtiFieldsOnSiteGoals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151132262_RenameIndexesOnChildTable.resx">
+      <DependentUpon>201802151132262_RenameIndexesOnChildTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802160457362_RenameIndexesOnChildAndAdult.resx">
+      <DependentUpon>201802160457362_RenameIndexesOnChildAndAdult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221042326_RenameAidIndexOnHouseholdTable.resx">
+      <DependentUpon>201802221042326_RenameAidIndexOnHouseholdTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803251553031_Adult_in_ChildStatusHistory.resx">
+      <DependentUpon>201803251553031_Adult_in_ChildStatusHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803251641308_Make_ChildID_in_ChildStatusHistory_be_Nullable.resx">
+      <DependentUpon>201803251641308_Make_ChildID_in_ChildStatusHistory_be_Nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803260054202_Add_Status_for_Old_Adults.resx">
+      <DependentUpon>201803260054202_Add_Status_for_Old_Adults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803281753592_AddUserRoleRelations.resx">
+      <DependentUpon>201803281753592_AddUserRoleRelations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803301004235_RenameRoleIDIndexOnUserTable.resx">
+      <DependentUpon>201803301004235_RenameRoleIDIndexOnUserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101458098_UpdateChildStatusHistoryToInheritFromAuditedEntity.resx">
+      <DependentUpon>201804101458098_UpdateChildStatusHistoryToInheritFromAuditedEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804151025227_RenameSiteIDIndexOnSite.resx">
+      <DependentUpon>201804151025227_RenameSiteIDIndexOnSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804151908408_AlterSiteGoalCommentNotRequired.resx">
+      <DependentUpon>201804151908408_AlterSiteGoalCommentNotRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804151943133_AlterSiteIncludePartnersAndUsers.resx">
+      <DependentUpon>201804151943133_AlterSiteIncludePartnersAndUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805021626315_change_Chass_to_Clinic_Partner.resx">
+      <DependentUpon>201805021626315_change_Chass_to_Clinic_Partner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805061649445_add_Child_and_Adult_To_ReferenceServiceTable.resx">
+      <DependentUpon>201805061649445_add_Child_and_Adult_To_ReferenceServiceTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805070808479_AddColumn_QuestionVersion_on_QuestionTable.resx">
+      <DependentUpon>201805070808479_AddColumn_QuestionVersion_on_QuestionTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804220830206_RemoveUsersFromSite.resx">
+      <DependentUpon>201804220830206_RemoveUsersFromSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231017183_RenameUserRoles.resx">
+      <DependentUpon>201804231017183_RenameUserRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805070955033_AddStateFieldsOnAuditAndSyncEntity.resx">
+      <DependentUpon>201805070955033_AddStateFieldsOnAuditAndSyncEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805081424049_add_new_MAC_Images_to_File_Table.resx">
+      <DependentUpon>201805081424049_add_new_MAC_Images_to_File_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805081551332_add_new_Question_to_Question_Table.resx">
+      <DependentUpon>201805081551332_add_new_Question_to_Question_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805081555448_add_Answers_for_Version2_Questions_on_Answer_Table.resx">
+      <DependentUpon>201805081555448_add_Answers_for_Version2_Questions_on_Answer_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805111103201_AddDateOfBirthUnknownAndVisitRecordCode.resx">
+      <DependentUpon>201805111103201_AddDateOfBirthUnknownAndVisitRecordCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805121127525_RestoreRoutineVisitMemberIDOnReferenceService.resx">
+      <DependentUpon>201805121127525_RestoreRoutineVisitMemberIDOnReferenceService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805121226192_RequiredFieldsOnHousehold.resx">
+      <DependentUpon>201805121226192_RequiredFieldsOnHousehold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805132257554_EnableMandatoryFieldsOnBeneficiaries.resx">
+      <DependentUpon>201805132257554_EnableMandatoryFieldsOnBeneficiaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805141744463_Add_RegistrationDate_for_Beneficiaries.resx">
+      <DependentUpon>201805141744463_Add_RegistrationDate_for_Beneficiaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805142022216_TrickEntityFramework.resx">
+      <DependentUpon>201805142022216_TrickEntityFramework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805152332013_add_Other_References_CheckBoxes.resx">
+      <DependentUpon>201805152332013_add_Other_References_CheckBoxes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805162120367_add_Other_References_Check_Boxes_To_Activist.resx">
+      <DependentUpon>201805162120367_add_Other_References_Check_Boxes_To_Activist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805241956106_UpdateEmptyVisitRecordCode.resx">
+      <DependentUpon>201805241956106_UpdateEmptyVisitRecordCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805250654443_UpdateEmptySiteIDOnPartner.resx">
+      <DependentUpon>201805250654443_UpdateEmptySiteIDOnPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805312159121_AddHIVTrackedOnAdultsAndChildren.resx">
+      <DependentUpon>201805312159121_AddHIVTrackedOnAdultsAndChildren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806101353338_insert_value_zero_to_otherReferences_CheckBoxes_on_existing_ReferenceServices.resx">
+      <DependentUpon>201806101353338_insert_value_zero_to_otherReferences_CheckBoxes_on_existing_ReferenceServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806101454182_Delete_Poverty_Proof_from_Others_in_Social_ReferenceService.resx">
+      <DependentUpon>201806101454182_Delete_Poverty_Proof_from_Others_in_Social_ReferenceService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806102251405_ChangeRoutineVisitViewsAndAddBeneficiaryView.resx">
+      <DependentUpon>201806102251405_ChangeRoutineVisitViewsAndAddBeneficiaryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806110937566_Add_PartnerID_relation_with_ReferenceService.resx">
+      <DependentUpon>201806110937566_Add_PartnerID_relation_with_ReferenceService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806121323153_Change_SocialAttendedDate_To_DateFormat_and_change_HealthAttendedDate_VBDate_to_NULL.resx">
+      <DependentUpon>201806121323153_Change_SocialAttendedDate_To_DateFormat_and_change_HealthAttendedDate_VBDate_to_NULL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806121423064_Remove_MaitenanceState.resx">
+      <DependentUpon>201806121423064_Remove_MaitenanceState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806131118504_InsertAdultStatusForAllAdults.resx">
+      <DependentUpon>201806131118504_InsertAdultStatusForAllAdults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806131334127_RemoveRoutineVisitMemberFKFromReferenceService.resx">
+      <DependentUpon>201806131334127_RemoveRoutineVisitMemberFKFromReferenceService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806151212158_AddBeneficiaryGuidOndHIVStatusAndChildStatusHistory.resx">
+      <DependentUpon>201806151212158_AddBeneficiaryGuidOndHIVStatusAndChildStatusHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806171045559_UpdateAllAdultsInAdultStatusToInitialStatus.resx">
+      <DependentUpon>201806171045559_UpdateAllAdultsInAdultStatusToInitialStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806181735568_FixHIVStatusWithWrongUndisclosedReasonsValues.resx">
+      <DependentUpon>201806181735568_FixHIVStatusWithWrongUndisclosedReasonsValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806192228121_AddRoutineVisitDateAndBeneficiaryHasServicesOnRoutineVisitMember.resx">
+      <DependentUpon>201806192228121_AddRoutineVisitDateAndBeneficiaryHasServicesOnRoutineVisitMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806211505084_ReCreateSystemViews.resx">
+      <DependentUpon>201806211505084_ReCreateSystemViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806270549300_UpdateBeneficiaryHasServicesInRoutineVisitMember.resx">
+      <DependentUpon>201806270549300_UpdateBeneficiaryHasServicesInRoutineVisitMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807011650258_AddNIDOnHIVStatus.resx">
+      <DependentUpon>201807011650258_AddNIDOnHIVStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807031034194_AddChildIDOnAdult.resx">
+      <DependentUpon>201807031034194_AddChildIDOnAdult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807031035318_UpdateAdultToPenultimateChildStatus.resx">
+      <DependentUpon>201807031035318_UpdateAdultToPenultimateChildStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807031041223_UpdateChildIdOnSystemCreatedAdults.resx">
+      <DependentUpon>201807031041223_UpdateChildIdOnSystemCreatedAdults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807090530410_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryView.resx">
+      <DependentUpon>201807090530410_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807091943335_AddIsPartSavingGroupOnBeneficiaryView.resx">
+      <DependentUpon>201807091943335_AddIsPartSavingGroupOnBeneficiaryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807121039593_UpdateAllAdultsInAdultStatusToInitialStatus_part2.resx">
+      <DependentUpon>201807121039593_UpdateAllAdultsInAdultStatusToInitialStatus_part2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807161833058_Add_UserID_into_HIVStatusTable.resx">
+      <DependentUpon>201807161833058_Add_UserID_into_HIVStatusTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807171015072_Update_Existing_Beneficiary_in_StatusHistory_without_Correct_BeneficiaryGuid.resx">
+      <DependentUpon>201807171015072_Update_Existing_Beneficiary_in_StatusHistory_without_Correct_BeneficiaryGuid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807250730227_DeleteOrphanHIVAndBeneficiaryStatus.resx">
+      <DependentUpon>201807250730227_DeleteOrphanHIVAndBeneficiaryStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807250807063_InsertUndeterminedTypeForBeneficiaryAndHouseholdNewMandatoryFields.resx">
+      <DependentUpon>201807250807063_InsertUndeterminedTypeForBeneficiaryAndHouseholdNewMandatoryFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807251049458_EnableNewMandatoryFieldsForBeneficiaryAndHousehold.resx">
+      <DependentUpon>201807251049458_EnableNewMandatoryFieldsForBeneficiaryAndHousehold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807251501177_UpdateHIVStatusWithoutBeneficiaryGuid.resx">
+      <DependentUpon>201807251501177_UpdateHIVStatusWithoutBeneficiaryGuid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807251609556_EnableMandatoryFieldsForHIVStatus.resx">
+      <DependentUpon>201807251609556_EnableMandatoryFieldsForHIVStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807281202023_Update_degree-of-kingship_Esposo_to_Code_06.resx">
+      <DependentUpon>201807281202023_Update_degree-of-kingship_Esposo_to_Code_06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807281352524_UpdateReferenceServiceWithoutChildIDorAdultID.resx">
+      <DependentUpon>201807281352524_UpdateReferenceServiceWithoutChildIDorAdultID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807281908509_UpdateNullablePartnerIDOnReferenceServiceWithHouseholdPartnerID.resx">
+      <DependentUpon>201807281908509_UpdateNullablePartnerIDOnReferenceServiceWithHouseholdPartnerID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807291813048_InsertUndeterminatedHIVStatusForBeneficiariesWhoDontHaveIt.resx">
+      <DependentUpon>201807291813048_InsertUndeterminatedHIVStatusForBeneficiariesWhoDontHaveIt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807291815199_DeleteOrphanHIVAndBeneficiaryStatusV2.resx">
+      <DependentUpon>201807291815199_DeleteOrphanHIVAndBeneficiaryStatusV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807291846591_EnableMandatoryFieldsOnBeneficiariesV1.resx">
+      <DependentUpon>201807291846591_EnableMandatoryFieldsOnBeneficiariesV1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808072014124_Update_Created_and_LastUpdated_Users_to_Original.resx">
+      <DependentUpon>201808072014124_Update_Created_and_LastUpdated_Users_to_Original.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808080802153_Update_Simple_Entity_to_Original.resx">
+      <DependentUpon>201808080802153_Update_Simple_Entity_to_Original.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809240747216_AddBeneficiaryCodeOnBeneficiaries.resx">
+      <DependentUpon>201809240747216_AddBeneficiaryCodeOnBeneficiaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809262118540_AddNewBeneficiaryStatus.resx">
+      <DependentUpon>201809262118540_AddNewBeneficiaryStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810081520379_AddCodeOnHouseholdAndPartner.resx">
+      <DependentUpon>201810081520379_AddCodeOnHouseholdAndPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810121409051_ChangeAllServicesToValueOne.resx">
+      <DependentUpon>201810121409051_ChangeAllServicesToValueOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810131511518_Update_And_Order_BeneficiaryStatus_To_OriginalID.resx">
+      <DependentUpon>201810131511518_Update_And_Order_BeneficiaryStatus_To_OriginalID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810131932351_FixHIVStatus_And_BeneficiaryStatus_WithZero_BeneficiaryGuid.resx">
+      <DependentUpon>201810131932351_FixHIVStatus_And_BeneficiaryStatus_WithZero_BeneficiaryGuid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810171409013_ReCreateRoutineVisitViewsWithDomainEntitySupportType.resx">
+      <DependentUpon>201810171409013_ReCreateRoutineVisitViewsWithDomainEntitySupportType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810220950115_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryViewV2.resx">
+      <DependentUpon>201810220950115_AddBeneficiaryHasServicesFieldOnRoutineVisitSummaryViewV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810251357154_CreatedUser_LastUpdatedUser_For_Entities_with_AuditedEntity_Inheritance.resx">
+      <DependentUpon>201810251357154_CreatedUser_LastUpdatedUser_For_Entities_with_AuditedEntity_Inheritance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811081251093_Remove_Codes.resx">
+      <DependentUpon>201811081251093_Remove_Codes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811112000453_AddAutomaticReportGeneratorTablesAndFields.resx">
+      <DependentUpon>201811112000453_AddAutomaticReportGeneratorTablesAndFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811261225102_AddInitialAndFinalPositionDateForAutomaticGeneratedReports.resx">
+      <DependentUpon>201811261225102_AddInitialAndFinalPositionDateForAutomaticGeneratedReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811261226300_ChangeAdminPassword.resx">
+      <DependentUpon>201811261226300_ChangeAdminPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901021109357_Add_Fields_to_Report_Data_Model.resx">
+      <DependentUpon>201901021109357_Add_Fields_to_Report_Data_Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901061456585_add-New-ReferenceServices.resx">
+      <DependentUpon>201901061456585_add-New-ReferenceServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902171522079_AddBeneficiaryTable.resx">
+      <DependentUpon>201902171522079_AddBeneficiaryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902171636262_AddSupportServiceFields.resx">
+      <DependentUpon>201902171636262_AddSupportServiceFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902181057383_AddVersionOnRoutineVisit.resx">
+      <DependentUpon>201902181057383_AddVersionOnRoutineVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902190910023_AddTypeDescriptionAndPopulateSupportServiceType.resx">
+      <DependentUpon>201902190910023_AddTypeDescriptionAndPopulateSupportServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902211127211_AddHouseholdStatus.AddHouseholdSupportPlan.AddTARVInitialDate.resx">
+      <DependentUpon>201902211127211_AddHouseholdStatus.AddHouseholdSupportPlan.AddTARVInitialDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902231038458_UpdateDomainIDOnCSIDomain.resx">
+      <DependentUpon>201902231038458_UpdateDomainIDOnCSIDomain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902251338268_MakeHIVInTreatmentAndUndisclosedReasonNullable.resx">
+      <DependentUpon>201902251338268_MakeHIVInTreatmentAndUndisclosedReasonNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902260802583_Make_HIV_InformationDate_Non_Nullable.resx">
+      <DependentUpon>201902260802583_Make_HIV_InformationDate_Non_Nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902261307247_ReCreateBeneficiaryView.resx">
+      <DependentUpon>201902261307247_ReCreateBeneficiaryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902271155288_AddFilesForAdultMAC.resx">
+      <DependentUpon>201902271155288_AddFilesForAdultMAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902271158373_AddQuestionAndAnswerForAdultMac.resx">
+      <DependentUpon>201902271158373_AddQuestionAndAnswerForAdultMac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902271314458_AddReferenceColumnAndRowNumber.resx">
+      <DependentUpon>201902271314458_AddReferenceColumnAndRowNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902280518532_AddNewHouseholdStatus_And_InsertAllHouseholdsWithInitialState.resx">
+      <DependentUpon>201902280518532_AddNewHouseholdStatus_And_InsertAllHouseholdsWithInitialState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902280617068_orderMACv1Questions.resx">
+      <DependentUpon>201902280617068_orderMACv1Questions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903050756309_AddNewSimpleentity_Degree_of_kinship_Proprio.resx">
+      <DependentUpon>201903050756309_AddNewSimpleentity_Degree_of_kinship_Proprio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903071456129_UpdateReferenceTypesColumnsAndRowNumbers.resx">
+      <DependentUpon>201903071456129_UpdateReferenceTypesColumnsAndRowNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903081109329_AddNewFieldsForBeneficiaryServiceStatus.resx">
+      <DependentUpon>201903081109329_AddNewFieldsForBeneficiaryServiceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903081233074_AddTableTrimesterAndLoadInitialData.resx">
+      <DependentUpon>201903081233074_AddTableTrimesterAndLoadInitialData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903081418003_AddFieldsToTrimesterModel.resx">
+      <DependentUpon>201903081418003_AddFieldsToTrimesterModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903081935312_ChangeTrimesterTableColumnOrderToTrimesterSequence.resx">
+      <DependentUpon>201903081935312_ChangeTrimesterTableColumnOrderToTrimesterSequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903081936148_AddBeneficiaryServicesStatusAndTrimestersDefinitions.resx">
+      <DependentUpon>201903081936148_AddBeneficiaryServicesStatusAndTrimestersDefinitions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903092118069_ChangeTrimesterToTrimesterDefinition.resx">
+      <DependentUpon>201903092118069_ChangeTrimesterToTrimesterDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903092122510_InitialDataForTrimesterDefinitions.resx">
+      <DependentUpon>201903092122510_InitialDataForTrimesterDefinitions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903101210003_ChangesToTrimesterModel.resx">
+      <DependentUpon>201903101210003_ChangesToTrimesterModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903131444006_SeqFieldInTrimesterModelIsNowMappedToDB.resx">
+      <DependentUpon>201903131444006_SeqFieldInTrimesterModelIsNowMappedToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903080910309_Make_PrincipalChiefName_And_ClosePlaceToHome_Required.resx">
+      <DependentUpon>201903080910309_Make_PrincipalChiefName_And_ClosePlaceToHome_Required.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903131357486_add_Selected_Reference_For_CheckboxList_in_Reference_Service.resx">
+      <DependentUpon>201903131357486_add_Selected_Reference_For_CheckboxList_in_Reference_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903140708301_UpdateSyncState_To_NeverSynced_And_LastUpdatedDate_on_HouseholdStatusHistory.resx">
+      <DependentUpon>201903140708301_UpdateSyncState_To_NeverSynced_And_LastUpdatedDate_on_HouseholdStatusHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903132006372_AlterServicesStatusDateToNullableOnBeneficiary.resx">
+      <DependentUpon>201903132006372_AlterServicesStatusDateToNullableOnBeneficiary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903141249325_MigrationProblemRectifier.resx">
+      <DependentUpon>201903141249325_MigrationProblemRectifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903150600252_orderMACv2Questions.resx">
+      <DependentUpon>201903150600252_orderMACv2Questions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903181232223_RecreateSystemViewsForNewAproach.resx">
+      <DependentUpon>201903181232223_RecreateSystemViewsForNewAproach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903151617260_Add_Parceiros-de-Populacoes-Chave-As_Family_Origin.resx">
+      <DependentUpon>201903151617260_Add_Parceiros-de-Populacoes-Chave-As_Family_Origin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903210833073_Adding_Order_To_Domain_And_SupportService.resx">
+      <DependentUpon>201903210833073_Adding_Order_To_Domain_And_SupportService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903210903061_Setting_Order_Of_Domain_SupportService.resx">
+      <DependentUpon>201903210903061_Setting_Order_Of_Domain_SupportService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903202046309_Add_Fields_to_Report_Data_Model1.resx">
+      <DependentUpon>201903202046309_Add_Fields_to_Report_Data_Model1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903211215139_ScholarityLevel.resx">
+      <DependentUpon>201903211215139_ScholarityLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903211236527_MigrationProblemRectifier1.resx">
+      <DependentUpon>201903211236527_MigrationProblemRectifier1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903241517345_UpdateBeneficiariesStatusDescriptions.resx">
+      <DependentUpon>201903241517345_UpdateBeneficiariesStatusDescriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903241949547_Update-missing-beneficiaryID-on-Entities.resx">
+      <DependentUpon>201903241949547_Update-missing-beneficiaryID-on-Entities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903242119022_AddCounterReferenceDate.resx">
+      <DependentUpon>201903242119022_AddCounterReferenceDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903281400090_AddNewFieldsInReportData.resx">
+      <DependentUpon>201903281400090_AddNewFieldsInReportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903290842078_RecreateReportDataFields.resx">
+      <DependentUpon>201903290842078_RecreateReportDataFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903290925286_InitialDataForTrimesterDefinitionDefinitionsV2.resx">
+      <DependentUpon>201903290925286_InitialDataForTrimesterDefinitionDefinitionsV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904021225459_UpdateBenefciaryModelAddServicesStatusID.resx">
+      <DependentUpon>201904021225459_UpdateBenefciaryModelAddServicesStatusID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904021431108_DeleAllTrimesters.resx">
+      <DependentUpon>201904021431108_DeleAllTrimesters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904031741575_UpdateOldRoutineVisitDomainOrdersToMatchNewOnes.resx">
+      <DependentUpon>201904031741575_UpdateOldRoutineVisitDomainOrdersToMatchNewOnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904031743547_UpdateAll_CheckBoxes_For_OldRoutineVisits_With_FE_and_HAB_Checked.resx">
+      <DependentUpon>201904031743547_UpdateAll_CheckBoxes_For_OldRoutineVisits_With_FE_and_HAB_Checked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904031821256_Update_New_RoutineVisit_Description.resx">
+      <DependentUpon>201904031821256_Update_New_RoutineVisit_Description.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904031857048_UpdateAll_CheckBoxes_For_NewRoutineVisits_With_Todos_in_Description.resx">
+      <DependentUpon>201904031857048_UpdateAll_CheckBoxes_For_NewRoutineVisits_With_Todos_in_Description.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904041340158_AddNewBeneficiaryStatus1.resx">
+      <DependentUpon>201904041340158_AddNewBeneficiaryStatus1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904041341156_InsertNewChildStatus_Based_on_No_Services.resx">
+      <DependentUpon>201904041341156_InsertNewChildStatus_Based_on_No_Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904041342216_InsertNewChildStatus_Based_on_GraduatedStatus.resx">
+      <DependentUpon>201904041342216_InsertNewChildStatus_Based_on_GraduatedStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904041345018_RemoveAdultStatusFromBeneficiaries.resx">
+      <DependentUpon>201904041345018_RemoveAdultStatusFromBeneficiaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904060847377_FixRoutineVisitFalseValuesInDomainEtities.resx">
+      <DependentUpon>201904060847377_FixRoutineVisitFalseValuesInDomainEtities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904101412416_Add_FiscalYearVersion_To_TrimesterDefinition.resx">
+      <DependentUpon>201904101412416_Add_FiscalYearVersion_To_TrimesterDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904121427115_addServiceStatusForReport.resx">
+      <DependentUpon>201904121427115_addServiceStatusForReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904131446119_HIVStatusAnd_BeneficiariesStatusView.resx">
+      <DependentUpon>201904131446119_HIVStatusAnd_BeneficiariesStatusView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904141848056_add-Trimester-Description.resx">
+      <DependentUpon>201904141848056_add-Trimester-Description.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904180531015_RoutineVisitDate_Missing_in_RoutineVisitMember.resx">
+      <DependentUpon>201904180531015_RoutineVisitDate_Missing_in_RoutineVisitMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221256309_FixChildStatusHistoryData.resx">
+      <DependentUpon>201904221256309_FixChildStatusHistoryData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221317103_changeOrangeActiveToYellowActive.resx">
+      <DependentUpon>201904221317103_changeOrangeActiveToYellowActive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221340305_FixHIVStatusData.resx">
+      <DependentUpon>201904221340305_FixHIVStatusData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904230612009_FixMUAC_AgeInterval_Description.resx">
+      <DependentUpon>201904230612009_FixMUAC_AgeInterval_Description.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904281434535_Restructurate_SupportServiceType_Table.resx">
+      <DependentUpon>201904281434535_Restructurate_SupportServiceType_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905092208251_Add_Function_DateRange.resx">
+      <DependentUpon>201905092208251_Add_Function_DateRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905211127356_Update_Missing_BeneficiaryHasService.resx">
+      <DependentUpon>201905211127356_Update_Missing_BeneficiaryHasService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905240820167_Add_New_RoutineVisit_View_and_MergedRoutineVisits_View.resx">
+      <DependentUpon>201905240820167_Add_New_RoutineVisit_View_and_MergedRoutineVisits_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905280824177_ServicesStatusHistory.resx">
+      <DependentUpon>201905280824177_ServicesStatusHistory.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

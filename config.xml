@@ -1,0 +1,13 @@
+<configuration>
+	<loginname>sa</loginname>
+	<loginpassword>password</loginpassword>
+	<databases>CSI</databases>
+	<CSI>
+		<ConnectionType>sqlconnection</ConnectionType>
+		<DataSource>localhost</DataSource>
+		<InitialCatalog>BW_CSI</InitialCatalog>
+		<Provider></Provider>
+		<ConnectOnCreate>False</ConnectOnCreate>
+		<IntegratedSecurity>True</IntegratedSecurity>
+	</CSI>
+</configuration>

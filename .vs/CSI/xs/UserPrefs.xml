@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{264E21D6-4024-4A53-B1BE-1CD42F3348FE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MAC/Web.config">
+    <Files>
+      <File FileName="EFDataAccess/Migrations/Configuration.cs" Line="1" Column="1" />
+      <File FileName="MAC/Web.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/eudson/Personal/VP/MAC/Core.CSI/EFDataAccess/Utilities/FileImporter.cs" relfile="EFDataAccess/Utilities/FileImporter.cs" line="49" column="1" />
+      <Breakpoint enabled="false" file="/Users/eudson/Personal/VP/MAC/Core.CSI/EFDataAccess/Services/SiteService.cs" relfile="EFDataAccess/Services/SiteService.cs" line="129" column="1" />
+      <Breakpoint enabled="false" file="/Users/eudson/Personal/VP/MAC/Core.CSI/MAC/Controllers/HomeController.cs" relfile="MAC/Controllers/HomeController.cs" line="552" column="1" />
+      <Breakpoint enabled="false" file="/Users/eudson/Personal/VP/MAC/Core.CSI/EFDataAccess/Services/PartnerService.cs" relfile="EFDataAccess/Services/PartnerService.cs" line="41" column="1" />
+      <Breakpoint file="/Users/eudson/Personal/VP/MAC/Core.CSI/EFDataAccess/ApplicationDbContext.cs" relfile="EFDataAccess/ApplicationDbContext.cs" line="137" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MAC PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BookWiseCSI PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

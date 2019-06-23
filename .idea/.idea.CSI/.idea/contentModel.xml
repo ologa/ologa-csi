@@ -1,0 +1,2625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_CSI.-1146784225.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p=".nuget" t="Include">
+        <e p="NuGet.Config" t="Include" />
+        <e p="NuGet.exe" t="Include" />
+        <e p="NuGet.targets" t="Include" />
+      </e>
+      <e p="BookWise" t="IncludeRecursive">
+        <e p="About.Designer.vb" t="Include" />
+        <e p="About.en-GB.resx" t="Include" />
+        <e p="About.pt-PT.resx" t="Include" />
+        <e p="About.resX" t="Include" />
+        <e p="About.vb" t="Include" />
+        <e p="ActionPlan.Designer.vb" t="Include" />
+        <e p="ActionPlan.en-GB.resx" t="Include" />
+        <e p="ActionPlan.pt-PT.resx" t="Include" />
+        <e p="ActionPlan.resx" t="Include" />
+        <e p="ActionPlan.vb" t="Include" />
+        <e p="ActiveUsers.Designer.vb" t="Include" />
+        <e p="ActiveUsers.en-GB.resx" t="Include" />
+        <e p="ActiveUsers.pt-PT.resx" t="Include" />
+        <e p="ActiveUsers.resX" t="Include" />
+        <e p="ActiveUsers.vb" t="Include" />
+        <e p="ADODB" t="Include" />
+        <e p="Adult.Designer.vb" t="Include" />
+        <e p="Adult.en-GB.resx" t="Include" />
+        <e p="Adult.pt-PT.resx" t="Include" />
+        <e p="Adult.resx" t="Include" />
+        <e p="Adult.vb" t="Include" />
+        <e p="app.config" t="Include" />
+        <e p="App_Code" t="Include">
+          <e p="DataSet1.Designer.vb" t="Include" />
+          <e p="DataSet1.xsc" t="Include" />
+          <e p="DataSet1.xsd" t="Include" />
+          <e p="DataSet1.xss" t="Include" />
+        </e>
+        <e p="AssemblyInfo.vb" t="Include" />
+        <e p="basTIMER.vb" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BookWise.ico" t="Include" />
+        <e p="BookWise_TemporaryKey.pfx" t="Include" />
+        <e p="BookWiseApplication.vb" t="Include" />
+        <e p="BookWiseCSI.vbproj" t="IncludeRecursive" />
+        <e p="CarePlan.Designer.vb" t="Include" />
+        <e p="CarePlan.en-GB.resx" t="Include" />
+        <e p="CarePlan.pt-PT.resx" t="Include" />
+        <e p="CarePlan.resX" t="Include" />
+        <e p="CarePlan.vb" t="Include" />
+        <e p="CarePlanList.Designer.vb" t="Include" />
+        <e p="CarePlanList.en-GB.resx" t="Include" />
+        <e p="CarePlanList.pt-PT.resx" t="Include" />
+        <e p="CarePlanList.resX" t="Include" />
+        <e p="CarePlanList.vb" t="Include" />
+        <e p="CarePlanService.Designer.vb" t="Include" />
+        <e p="CarePlanService.pt-PT.resx" t="Include" />
+        <e p="CarePlanService.resx" t="Include" />
+        <e p="CarePlanService.vb" t="Include" />
+        <e p="Child.Designer.vb" t="Include" />
+        <e p="Child.en-GB.resx" t="Include" />
+        <e p="Child.pt-PT.resx" t="Include" />
+        <e p="Child.resX" t="Include" />
+        <e p="Child.vb" t="Include" />
+        <e p="ChildAge.Designer.vb" t="Include" />
+        <e p="ChildAge.en-GB.resx" t="Include" />
+        <e p="ChildAge.pt-PT.resx" t="Include" />
+        <e p="ChildAge.resX" t="Include" />
+        <e p="ChildAge.vb" t="Include" />
+        <e p="ChildDisability.Designer.vb" t="Include" />
+        <e p="ChildDisability.resX" t="Include" />
+        <e p="ChildDisability.vb" t="Include" />
+        <e p="config.xml" t="Include" />
+        <e p="Controls" t="Include">
+          <e p="DetailControl.vb" t="Include" />
+          <e p="MasterControl.resx" t="Include" />
+          <e p="MasterControl.vb" t="Include" />
+        </e>
+        <e p="csi" t="Include">
+          <e p="CSI.Designer.vb" t="Include" />
+          <e p="CSI.en-GB.resx" t="Include" />
+          <e p="CSI.pt-PT.resx" t="Include" />
+          <e p="CSI.resX" t="Include" />
+          <e p="CSI.vb" t="Include" />
+          <e p="CSIContacts.Designer.vb" t="Include" />
+          <e p="CSIContacts.resx" t="Include" />
+          <e p="CSIContacts.vb" t="Include" />
+          <e p="CSIDisplays.Designer.vb" t="Include" />
+          <e p="CSIDisplays.resx" t="Include" />
+          <e p="CSIDisplays.vb" t="Include" />
+          <e p="CSIEvent.Designer.vb" t="Include" />
+          <e p="CSIEvent.resX" t="Include" />
+          <e p="CSIEvent.vb" t="Include" />
+          <e p="CSIList.Designer.vb" t="Include" />
+          <e p="CSIList.en-GB.resx" t="Include" />
+          <e p="CSIList.pt-PT.resx" t="Include" />
+          <e p="CSIList.resX" t="Include" />
+          <e p="CSIList.vb" t="Include" />
+          <e p="CSIScore.Designer.vb" t="Include" />
+          <e p="CSIScore.en-GB.resx" t="Include" />
+          <e p="CSIScore.pt-PT.resx" t="Include" />
+          <e p="CSIScore.resX" t="Include" />
+          <e p="CSIScore.vb" t="Include" />
+          <e p="CSIScoreWizardByQuestion.Designer.vb" t="Include" />
+          <e p="CSIScoreWizardByQuestion.en-GB.resx" t="Include" />
+          <e p="CSIScoreWizardByQuestion.pt-PT.resx" t="Include" />
+          <e p="CSIScoreWizardByQuestion.resx" t="Include" />
+          <e p="CSIScoreWizardByQuestion.vb" t="Include" />
+          <e p="CSIScoreWizardQuestion.Designer.vb" t="Include" />
+          <e p="CSIScoreWizardQuestion.en-GB.resx" t="Include" />
+          <e p="CSIScoreWizardQuestion.pt-PT.resx" t="Include" />
+          <e p="CSIScoreWizardQuestion.resx" t="Include" />
+          <e p="CSIScoreWizardQuestion.vb" t="Include" />
+          <e p="CSISupport.Designer.vb" t="Include" />
+          <e p="CSISupport.en-GB.resx" t="Include" />
+          <e p="CSISupport.pt-PT.resx" t="Include" />
+          <e p="CSISupport.resX" t="Include" />
+          <e p="CSISupport.vb" t="Include" />
+          <e p="CSIWizardTypeSelection.Designer.vb" t="Include" />
+          <e p="CSIWizardTypeSelection.en-GB.resx" t="Include" />
+          <e p="CSIWizardTypeSelection.pt-PT.resx" t="Include" />
+          <e p="CSIWizardTypeSelection.resx" t="Include" />
+          <e p="CSIWizardTypeSelection.vb" t="Include" />
+        </e>
+        <e p="Dashboard.Designer.vb" t="Include" />
+        <e p="Dashboard.resX" t="Include" />
+        <e p="Dashboard.vb" t="Include" />
+        <e p="DashboardFHI.Designer.vb" t="Include" />
+        <e p="DashboardFHI.pt-PT.resx" t="Include" />
+        <e p="DashboardFHI.resx" t="Include" />
+        <e p="DashboardFHI.vb" t="Include" />
+        <e p="DashboardHousehold.Designer.vb" t="Include" />
+        <e p="DashboardHousehold.pt-PT.resx" t="Include" />
+        <e p="DashboardHousehold.resx" t="Include" />
+        <e p="DashboardHousehold.vb" t="Include" />
+        <e p="DashboardSentebale.Designer.vb" t="Include" />
+        <e p="DashboardSentebale.en-GB.resx" t="Include" />
+        <e p="DashboardSentebale.pt-PT.resx" t="Include" />
+        <e p="DashboardSentebale.resX" t="Include" />
+        <e p="DashboardSentebale.vb" t="Include" />
+        <e p="DataGridViewExtensions.vb" t="Include" />
+        <e p="DateTimePicker.Designer.vb" t="Include" />
+        <e p="DateTimePicker.vb" t="Include" />
+        <e p="DistrictAssignment.Designer.vb" t="Include" />
+        <e p="DistrictAssignment.resX" t="Include" />
+        <e p="DistrictAssignment.vb" t="Include" />
+        <e p="FollowupVisit.Designer.vb" t="Include" />
+        <e p="FollowupVisit.resx" t="Include" />
+        <e p="FollowupVisit.vb" t="Include" />
+        <e p="General.vb" t="Include" />
+        <e p="GenerateMultiple.Designer.vb" t="Include" />
+        <e p="GenerateMultiple.resX" t="Include" />
+        <e p="GenerateMultiple.vb" t="Include" />
+        <e p="GraphLegend.Designer.vb" t="Include" />
+        <e p="GraphLegend.resX" t="Include" />
+        <e p="GraphLegend.vb" t="Include" />
+        <e p="GridModule.vb" t="Include" />
+        <e p="HIVStatusHistory.Designer.vb" t="Include" />
+        <e p="HIVStatusHistory.en-GB.resx" t="Include" />
+        <e p="HIVStatusHistory.pt-PT.resx" t="Include" />
+        <e p="HIVStatusHistory.resX" t="Include" />
+        <e p="HIVStatusHistory.vb" t="Include" />
+        <e p="HIVStatusHistoryAdd.Designer.vb" t="Include" />
+        <e p="HIVStatusHistoryAdd.en-GB.resx" t="Include" />
+        <e p="HIVStatusHistoryAdd.pt-PT.resx" t="Include" />
+        <e p="HIVStatusHistoryAdd.resX" t="Include" />
+        <e p="HIVStatusHistoryAdd.vb" t="Include" />
+        <e p="Household.Designer.vb" t="Include" />
+        <e p="Household.en-GB.resx" t="Include" />
+        <e p="Household.pt-PT.resx" t="Include" />
+        <e p="Household.resx" t="Include" />
+        <e p="Household.vb" t="Include" />
+        <e p="HouseholdForm.Designer.vb" t="Include" />
+        <e p="HouseholdForm.pt-PT.resx" t="Include" />
+        <e p="HouseholdForm.resx" t="Include" />
+        <e p="HouseholdForm.vb" t="Include" />
+        <e p="HouseholdProject.Designer.vb" t="Include" />
+        <e p="HouseholdProject.resx" t="Include" />
+        <e p="HouseholdProject.vb" t="Include" />
+        <e p="HygieneAndSanitation.Designer.vb" t="Include" />
+        <e p="HygieneAndSanitation.resx" t="Include" />
+        <e p="HygieneAndSanitation.vb" t="Include" />
+        <e p="ImportAdultToHousehold.Designer.vb" t="Include" />
+        <e p="ImportAdultToHousehold.pt-PT.resx" t="Include" />
+        <e p="ImportAdultToHousehold.resx" t="Include" />
+        <e p="ImportAdultToHousehold.vb" t="Include" />
+        <e p="ImportChildToHousehold.Designer.vb" t="Include" />
+        <e p="ImportChildToHousehold.pt-PT.resx" t="Include" />
+        <e p="ImportChildToHousehold.resx" t="Include" />
+        <e p="ImportChildToHousehold.vb" t="Include" />
+        <e p="LineShapeArray.vb" t="Include" />
+        <e p="Login.Designer.vb" t="Include" />
+        <e p="Login.en-GB.resx" t="Include" />
+        <e p="Login.pt-PT.resx" t="Include" />
+        <e p="Login.resX" t="Include" />
+        <e p="Login.vb" t="Include" />
+        <e p="Management" t="Include">
+          <e p="ManageAnswer.Designer.vb" t="Include" />
+          <e p="ManageAnswer.en-GB.resx" t="Include" />
+          <e p="ManageAnswer.pt-PT.resx" t="Include" />
+          <e p="ManageAnswer.resx" t="Include" />
+          <e p="ManageAnswer.vb" t="Include" />
+          <e p="ManageCaregiverRelations.Designer.vb" t="Include" />
+          <e p="ManageCaregiverRelations.en-GB.resx" t="Include" />
+          <e p="ManageCaregiverRelations.pt-PT.resx" t="Include" />
+          <e p="ManageCaregiverRelations.resX" t="Include" />
+          <e p="ManageCaregiverRelations.vb" t="Include" />
+          <e p="ManageChildStatus.Designer.vb" t="Include" />
+          <e p="ManageChildStatus.en-GB.resx" t="Include" />
+          <e p="ManageChildStatus.pt-PT.resx" t="Include" />
+          <e p="ManageChildStatus.resx" t="Include" />
+          <e p="ManageChildStatus.vb" t="Include" />
+          <e p="ManageCommunityCouncils.Designer.vb" t="Include" />
+          <e p="ManageCommunityCouncils.resX" t="Include" />
+          <e p="ManageCommunityCouncils.vb" t="Include" />
+          <e p="ManageCutPoint.Designer.vb" t="Include" />
+          <e p="ManageCutPoint.en-GB.resx" t="Include" />
+          <e p="ManageCutPoint.pt-PT.resx" t="Include" />
+          <e p="ManageCutPoint.resx" t="Include" />
+          <e p="ManageCutPoint.vb" t="Include" />
+          <e p="ManageDisabilities.Designer.vb" t="Include" />
+          <e p="ManageDisabilities.resX" t="Include" />
+          <e p="ManageDisabilities.vb" t="Include" />
+          <e p="ManageDistricts.Designer.vb" t="Include" />
+          <e p="ManageDistricts.en-GB.resx" t="Include" />
+          <e p="ManageDistricts.pt-PT.resx" t="Include" />
+          <e p="ManageDistricts.resX" t="Include" />
+          <e p="ManageDistricts.vb" t="Include" />
+          <e p="ManageDomains.Designer.vb" t="Include" />
+          <e p="ManageDomains.en-GB.resx" t="Include" />
+          <e p="ManageDomains.pt-PT.resx" t="Include" />
+          <e p="ManageDomains.resx" t="Include" />
+          <e p="ManageDomains.vb" t="Include" />
+          <e p="ManageEvents.Designer.vb" t="Include" />
+          <e p="ManageEvents.resX" t="Include" />
+          <e p="ManageEvents.vb" t="Include" />
+          <e p="ManageGeographicSites.Designer.vb" t="Include" />
+          <e p="ManageGeographicSites.en-GB.resx" t="Include" />
+          <e p="ManageGeographicSites.pt-PT.resx" t="Include" />
+          <e p="ManageGeographicSites.resX" t="Include" />
+          <e p="ManageGeographicSites.vb" t="Include" />
+          <e p="ManageGraduationCriteria.Designer.vb" t="Include" />
+          <e p="ManageGraduationCriteria.en-GB.resx" t="Include" />
+          <e p="ManageGraduationCriteria.pt-PT.resx" t="Include" />
+          <e p="ManageGraduationCriteria.resX" t="Include" />
+          <e p="ManageGraduationCriteria.vb" t="Include" />
+          <e p="ManageGuardianRelations.Designer.vb" t="Include" />
+          <e p="ManageGuardianRelations.en-GB.resx" t="Include" />
+          <e p="ManageGuardianRelations.pt-PT.resx" t="Include" />
+          <e p="ManageGuardianRelations.resX" t="Include" />
+          <e p="ManageGuardianRelations.vb" t="Include" />
+          <e p="ManageOrgUnit.Designer.vb" t="Include" />
+          <e p="ManageOrgUnit.en-GB.resx" t="Include" />
+          <e p="ManageOrgUnit.pt-PT.resx" t="Include" />
+          <e p="ManageOrgUnit.resx" t="Include" />
+          <e p="ManageOrgUnit.vb" t="Include" />
+          <e p="ManageOVCTypes.Designer.vb" t="Include" />
+          <e p="ManageOVCTypes.en-GB.resx" t="Include" />
+          <e p="ManageOVCTypes.pt-PT.resx" t="Include" />
+          <e p="ManageOVCTypes.resx" t="Include" />
+          <e p="ManageOVCTypes.vb" t="Include" />
+          <e p="ManagePartners.Designer.vb" t="Include" />
+          <e p="ManagePartners.en-GB.resx" t="Include" />
+          <e p="ManagePartners.pt-PT.resx" t="Include" />
+          <e p="ManagePartners.resX" t="Include" />
+          <e p="ManagePartners.vb" t="Include" />
+          <e p="ManageQuestion.Designer.vb" t="Include" />
+          <e p="ManageQuestion.en-GB.resx" t="Include" />
+          <e p="ManageQuestion.pt-PT.resx" t="Include" />
+          <e p="ManageQuestion.resx" t="Include" />
+          <e p="ManageQuestion.vb" t="Include" />
+          <e p="ManageScore.Designer.vb" t="Include" />
+          <e p="ManageScore.en-GB.resx" t="Include" />
+          <e p="ManageScore.pt-PT.resx" t="Include" />
+          <e p="ManageScore.resx" t="Include" />
+          <e p="ManageScore.vb" t="Include" />
+          <e p="ManageServiceProviders.Designer.vb" t="Include" />
+          <e p="ManageServiceProviders.en-GB.resx" t="Include" />
+          <e p="ManageServiceProviders.pt-PT.resx" t="Include" />
+          <e p="ManageServiceProviders.resX" t="Include" />
+          <e p="ManageServiceProviders.vb" t="Include" />
+          <e p="ManageServiceProviderTypes.Designer.vb" t="Include" />
+          <e p="ManageServiceProviderTypes.en-GB.resx" t="Include" />
+          <e p="ManageServiceProviderTypes.pt-PT.resx" t="Include" />
+          <e p="ManageServiceProviderTypes.resX" t="Include" />
+          <e p="ManageServiceProviderTypes.vb" t="Include" />
+          <e p="ManageSites.Designer.vb" t="Include" />
+          <e p="ManageSites.en-GB.resx" t="Include" />
+          <e p="ManageSites.pt-PT.resx" t="Include" />
+          <e p="ManageSites.resx" t="Include" />
+          <e p="ManageSites.vb" t="Include" />
+          <e p="ManageSources.Designer.vb" t="Include" />
+          <e p="ManageSources.en-GB.resx" t="Include" />
+          <e p="ManageSources.pt-PT.resx" t="Include" />
+          <e p="ManageSources.resX" t="Include" />
+          <e p="ManageSources.vb" t="Include" />
+          <e p="ManageSupportServiceTypes.Designer.vb" t="Include" />
+          <e p="ManageSupportServiceTypes.en-GB.resx" t="Include" />
+          <e p="ManageSupportServiceTypes.pt-PT.resx" t="Include" />
+          <e p="ManageSupportServiceTypes.resX" t="Include" />
+          <e p="ManageSupportServiceTypes.vb" t="Include" />
+          <e p="ManageUsers.Designer.vb" t="Include" />
+          <e p="ManageUsers.en-GB.resx" t="Include" />
+          <e p="ManageUsers.pt-PT.resx" t="Include" />
+          <e p="ManageUsers.resX" t="Include" />
+          <e p="ManageUsers.vb" t="Include" />
+          <e p="ManageVillages.Designer.vb" t="Include" />
+          <e p="ManageVillages.en-GB.resx" t="Include" />
+          <e p="ManageVillages.pt-PT.resx" t="Include" />
+          <e p="ManageVillages.resX" t="Include" />
+          <e p="ManageVillages.vb" t="Include" />
+          <e p="ManageWards.Designer.vb" t="Include" />
+          <e p="ManageWards.resX" t="Include" />
+          <e p="ManageWards.vb" t="Include" />
+        </e>
+        <e p="MDI.Designer.vb" t="Include" />
+        <e p="MDI.en-GB.resx" t="Include" />
+        <e p="MDI.pt-PT.resx" t="Include" />
+        <e p="MDI.resX" t="Include" />
+        <e p="MDI.vb" t="Include" />
+        <e p="Membership.Designer.vb" t="Include" />
+        <e p="Membership.resx" t="Include" />
+        <e p="Membership.vb" t="Include" />
+        <e p="MembershipList.Designer.vb" t="Include" />
+        <e p="MembershipList.resx" t="Include" />
+        <e p="MembershipList.vb" t="Include" />
+        <e p="Microsoft.StdFormat" t="Include" />
+        <e p="MigrateChildToAdult.Designer.vb" t="Include" />
+        <e p="MigrateChildToAdult.pt-PT.resx" t="Include" />
+        <e p="MigrateChildToAdult.resx" t="Include" />
+        <e p="MigrateChildToAdult.vb" t="Include" />
+        <e p="mscomctl" t="Include" />
+        <e p="Mulitple.Designer.vb" t="Include" />
+        <e p="Mulitple.resX" t="Include" />
+        <e p="Mulitple.vb" t="Include" />
+        <e p="My Project" t="Include">
+          <e p="app.manifest" t="Include" />
+          <e p="DataSources" t="Include">
+            <e p="VPPS.CSI.Domain.Answer.datasource" t="Include" />
+            <e p="VPPS.CSI.Domain.Domain.datasource" t="Include" />
+            <e p="VPPS.CSI.Domain.Household.datasource" t="Include" />
+            <e p="VPPS.CSI.Domain.Question.datasource" t="Include" />
+            <e p="VPPS.CSI.Domain.ReferenceService.datasource" t="Include" />
+            <e p="VPPS.CSI.Domain.RoutineVisit.datasource" t="Include" />
+            <e p="VPPS.CSI.Domain.SiteGoal.datasource" t="Include" />
+          </e>
+          <e p="Resources.Designer.vb" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.vb" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="myGroupBox.vb" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="OracleInfo.Designer.vb" t="Include" />
+        <e p="OracleInfo.resX" t="Include" />
+        <e p="OracleInfo.vb" t="Include" />
+        <e p="OvalShapeArray.vb" t="Include" />
+        <e p="packages.config" t="Include" />
+        <e p="PatientStatusHistory.Designer.vb" t="Include" />
+        <e p="PatientStatusHistory.en-GB.resx" t="Include" />
+        <e p="PatientStatusHistory.pt-PT.resx" t="Include" />
+        <e p="PatientStatusHistory.resX" t="Include" />
+        <e p="PatientStatusHistory.vb" t="Include" />
+        <e p="PatientStatusHistoryAdd.Designer.vb" t="Include" />
+        <e p="PatientStatusHistoryAdd.en-GB.resx" t="Include" />
+        <e p="PatientStatusHistoryAdd.pt-PT.resx" t="Include" />
+        <e p="PatientStatusHistoryAdd.resX" t="Include" />
+        <e p="PatientStatusHistoryAdd.vb" t="Include" />
+        <e p="ProjectList.Designer.vb" t="Include" />
+        <e p="ProjectList.resx" t="Include" />
+        <e p="ProjectList.vb" t="Include" />
+        <e p="RectangleShapeArray.vb" t="Include" />
+        <e p="Reports" t="Include">
+          <e p="ChildStatusReport.Designer.vb" t="Include" />
+          <e p="ChildStatusReport.pt-PT.resx" t="Include" />
+          <e p="ChildStatusReport.resx" t="Include" />
+          <e p="ChildStatusReport.vb" t="Include" />
+          <e p="CSIAPPTrendReport.Designer.vb" t="Include" />
+          <e p="CSIAPPTrendReport.pt-PT.resx" t="Include" />
+          <e p="CSIAPPTrendReport.resx" t="Include" />
+          <e p="CSIAPPTrendReport.vb" t="Include" />
+          <e p="CSICurrentStatusReport.Designer.vb" t="Include" />
+          <e p="CSICurrentStatusReport.pt-PT.resx" t="Include" />
+          <e p="CSICurrentStatusReport.resx" t="Include" />
+          <e p="CSICurrentStatusReport.vb" t="Include" />
+          <e p="CSIGraphTrendReport.Designer.vb" t="Include" />
+          <e p="CSIGraphTrendReport.pt-PT.resx" t="Include" />
+          <e p="CSIGraphTrendReport.resx" t="Include" />
+          <e p="CSIGraphTrendReport.vb" t="Include" />
+          <e p="CSIProgressEvaluationReport.Designer.vb" t="Include" />
+          <e p="CSIProgressEvaluationReport.pt-PT.resx" t="Include" />
+          <e p="CSIProgressEvaluationReport.resx" t="Include" />
+          <e p="CSIProgressEvaluationReport.vb" t="Include" />
+          <e p="CSITrendCurrentReport.Designer.vb" t="Include" />
+          <e p="CSITrendCurrentReport.pt-PT.resx" t="Include" />
+          <e p="CSITrendCurrentReport.resx" t="Include" />
+          <e p="CSITrendCurrentReport.vb" t="Include" />
+          <e p="CSITrendReport.Designer.vb" t="Include" />
+          <e p="CSITrendReport.pt-PT.resx" t="Include" />
+          <e p="CSITrendReport.resx" t="Include" />
+          <e p="CSITrendReport.vb" t="Include" />
+          <e p="CSITrendSummaryReport.Designer.vb" t="Include" />
+          <e p="CSITrendSummaryReport.pt-PT.resx" t="Include" />
+          <e p="CSITrendSummaryReport.resx" t="Include" />
+          <e p="CSITrendSummaryReport.vb" t="Include" />
+          <e p="CSIUserActivityReport.Designer.vb" t="Include" />
+          <e p="CSIUserActivityReport.pt-PT.resx" t="Include" />
+          <e p="CSIUserActivityReport.resx" t="Include" />
+          <e p="CSIUserActivityReport.vb" t="Include" />
+          <e p="MonthlyProgressReport.Designer.vb" t="Include" />
+          <e p="MonthlyProgressReport.pt-PT.resx" t="Include" />
+          <e p="MonthlyProgressReport.resx" t="Include" />
+          <e p="MonthlyProgressReport.vb" t="Include" />
+          <e p="PartnerPerformanceReport.Designer.vb" t="Include" />
+          <e p="PartnerPerformanceReport.pt-PT.resx" t="Include" />
+          <e p="PartnerPerformanceReport.resx" t="Include" />
+          <e p="PartnerPerformanceReport.vb" t="Include" />
+          <e p="QuestionReport.Designer.vb" t="Include" />
+          <e p="QuestionReport.pt-PT.resx" t="Include" />
+          <e p="QuestionReport.resx" t="Include" />
+          <e p="QuestionReport.vb" t="Include" />
+          <e p="ServiceProviderReport.Designer.vb" t="Include" />
+          <e p="ServiceProviderReport.pt-PT.resx" t="Include" />
+          <e p="ServiceProviderReport.resx" t="Include" />
+          <e p="ServiceProviderReport.vb" t="Include" />
+          <e p="ServiceTrackingReport.Designer.vb" t="Include" />
+          <e p="ServiceTrackingReport.pt-PT.resx" t="Include" />
+          <e p="ServiceTrackingReport.resx" t="Include" />
+          <e p="ServiceTrackingReport.vb" t="Include" />
+        </e>
+        <e p="ResourceLocalize.Designer.vb" t="Include" />
+        <e p="ResourceLocalize.en-GB.Designer.vb" t="Include" />
+        <e p="ResourceLocalize.en-GB.resx" t="Include" />
+        <e p="ResourceLocalize.pt-PT.Designer.vb" t="Include" />
+        <e p="ResourceLocalize.pt-PT.resx" t="Include" />
+        <e p="ResourceLocalize.resx" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="1460407511_Previous.png" t="Include" />
+          <e p="1460407532_Next.png" t="Include" />
+          <e p="Apps-Search-64.png" t="Include" />
+          <e p="asterisk-32.png" t="Include" />
+          <e p="back-logo-64.png" t="Include" />
+          <e p="Calendar_SubBlue.bmp" t="Include" />
+          <e p="Compact_SubOrange.bmp" t="Include" />
+          <e p="Compact_SubWhite.bmp" t="Include" />
+          <e p="Consult-icon-follow-up1.png" t="Include" />
+          <e p="dasboard64.png" t="Include" />
+          <e p="data-migration-icon-32.jpg" t="Include" />
+          <e p="family-icon.png" t="Include" />
+          <e p="family-icon1.png" t="Include" />
+          <e p="Green-Smile-with-Number.jpg" t="Include" />
+          <e p="Green-Smiley2.jpg" t="Include" />
+          <e p="imgFormBG.Image.png" t="Include" />
+          <e p="imgMAC.Image.png" t="Include" />
+          <e p="imgNoData.Image.png" t="Include" />
+          <e p="imgSearch.Image.png" t="Include" />
+          <e p="information-16.png" t="Include" />
+          <e p="loader.gif" t="Include" />
+          <e p="Not-Applicable-with-Number.jpg" t="Include" />
+          <e p="outlookGrid1.CollapseIcon.png" t="Include" />
+          <e p="outlookGrid1.ExpandIcon.png" t="Include" />
+          <e p="person.png" t="Include" />
+          <e p="plus_add_blue64.png" t="Include" />
+          <e p="print322.png" t="Include" />
+          <e p="Red-Smile-with-Number.jpg" t="Include" />
+          <e p="reports_icon64.png" t="Include" />
+          <e p="save-64.png" t="Include" />
+          <e p="Synchronization-64.png" t="Include" />
+          <e p="Yellow-Smile-with-Number.jpg" t="Include" />
+        </e>
+        <e p="RoutineVisit.Designer.vb" t="Include" />
+        <e p="RoutineVisit.pt-PT.resx" t="Include" />
+        <e p="RoutineVisit.resx" t="Include" />
+        <e p="RoutineVisit.vb" t="Include" />
+        <e p="RoutineVisitList.Designer.vb" t="Include" />
+        <e p="RoutineVisitList.resx" t="Include" />
+        <e p="RoutineVisitList.vb" t="Include" />
+        <e p="SchoolAndOthers.Designer.vb" t="Include" />
+        <e p="SchoolAndOthers.resx" t="Include" />
+        <e p="SchoolAndOthers.vb" t="Include" />
+        <e p="SearchAdult.Designer.vb" t="Include" />
+        <e p="SearchAdult.en-GB.resx" t="Include" />
+        <e p="SearchAdult.pt-PT.resx" t="Include" />
+        <e p="SearchAdult.resX" t="Include" />
+        <e p="SearchAdult.vb" t="Include" />
+        <e p="SearchChild.Designer.vb" t="Include" />
+        <e p="SearchChild.en-GB.resx" t="Include" />
+        <e p="SearchChild.pt-PT.resx" t="Include" />
+        <e p="SearchChild.resX" t="Include" />
+        <e p="SearchChild.vb" t="Include" />
+        <e p="SelectChild.Designer.vb" t="Include" />
+        <e p="SelectChild.resX" t="Include" />
+        <e p="SelectChild.vb" t="Include" />
+        <e p="ServiceTracking.Designer.vb" t="Include" />
+        <e p="ServiceTracking.resx" t="Include" />
+        <e p="ServiceTracking.vb" t="Include" />
+        <e p="ServiceTrackingHandler.Designer.vb" t="Include" />
+        <e p="ServiceTrackingHandler.en-GB.resx" t="Include" />
+        <e p="ServiceTrackingHandler.pt-PT.resx" t="Include" />
+        <e p="ServiceTrackingHandler.resx" t="Include" />
+        <e p="ServiceTrackingHandler.vb" t="Include" />
+        <e p="ServiceTrackingList.Designer.vb" t="Include" />
+        <e p="ServiceTrackingList.resx" t="Include" />
+        <e p="ServiceTrackingList.vb" t="Include" />
+        <e p="SQLInfo.Designer.vb" t="Include" />
+        <e p="SQLInfo.resX" t="Include" />
+        <e p="SQLInfo.vb" t="Include" />
+        <e p="StatusHistory.Designer.vb" t="Include" />
+        <e p="StatusHistory.en-GB.resx" t="Include" />
+        <e p="StatusHistory.pt-PT.resx" t="Include" />
+        <e p="StatusHistory.resX" t="Include" />
+        <e p="StatusHistory.vb" t="Include" />
+        <e p="StatusHistoryAdd.Designer.vb" t="Include" />
+        <e p="StatusHistoryAdd.en-GB.resx" t="Include" />
+        <e p="StatusHistoryAdd.pt-PT.resx" t="Include" />
+        <e p="StatusHistoryAdd.resX" t="Include" />
+        <e p="StatusHistoryAdd.vb" t="Include" />
+        <e p="SyncDataCentralRepository.Designer.vb" t="Include" />
+        <e p="SyncDataCentralRepository.pt-PT.resx" t="Include" />
+        <e p="SyncDataCentralRepository.resx" t="Include" />
+        <e p="SyncDataCentralRepository.vb" t="Include" />
+        <e p="UpgradeSupport.vb" t="Include" />
+        <e p="VPS.vb" t="Include" />
+        <e p="WellBeingTool.Designer.vb" t="Include" />
+        <e p="WellBeingTool.resx" t="Include" />
+        <e p="WellBeingTool.vb" t="Include" />
+        <e p="WellBeingToolList.Designer.vb" t="Include" />
+        <e p="WellBeingToolList.resx" t="Include" />
+        <e p="WellBeingToolList.vb" t="Include" />
+      </e>
+      <e p="BusinessObjects" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BusinessObjects.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Proxies" t="Include">
+          <e p="ActionProxy.cs" t="Include" />
+          <e p="AdultHouseholdProxy.cs" t="Include" />
+          <e p="AdultMembershipProxy.cs" t="Include" />
+          <e p="AdultProxy.cs" t="Include" />
+          <e p="AdultServiceProxy.cs" t="Include" />
+          <e p="CareGiverRelationProxy.cs" t="Include" />
+          <e p="CareGroupMembershipProxy.cs" t="Include" />
+          <e p="CarePlanDomainProxy.cs" t="Include" />
+          <e p="CarePlanDomainSupportServiceProxy.cs" t="Include" />
+          <e p="CarePlanProxy.cs" t="Include" />
+          <e p="CFMMembershipProxy.cs" t="Include" />
+          <e p="ChildDisabilityProxy.cs" t="Include" />
+          <e p="ChildHouseholdProxy.cs" t="Include" />
+          <e p="ChildMembershipProxy.cs" t="Include" />
+          <e p="ChildPartnerProxy.cs" t="Include" />
+          <e p="ChildProxy.cs" t="Include" />
+          <e p="ChildServiceProxy.cs" t="Include" />
+          <e p="ChildStatusHistoryProxy.cs" t="Include" />
+          <e p="ChildStatusProxy.cs" t="Include" />
+          <e p="CommunityCouncilProxy.cs" t="Include" />
+          <e p="CSIContactProxy.cs" t="Include" />
+          <e p="CSIDomainProxy.cs" t="Include" />
+          <e p="CSIDomainScoreProxy.cs" t="Include" />
+          <e p="CSIDomainSourceProxy.cs" t="Include" />
+          <e p="CSIDomainSupportServiceProxy.cs" t="Include" />
+          <e p="CSIEventProxy.cs" t="Include" />
+          <e p="CSIProxy.cs" t="Include" />
+          <e p="DisabilityProxy.cs" t="Include" />
+          <e p="DistrictProxy.cs" t="Include" />
+          <e p="DomainProxy.cs" t="Include" />
+          <e p="ECCDMembershipProxy.cs" t="Include" />
+          <e p="EventProxy.cs" t="Include" />
+          <e p="FollowUpProxy.cs" t="Include" />
+          <e p="GuardianRelationProxy.cs" t="Include" />
+          <e p="GuidelineProxy.cs" t="Include" />
+          <e p="HomeEnvironmentProxy.cs" t="Include" />
+          <e p="HouseholdMembershipProxy.cs" t="Include" />
+          <e p="HouseholdProjectProxy.cs" t="Include" />
+          <e p="MembershipProxy.cs" t="Include" />
+          <e p="OutcomeProxy.cs" t="Include" />
+          <e p="OVCTypeProxy.cs" t="Include" />
+          <e p="ParticipantRegistrationProxy.cs" t="Include" />
+          <e p="PartnerProxy.cs" t="Include" />
+          <e p="QuestionProxy.cs" t="Include" />
+          <e p="RecipientTypeProxy.cs" t="Include" />
+          <e p="ServiceProviderProxy.cs" t="Include" />
+          <e p="ServiceProviderTypeProxy.cs" t="Include" />
+          <e p="SILCMembershipProxy.cs" t="Include" />
+          <e p="SiteProxy.cs" t="Include" />
+          <e p="SourceProxy.cs" t="Include" />
+          <e p="SupportServiceTypeProxy.cs" t="Include" />
+          <e p="UserActionProxy.cs" t="Include" />
+          <e p="UserProxy.cs" t="Include" />
+          <e p="VGAMembershipProxy.cs" t="Include" />
+          <e p="VillageProxy.cs" t="Include" />
+          <e p="WardProxy.cs" t="Include" />
+          <e p="WBTDomainProxy.cs" t="Include" />
+          <e p="WBTDomainScoreProxy.cs" t="Include" />
+          <e p="WBTProxy.cs" t="Include" />
+        </e>
+        <e p="Rules" t="Include">
+          <e p="Action.cs" t="Include" />
+          <e p="Adult.cs" t="Include" />
+          <e p="AdultHousehold.cs" t="Include" />
+          <e p="AdultMembership.cs" t="Include" />
+          <e p="AdultService.cs" t="Include" />
+          <e p="CareGiverRelation.cs" t="Include" />
+          <e p="CareGroupMembership.cs" t="Include" />
+          <e p="CarePlan.cs" t="Include" />
+          <e p="CarePlanDomain.cs" t="Include" />
+          <e p="CarePlanDomainSupportService.cs" t="Include" />
+          <e p="CFMMembership.cs" t="Include" />
+          <e p="Child.cs" t="Include" />
+          <e p="ChildDisability.cs" t="Include" />
+          <e p="ChildHousehold.cs" t="Include" />
+          <e p="ChildMembership.cs" t="Include" />
+          <e p="ChildPartner.cs" t="Include" />
+          <e p="ChildService.cs" t="Include" />
+          <e p="ChildStatus.cs" t="Include" />
+          <e p="ChildStatusHistory.cs" t="Include" />
+          <e p="CommunityCouncil.cs" t="Include" />
+          <e p="CSI.cs" t="Include" />
+          <e p="CSIContact.cs" t="Include" />
+          <e p="CSIDomain.cs" t="Include" />
+          <e p="CSIDomainScore.cs" t="Include" />
+          <e p="CSIDomainSource.cs" t="Include" />
+          <e p="CSIDomainSupportService.cs" t="Include" />
+          <e p="CSIEvent.cs" t="Include" />
+          <e p="Disability.cs" t="Include" />
+          <e p="District.cs" t="Include" />
+          <e p="Domain.cs" t="Include" />
+          <e p="ECCDMembership.cs" t="Include" />
+          <e p="Event.cs" t="Include" />
+          <e p="FollowUp.cs" t="Include" />
+          <e p="GuardianRelation.cs" t="Include" />
+          <e p="Guideline.cs" t="Include" />
+          <e p="HomeEnvironment.cs" t="Include" />
+          <e p="HouseholdMembership.cs" t="Include" />
+          <e p="HouseholdProject.cs" t="Include" />
+          <e p="Membership.cs" t="Include" />
+          <e p="Outcome.cs" t="Include" />
+          <e p="OVCType.cs" t="Include" />
+          <e p="ParticipantRegistration.cs" t="Include" />
+          <e p="Partner.cs" t="Include" />
+          <e p="Question.cs" t="Include" />
+          <e p="RecipientType.cs" t="Include" />
+          <e p="ServiceProvider.cs" t="Include" />
+          <e p="ServiceProviderType.cs" t="Include" />
+          <e p="SILCMembership.cs" t="Include" />
+          <e p="Site.cs" t="Include" />
+          <e p="Source.cs" t="Include" />
+          <e p="SupportServiceType.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+          <e p="UserAction.cs" t="Include" />
+          <e p="VGAMembership.cs" t="Include" />
+          <e p="Village.cs" t="Include" />
+          <e p="Ward.cs" t="Include" />
+          <e p="WBT.cs" t="Include" />
+          <e p="WBTDomain.cs" t="Include" />
+          <e p="WBTDomainScore.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CSI.sln" t="IncludeFlat" />
+      <e p="CSIOffline" t="IncludeRecursive">
+        <e p="app" t="Include">
+          <e p="admin" t="Include">
+            <e p="admin.html" t="Include" />
+            <e p="admin.js" t="Include" />
+          </e>
+          <e p="app.js" t="Include" />
+          <e p="careplan" t="Include">
+            <e p="careplandetail.html" t="Include" />
+            <e p="careplandetail.js" t="Include" />
+            <e p="careplanlist.html" t="Include" />
+            <e p="careplanlist.js" t="Include" />
+            <e p="modalCarePlan.html" t="Include" />
+            <e p="todolist.html" t="Include" />
+            <e p="todolist.js" t="Include" />
+          </e>
+          <e p="child" t="Include">
+            <e p="child.js" t="Include" />
+            <e p="childdetail.html" t="Include" />
+            <e p="childdetail.js" t="Include" />
+            <e p="childList.html" t="Include" />
+          </e>
+          <e p="common" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="bootstrap.dialog.js" t="Include" />
+            </e>
+            <e p="common.js" t="Include" />
+            <e p="logger.js" t="Include" />
+            <e p="spinner.js" t="Include" />
+          </e>
+          <e p="config.exceptionHandler.js" t="Include" />
+          <e p="config.js" t="Include" />
+          <e p="config.route.js" t="Include" />
+          <e p="csi" t="Include">
+            <e p="csidetail.html" t="Include" />
+            <e p="csidetail.js" t="Include" />
+            <e p="csilist.html" t="Include" />
+            <e p="csilist.js" t="Include" />
+            <e p="csiscore.html" t="Include" />
+            <e p="csiscore.js" t="Include" />
+            <e p="csisupport.html" t="Include" />
+            <e p="csisupport.js" t="Include" />
+          </e>
+          <e p="dashboard" t="Include">
+            <e p="dashboard.html" t="Include" />
+            <e p="dashboard.js" t="Include" />
+          </e>
+          <e p="i18n" t="Include">
+            <e p="en.json" t="Include" />
+          </e>
+          <e p="layout" t="Include">
+            <e p="shell.html" t="Include" />
+            <e p="shell.js" t="Include" />
+            <e p="sidebar.html" t="Include" />
+            <e p="sidebar.js" t="Include" />
+            <e p="topnav.html" t="Include" />
+            <e p="widgetheader.html" t="Include" />
+          </e>
+          <e p="partials" t="Include">
+            <e p="modalCarePlan.html" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="csiDomainFactory.js" t="Include" />
+            <e p="datacontext.js" t="Include" />
+            <e p="directives.js" t="Include" />
+            <e p="localDBService.js" t="Include" />
+            <e p="synchservice.js" t="Include" />
+          </e>
+          <e p="synchronization" t="Include">
+            <e p="synch.html" t="Include" />
+            <e p="synch.js" t="Include" />
+          </e>
+        </e>
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="RouteConfig.cs" t="Include" />
+          <e p="WebApiConfig.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="animations.css" t="Include" />
+          <e p="bootstrap-theme.css" t="Include" />
+          <e p="bootstrap-theme.css.map" t="Include" />
+          <e p="bootstrap-theme.min.css" t="Include" />
+          <e p="bootstrap.css" t="Include" />
+          <e p="bootstrap.css.map" t="Include" />
+          <e p="bootstrap.min.css" t="Include" />
+          <e p="codecamper.min.css" t="Include" />
+          <e p="customtheme.css" t="Include" />
+          <e p="font-awesome.css" t="Include" />
+          <e p="font-awesome.min.css" t="Include" />
+          <e p="ie10mobile.css" t="Include" />
+          <e p="images" t="Include">
+            <e p="AngularJS-small.png" t="Include" />
+            <e p="breezelogo.png" t="Include" />
+            <e p="f.png" t="Include" />
+            <e p="glyphicons-halflings-white.png" t="Include" />
+            <e p="glyphicons-halflings.png" t="Include" />
+            <e p="icon.png" t="Include" />
+            <e p="m.png" t="Include" />
+          </e>
+          <e p="offline-language-english.css" t="Include" />
+          <e p="offline-theme-chrome-indicator.css" t="Include" />
+          <e p="offline-theme-slide.css" t="Include" />
+          <e p="select.css" t="Include" />
+          <e p="select2.css" t="Include" />
+          <e p="site.css" t="Include" />
+          <e p="styles.css" t="Include" />
+          <e p="toastr.css" t="Include" />
+          <e p="toastr.less" t="Include" />
+          <e p="toastr.min.css" t="Include" />
+          <e p="toastr.scss" t="Include" />
+          <e p="todo.css" t="Include" />
+          <e p="xeditable.css" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="FileApiController.cs" t="Include" />
+          <e p="ManifestController.cs" t="Include" />
+          <e p="SynchronisationController.cs" t="Include" />
+        </e>
+        <e p="CSIOffline.csproj" t="IncludeRecursive" />
+        <e p="favicon.ico" t="Include" />
+        <e p="fonts" t="Include">
+          <e p="fontawesome-webfont.eot" t="Include" />
+          <e p="fontawesome-webfont.svg" t="Include" />
+          <e p="fontawesome-webfont.ttf" t="Include" />
+          <e p="fontawesome-webfont.woff" t="Include" />
+          <e p="fontawesome-webfont.woff2" t="Include" />
+          <e p="FontAwesome.otf" t="Include" />
+          <e p="glyphicons-halflings-regular.eot" t="Include" />
+          <e p="glyphicons-halflings-regular.svg" t="Include" />
+          <e p="glyphicons-halflings-regular.ttf" t="Include" />
+          <e p="glyphicons-halflings-regular.woff" t="Include" />
+          <e p="glyphicons-halflings-regular.woff2" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="icon.png" t="Include" />
+        <e p="index.html" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Answer.cs" t="Include" />
+          <e p="CarePlan.cs" t="Include" />
+          <e p="CarePlanDomain.cs" t="Include" />
+          <e p="CarePlanDomainSupportService.cs" t="Include" />
+          <e p="Child.cs" t="Include" />
+          <e p="CSI.cs" t="Include" />
+          <e p="CSIDomain.cs" t="Include" />
+          <e p="CsiDomainScores.cs" t="Include" />
+          <e p="CSIDomainSupportService.cs" t="Include" />
+          <e p="CSItoWBOTmodel.cs" t="Include" />
+          <e p="Domain.cs" t="Include" />
+          <e p="GuardianRelation.cs" t="Include" />
+          <e p="ModelFactory.cs" t="Include" />
+          <e p="OVCType.cs" t="Include" />
+          <e p="Partner.cs" t="Include" />
+          <e p="Question.cs" t="Include" />
+          <e p="RootObject.cs" t="Include" />
+          <e p="ServiceProvider.cs" t="Include" />
+          <e p="Source.cs" t="Include" />
+          <e p="SupportService.cs" t="Include" />
+          <e p="Task.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="AzureCSI.pubxml" t="Include" />
+            <e p="CSI.pubxml" t="Include" />
+            <e p="test.pubxml" t="Include" />
+            <e p="vps-csioffline - FTP.pubxml" t="Include" />
+            <e p="vps-csioffline - Web Deploy.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="angular-animate.js" t="Include" />
+          <e p="angular-animate.min.js" t="Include" />
+          <e p="angular-animate.min.js.map" t="Include" />
+          <e p="angular-aria.js" t="Include" />
+          <e p="angular-aria.min.js" t="Include" />
+          <e p="angular-aria.min.js.map" t="Include" />
+          <e p="angular-cookies.js" t="Include" />
+          <e p="angular-cookies.min.js" t="Include" />
+          <e p="angular-cookies.min.js.map" t="Include" />
+          <e p="angular-csp.css" t="Include" />
+          <e p="angular-input-date.js" t="Include" />
+          <e p="angular-loader.js" t="Include" />
+          <e p="angular-loader.min.js" t="Include" />
+          <e p="angular-loader.min.js.map" t="Include" />
+          <e p="angular-messages.js" t="Include" />
+          <e p="angular-messages.min.js" t="Include" />
+          <e p="angular-messages.min.js.map" t="Include" />
+          <e p="angular-mocks.js" t="Include" />
+          <e p="angular-resource.js" t="Include" />
+          <e p="angular-resource.min.js" t="Include" />
+          <e p="angular-resource.min.js.map" t="Include" />
+          <e p="angular-route.js" t="Include" />
+          <e p="angular-route.min.js" t="Include" />
+          <e p="angular-route.min.js.map" t="Include" />
+          <e p="angular-sanitize.js" t="Include" />
+          <e p="angular-sanitize.min.js" t="Include" />
+          <e p="angular-sanitize.min.js.map" t="Include" />
+          <e p="angular-scenario.js" t="Include" />
+          <e p="angular-touch.js" t="Include" />
+          <e p="angular-touch.min.js" t="Include" />
+          <e p="angular-touch.min.js.map" t="Include" />
+          <e p="angular.js" t="Include" />
+          <e p="angular.min.js" t="Include" />
+          <e p="angular.min.js.map" t="Include" />
+          <e p="bootstrap.js" t="Include" />
+          <e p="bootstrap.min.js" t="Include" />
+          <e p="components.js" t="Include" />
+          <e p="Dexie.js" t="Include" />
+          <e p="Dexie.Observable.js" t="Include" />
+          <e p="errors.json" t="Include" />
+          <e p="i18n" t="Include">
+            <e p="angular-locale_en-001.js" t="Include" />
+            <e p="angular-locale_en-150.js" t="Include" />
+            <e p="angular-locale_en-gb.js" t="Include" />
+            <e p="angular-locale_en-us.js" t="Include" />
+            <e p="angular-locale_en-za.js" t="Include" />
+            <e p="angular-locale_en.js" t="Include" />
+            <e p="angular-locale_pt-br.js" t="Include" />
+            <e p="angular-locale_pt-mz.js" t="Include" />
+            <e p="angular-locale_pt-pt.js" t="Include" />
+            <e p="angular-locale_pt.js" t="Include" />
+          </e>
+          <e p="jquery-1.9.1.intellisense.js" t="Include" />
+          <e p="jquery-1.9.1.js" t="Include" />
+          <e p="jquery-1.9.1.min.js" t="Include" />
+          <e p="jquery-1.9.1.min.map" t="Include" />
+          <e p="jquery-2.1.1.intellisense.js" t="Include" />
+          <e p="jquery-2.1.1.js" t="Include" />
+          <e p="jquery-2.1.1.min.js" t="Include" />
+          <e p="jquery-2.1.1.min.map" t="Include" />
+          <e p="lodash.js" t="Include" />
+          <e p="lodash.min.js" t="Include" />
+          <e p="modernizr-2.6.2.js" t="Include" />
+          <e p="moment-with-langs.js" t="Include" />
+          <e p="moment-with-langs.min.js" t="Include" />
+          <e p="moment.js" t="Include" />
+          <e p="moment.min.js" t="Include" />
+          <e p="npm.js" t="Include" />
+          <e p="offline.min.js" t="Include" />
+          <e p="select.js" t="Include" />
+          <e p="spin.js" t="Include" />
+          <e p="spin.min.js" t="Include" />
+          <e p="toastr.js" t="Include" />
+          <e p="toastr.min.js" t="Include" />
+          <e p="toastr.min.js.map" t="Include" />
+          <e p="ui-bootstrap-tpls-0.10.0.js" t="Include" />
+          <e p="ui-bootstrap-tpls-0.10.0.min.js" t="Include" />
+          <e p="uuid.js" t="Include" />
+          <e p="version.json" t="Include" />
+          <e p="xeditable.min.js" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Manifest" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="CustomComponents" t="IncludeRecursive">
+        <e p="AnswerBoxControl.cs" t="Include" />
+        <e p="AnswerBoxControl.Designer.cs" t="Include" />
+        <e p="AnswerBoxControl.resx" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CarePlanServiceControl.cs" t="Include" />
+        <e p="CarePlanServiceControl.Designer.cs" t="Include" />
+        <e p="CarePlanServiceControl.en-GB.resx" t="Include" />
+        <e p="CarePlanServiceControl.pt-PT.resx" t="Include" />
+        <e p="CarePlanServiceControl.resx" t="Include" />
+        <e p="CarePlanTaskControl.cs" t="Include" />
+        <e p="CarePlanTaskControl.Designer.cs" t="Include" />
+        <e p="CarePlanTaskControl.en-GB.resx" t="Include" />
+        <e p="CarePlanTaskControl.pt-PT.resx" t="Include" />
+        <e p="CarePlanTaskControl.resx" t="Include" />
+        <e p="ColorPicker.cs" t="Include" />
+        <e p="ColorPicker.Designer.cs" t="Include" />
+        <e p="CustomComponents.csproj" t="IncludeRecursive" />
+        <e p="DashboardFilter.cs" t="Include" />
+        <e p="DashboardFilter.Designer.cs" t="Include" />
+        <e p="DashboardFilter.en-GB.resx" t="Include" />
+        <e p="DashboardFilter.pt-PT.resx" t="Include" />
+        <e p="DashboardFilter.resx" t="Include" />
+        <e p="DataGridViewDisableButtonCell.cs" t="Include" />
+        <e p="DataGridViewDisableButtonColumn .cs" t="Include" />
+        <e p="Expander.cs" t="Include" />
+        <e p="Expander.Designer.cs" t="Include" />
+        <e p="GripBounds.cs" t="Include" />
+        <e p="MultiHeaderGrid" t="Include">
+          <e p="MultiHeader.cs" t="Include" />
+          <e p="MultiHeaderGrid.cs" t="Include" />
+          <e p="MultiHeaderGrid.Designer.cs" t="Include" />
+        </e>
+        <e p="NativeMethods.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Popup.cs" t="Include" />
+        <e p="Popup.Designer.cs" t="Include" />
+        <e p="PopupAnimations.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="QuestionCard.cs" t="Include" />
+        <e p="QuestionCard.Designer.cs" t="Include" />
+        <e p="QuestionCard.resx" t="Include" />
+      </e>
+      <e p="Documentation" t="Include" />
+      <e p="Domain" t="IncludeRecursive">
+        <e p="Action.cs" t="Include" />
+        <e p="Adult.cs" t="Include" />
+        <e p="Aid.cs" t="Include" />
+        <e p="Answer.cs" t="Include" />
+        <e p="AuditedEntity.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CareGiverRelation.cs" t="Include" />
+        <e p="CarePlan.cs" t="Include" />
+        <e p="CarePlanDomain.cs" t="Include" />
+        <e p="CarePlanDomainSupportService.cs" t="Include" />
+        <e p="Child.cs" t="Include" />
+        <e p="ChildDisability.cs" t="Include" />
+        <e p="ChildEvent.cs" t="Include" />
+        <e p="ChildPartner.cs" t="Include" />
+        <e p="ChildProject.cs" t="Include" />
+        <e p="ChildRegistration.cs" t="Include" />
+        <e p="ChildStatus.cs" t="Include" />
+        <e p="ChildStatusHistory.cs" t="Include" />
+        <e p="ChildTrainingEvent.cs" t="Include" />
+        <e p="ChildTrainingEventItem.cs" t="Include" />
+        <e p="CollaboratorRole.cs" t="Include" />
+        <e p="CommunityCouncil.cs" t="Include" />
+        <e p="Config.cs" t="Include" />
+        <e p="ConfigType.cs" t="Include" />
+        <e p="CSI.cs" t="Include" />
+        <e p="CSIDomain.cs" t="Include" />
+        <e p="CSIDomainScore.cs" t="Include" />
+        <e p="CSIDomainSource.cs" t="Include" />
+        <e p="CSIDomainSupportService.cs" t="Include" />
+        <e p="CSIEvent.cs" t="Include" />
+        <e p="CutPoint.cs" t="Include" />
+        <e p="Disability.cs" t="Include" />
+        <e p="District.cs" t="Include" />
+        <e p="Domain.cs" t="Include" />
+        <e p="Domain.csproj" t="IncludeRecursive" />
+        <e p="DomainCriteria.cs" t="Include" />
+        <e p="Drug.cs" t="Include" />
+        <e p="DrugDose.cs" t="Include" />
+        <e p="Encounter.cs" t="Include" />
+        <e p="EncounterDrug.cs" t="Include" />
+        <e p="EncounterType.cs" t="Include" />
+        <e p="Event.cs" t="Include" />
+        <e p="Field.cs" t="Include" />
+        <e p="File.cs" t="Include" />
+        <e p="FollowUp.cs" t="Include" />
+        <e p="Form.cs" t="Include" />
+        <e p="FormField.cs" t="Include" />
+        <e p="GeneralInfo.cs" t="Include" />
+        <e p="GraduationCriteria.cs" t="Include" />
+        <e p="GuardianRelation.cs" t="Include" />
+        <e p="Guideline.cs" t="Include" />
+        <e p="HIVStatus.cs" t="Include" />
+        <e p="Household.cs" t="Include" />
+        <e p="IAuditedEntity.cs" t="Include" />
+        <e p="IIdentifiableEntity.cs" t="Include" />
+        <e p="Language.cs" t="Include" />
+        <e p="Location.cs" t="Include" />
+        <e p="Normalizer.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="OrgUnit.cs" t="Include" />
+        <e p="OrgUnitType.cs" t="Include" />
+        <e p="Outcome.cs" t="Include" />
+        <e p="OVCType.cs" t="Include" />
+        <e p="Partner.cs" t="Include" />
+        <e p="PartnerLocation.cs" t="Include" />
+        <e p="PartnerProject.cs" t="Include" />
+        <e p="PartnerProjectSnapshot.cs" t="Include" />
+        <e p="Project.cs" t="Include" />
+        <e p="ProjectTrackerItem.cs" t="Include" />
+        <e p="ProjectTrackerItemValue.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Question.cs" t="Include" />
+        <e p="QuestionCriteria.cs" t="Include" />
+        <e p="RecipientType.cs" t="Include" />
+        <e p="Reference.cs" t="Include" />
+        <e p="ReferenceService.cs" t="Include" />
+        <e p="ReferenceType.cs" t="Include" />
+        <e p="RegistrationType.cs" t="Include" />
+        <e p="Resource.cs" t="Include" />
+        <e p="Role.cs" t="Include" />
+        <e p="RoutineVisit.cs" t="Include" />
+        <e p="RoutineVisitLog.cs" t="Include" />
+        <e p="RoutineVisitMember.cs" t="Include" />
+        <e p="RoutineVisitSupport.cs" t="Include" />
+        <e p="SchoolLevel.cs" t="Include" />
+        <e p="ScoreType.cs" t="Include" />
+        <e p="Service.cs" t="Include" />
+        <e p="ServiceCategory.cs" t="Include" />
+        <e p="ServiceInstance.cs" t="Include" />
+        <e p="ServiceProvider.cs" t="Include" />
+        <e p="ServiceProviderType.cs" t="Include" />
+        <e p="ServiceTrack.cs" t="Include" />
+        <e p="ServiceTrackSection.cs" t="Include" />
+        <e p="SimpleEntity.cs" t="Include" />
+        <e p="Site.cs" t="Include" />
+        <e p="SiteConfig.cs" t="Include" />
+        <e p="SiteGoal.cs" t="Include" />
+        <e p="SiteProgress.cs" t="Include" />
+        <e p="SiteProgressItem.cs" t="Include" />
+        <e p="SiteProgressItemType.cs" t="Include" />
+        <e p="Snapshot.cs" t="Include" />
+        <e p="Source.cs" t="Include" />
+        <e p="SupportServiceType.cs" t="Include" />
+        <e p="SyncableEntity.cs" t="Include" />
+        <e p="SyncLog.cs" t="Include" />
+        <e p="Task.cs" t="Include" />
+        <e p="TrackerItem.cs" t="Include" />
+        <e p="Training.cs" t="Include" />
+        <e p="TrainingEvent.cs" t="Include" />
+        <e p="TrainingItem.cs" t="Include" />
+        <e p="UniqueEntity.cs" t="Include" />
+        <e p="User.cs" t="Include" />
+        <e p="UserAction.cs" t="Include" />
+        <e p="Village.cs" t="Include" />
+        <e p="Ward.cs" t="Include" />
+        <e p="WellbeingXref.cs" t="Include" />
+      </e>
+      <e p="EFDataAccess" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="ApplicationDbContext.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Conventions" t="Include">
+          <e p="ForeignKeyNamingConvention.cs" t="Include" />
+        </e>
+        <e p="CSIDatabaseInitializer.cs" t="Include" />
+        <e p="CustomQuery" t="Include">
+          <e p="ChildDomainReport.cs" t="Include" />
+          <e p="ChildListForDashboard.cs" t="Include" />
+          <e p="CustomQueryExecutor.cs" t="Include" />
+          <e p="ScoreAverageInfo.cs" t="Include" />
+        </e>
+        <e p="CustomQueryObject" t="Include">
+          <e p="HouseholdCQO.cs" t="Include" />
+        </e>
+        <e p="DTO" t="Include">
+          <e p="AgreggatedBaseDataDTO.cs" t="Include" />
+          <e p="AgreggatedBeforeAndActualChildStatusReportDTO.cs" t="Include" />
+          <e p="AgreggatedChildByQuestionReportDTO.cs" t="Include" />
+          <e p="AgreggatedDTO" t="Include">
+            <e p="AgreggatedGlobalReportDTO.cs" t="Include" />
+            <e p="AgreggatedInitialRecordSummaryReportDTO.cs" t="Include" />
+            <e p="AgreggatedRoutineVisitSummaryReportDTO.cs" t="Include" />
+          </e>
+          <e p="AgreggatedLastChildStatusReportDTO.cs" t="Include" />
+          <e p="BeforeAndActualChildStatusReportDTO.cs" t="Include" />
+          <e p="BeneficiariesAndHIVStatusDTO.cs" t="Include" />
+          <e p="CarePlanChildDTO.cs" t="Include" />
+          <e p="ChildByQuestionReportDTO.cs" t="Include" />
+          <e p="ChildQuestionSummaryReportDTO.cs" t="Include" />
+          <e p="ChildWhithoutAssistenceDTO.cs" t="Include" />
+          <e p="FilterWidgetData.cs" t="Include" />
+          <e p="GlobalReportDTO.cs" t="Include" />
+          <e p="GraduatedAdultReportDTO.cs" t="Include" />
+          <e p="HIVStatusChangesDTO.cs" t="Include" />
+          <e p="HIVStatusDTO.cs" t="Include" />
+          <e p="InitialAndActualChildStatusReportDTO.cs" t="Include" />
+          <e p="InitialAndFinalHIVStatusDTO.cs" t="Include" />
+          <e p="InitialRecordSummaryReportDTO.cs" t="Include" />
+          <e p="ISummaryReportDTO.cs" t="Include" />
+          <e p="LastChildStatusReportDTO.cs" t="Include" />
+          <e p="ReferencesSummaryByAgeReportDTO.cs" t="Include" />
+          <e p="ReferencesSummaryByRefTypeReportDTO.cs" t="Include" />
+          <e p="RoutineVisitChildDTO.cs" t="Include" />
+          <e p="RoutineVisitSummaryReportDTO.cs" t="Include" />
+          <e p="SeriesData.cs" t="Include" />
+          <e p="SeriesDataChildsTotalMaintenanceGraduated.cs" t="Include" />
+          <e p="SeriesDataComulative.cs" t="Include" />
+          <e p="SeriesDataDynamic.cs" t="Include" />
+          <e p="SeriesDataFamilyOrigin.cs" t="Include" />
+          <e p="UserRecordCountingReportDTO.cs" t="Include" />
+        </e>
+        <e p="EFConstants.cs" t="Include" />
+        <e p="EFDataAccess.csproj" t="IncludeRecursive" />
+        <e p="Interceptors" t="Include">
+          <e p="DbCommandLoggingInterceptor.cs" t="Include" />
+          <e p="TransientErrorsInterceptor.cs" t="Include" />
+        </e>
+        <e p="LocalizationSeed.cs" t="Include" />
+        <e p="Logging" t="Include">
+          <e p="ILogger.cs" t="Include" />
+          <e p="Logger.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="201501291711466_IntitialCreate.cs" t="Include" />
+          <e p="201501291711466_IntitialCreate.Designer.cs" t="Include" />
+          <e p="201501291711466_IntitialCreate.resx" t="Include" />
+          <e p="201501301040395_LegacyStoredProcedures.cs" t="Include" />
+          <e p="201501301040395_LegacyStoredProcedures.Designer.cs" t="Include" />
+          <e p="201501301040395_LegacyStoredProcedures.resx" t="Include" />
+          <e p="201502110606378_changeColumnsLenght.cs" t="Include" />
+          <e p="201502110606378_changeColumnsLenght.Designer.cs" t="Include" />
+          <e p="201502110606378_changeColumnsLenght.resx" t="Include" />
+          <e p="201502131211191_addAnswertoCSIDomain.cs" t="Include" />
+          <e p="201502131211191_addAnswertoCSIDomain.Designer.cs" t="Include" />
+          <e p="201502131211191_addAnswertoCSIDomain.resx" t="Include" />
+          <e p="201504141156221_addUUID.cs" t="Include" />
+          <e p="201504141156221_addUUID.Designer.cs" t="Include" />
+          <e p="201504141156221_addUUID.resx" t="Include" />
+          <e p="201504151122132_autoGenerateGuidFields.cs" t="Include" />
+          <e p="201504151122132_autoGenerateGuidFields.Designer.cs" t="Include" />
+          <e p="201504151122132_autoGenerateGuidFields.resx" t="Include" />
+          <e p="201506081444367_ConfigurationSitesEntities.cs" t="Include" />
+          <e p="201506081444367_ConfigurationSitesEntities.Designer.cs" t="Include" />
+          <e p="201506081444367_ConfigurationSitesEntities.resx" t="Include" />
+          <e p="201506111100253_addLastLoginDateOnUser.cs" t="Include" />
+          <e p="201506111100253_addLastLoginDateOnUser.Designer.cs" t="Include" />
+          <e p="201506111100253_addLastLoginDateOnUser.resx" t="Include" />
+          <e p="201506151514232_addRoleEntity.cs" t="Include" />
+          <e p="201506151514232_addRoleEntity.Designer.cs" t="Include" />
+          <e p="201506151514232_addRoleEntity.resx" t="Include" />
+          <e p="201506170602380_addRoleToUser.cs" t="Include" />
+          <e p="201506170602380_addRoleToUser.Designer.cs" t="Include" />
+          <e p="201506170602380_addRoleToUser.resx" t="Include" />
+          <e p="201506182127535_UpdateUserEntityAddInactiveDaysExceededDate.cs" t="Include" />
+          <e p="201506182127535_UpdateUserEntityAddInactiveDaysExceededDate.Designer.cs" t="Include" />
+          <e p="201506182127535_UpdateUserEntityAddInactiveDaysExceededDate.resx" t="Include" />
+          <e p="201509152230079_AddFileClass.cs" t="Include" />
+          <e p="201509152230079_AddFileClass.Designer.cs" t="Include" />
+          <e p="201509152230079_AddFileClass.resx" t="Include" />
+          <e p="201510132041124_ChangeGetStatusHistoryCompleteLegacyProcedure.cs" t="Include" />
+          <e p="201510132041124_ChangeGetStatusHistoryCompleteLegacyProcedure.Designer.cs" t="Include" />
+          <e p="201510132041124_ChangeGetStatusHistoryCompleteLegacyProcedure.resx" t="Include" />
+          <e p="201510160929271_AddCutPointEntity.cs" t="Include" />
+          <e p="201510160929271_AddCutPointEntity.Designer.cs" t="Include" />
+          <e p="201510160929271_AddCutPointEntity.resx" t="Include" />
+          <e p="201511090317276_addFieldExludeFromReport.cs" t="Include" />
+          <e p="201511090317276_addFieldExludeFromReport.Designer.cs" t="Include" />
+          <e p="201511090317276_addFieldExludeFromReport.resx" t="Include" />
+          <e p="201511090404423_AlterAnswerAddFieldExcludeFromReport.cs" t="Include" />
+          <e p="201511090404423_AlterAnswerAddFieldExcludeFromReport.Designer.cs" t="Include" />
+          <e p="201511090404423_AlterAnswerAddFieldExcludeFromReport.resx" t="Include" />
+          <e p="201601130900492_addFile.cs" t="Include" />
+          <e p="201601130900492_addFile.Designer.cs" t="Include" />
+          <e p="201601130900492_addFile.resx" t="Include" />
+          <e p="201602150803361_Task.cs" t="Include" />
+          <e p="201602150803361_Task.Designer.cs" t="Include" />
+          <e p="201602150803361_Task.resx" t="Include" />
+          <e p="201602151633244_Task_Allow_nullable_CompleteDate.cs" t="Include" />
+          <e p="201602151633244_Task_Allow_nullable_CompleteDate.Designer.cs" t="Include" />
+          <e p="201602151633244_Task_Allow_nullable_CompleteDate.resx" t="Include" />
+          <e p="201602240708504_freeTextSupportServices.cs" t="Include" />
+          <e p="201602240708504_freeTextSupportServices.Designer.cs" t="Include" />
+          <e p="201602240708504_freeTextSupportServices.resx" t="Include" />
+          <e p="201603101510475_DomainOrderColumn.cs" t="Include" />
+          <e p="201603101510475_DomainOrderColumn.Designer.cs" t="Include" />
+          <e p="201603101510475_DomainOrderColumn.resx" t="Include" />
+          <e p="201603181335599_AddServiceProviderToCarePlan.cs" t="Include" />
+          <e p="201603181335599_AddServiceProviderToCarePlan.Designer.cs" t="Include" />
+          <e p="201603181335599_AddServiceProviderToCarePlan.resx" t="Include" />
+          <e p="201603181542349_Site_Logo.cs" t="Include" />
+          <e p="201603181542349_Site_Logo.Designer.cs" t="Include" />
+          <e p="201603181542349_Site_Logo.resx" t="Include" />
+          <e p="201603250957277_LocationConfigurations.cs" t="Include" />
+          <e p="201603250957277_LocationConfigurations.Designer.cs" t="Include" />
+          <e p="201603250957277_LocationConfigurations.resx" t="Include" />
+          <e p="201603272109469_PartnerSitesEnitities.cs" t="Include" />
+          <e p="201603272109469_PartnerSitesEnitities.Designer.cs" t="Include" />
+          <e p="201603272109469_PartnerSitesEnitities.resx" t="Include" />
+          <e p="201603291001354_AddGraduationCriteria.cs" t="Include" />
+          <e p="201603291001354_AddGraduationCriteria.Designer.cs" t="Include" />
+          <e p="201603291001354_AddGraduationCriteria.resx" t="Include" />
+          <e p="201603291229372_changeScoreTypeDomainAndQuestionCriteria.cs" t="Include" />
+          <e p="201603291229372_changeScoreTypeDomainAndQuestionCriteria.Designer.cs" t="Include" />
+          <e p="201603291229372_changeScoreTypeDomainAndQuestionCriteria.resx" t="Include" />
+          <e p="201603302136115_AddManyToManyRelationGraduatinCriteriaAndQuestion.cs" t="Include" />
+          <e p="201603302136115_AddManyToManyRelationGraduatinCriteriaAndQuestion.Designer.cs" t="Include" />
+          <e p="201603302136115_AddManyToManyRelationGraduatinCriteriaAndQuestion.resx" t="Include" />
+          <e p="201604052034020_ServiceTrackingEntities.cs" t="Include" />
+          <e p="201604052034020_ServiceTrackingEntities.Designer.cs" t="Include" />
+          <e p="201604052034020_ServiceTrackingEntities.resx" t="Include" />
+          <e p="201604061404321_ServiceTrackingEntitiesNewField.cs" t="Include" />
+          <e p="201604061404321_ServiceTrackingEntitiesNewField.Designer.cs" t="Include" />
+          <e p="201604061404321_ServiceTrackingEntitiesNewField.resx" t="Include" />
+          <e p="201604132218445_AddColumnOrderToQuestionEntity.cs" t="Include" />
+          <e p="201604132218445_AddColumnOrderToQuestionEntity.Designer.cs" t="Include" />
+          <e p="201604132218445_AddColumnOrderToQuestionEntity.resx" t="Include" />
+          <e p="201604151030137_addFileToScoreType.cs" t="Include" />
+          <e p="201604151030137_addFileToScoreType.Designer.cs" t="Include" />
+          <e p="201604151030137_addFileToScoreType.resx" t="Include" />
+          <e p="201604201015526_HouseholdAndOrgUnitGraduationEntities.cs" t="Include" />
+          <e p="201604201015526_HouseholdAndOrgUnitGraduationEntities.Designer.cs" t="Include" />
+          <e p="201604201015526_HouseholdAndOrgUnitGraduationEntities.resx" t="Include" />
+          <e p="201604231724450_LinkChildToOrgUnit.cs" t="Include" />
+          <e p="201604231724450_LinkChildToOrgUnit.Designer.cs" t="Include" />
+          <e p="201604231724450_LinkChildToOrgUnit.resx" t="Include" />
+          <e p="201604232104437_AlterAdultEntity.cs" t="Include" />
+          <e p="201604232104437_AlterAdultEntity.Designer.cs" t="Include" />
+          <e p="201604232104437_AlterAdultEntity.resx" t="Include" />
+          <e p="201604232106487_AlterAdultProcedures.cs" t="Include" />
+          <e p="201604232106487_AlterAdultProcedures.Designer.cs" t="Include" />
+          <e p="201604232106487_AlterAdultProcedures.resx" t="Include" />
+          <e p="201604232111329_AlterGetAdultProcedure.cs" t="Include" />
+          <e p="201604232111329_AlterGetAdultProcedure.Designer.cs" t="Include" />
+          <e p="201604232111329_AlterGetAdultProcedure.resx" t="Include" />
+          <e p="201604250948275_AlterHouseholdAndNewFields.cs" t="Include" />
+          <e p="201604250948275_AlterHouseholdAndNewFields.Designer.cs" t="Include" />
+          <e p="201604250948275_AlterHouseholdAndNewFields.resx" t="Include" />
+          <e p="201604251600378_AlterAdultNotAllowNullForIsheadColumn.cs" t="Include" />
+          <e p="201604251600378_AlterAdultNotAllowNullForIsheadColumn.Designer.cs" t="Include" />
+          <e p="201604251600378_AlterAdultNotAllowNullForIsheadColumn.resx" t="Include" />
+          <e p="201604251622522_alterProcedureSearchAdults.cs" t="Include" />
+          <e p="201604251622522_alterProcedureSearchAdults.Designer.cs" t="Include" />
+          <e p="201604251622522_alterProcedureSearchAdults.resx" t="Include" />
+          <e p="201604290828584_AlterRelationGraduationCriteria.cs" t="Include" />
+          <e p="201604290828584_AlterRelationGraduationCriteria.Designer.cs" t="Include" />
+          <e p="201604290828584_AlterRelationGraduationCriteria.resx" t="Include" />
+          <e p="201604300901438_AlterProcedureGetChildCountForDashboard.cs" t="Include" />
+          <e p="201604300901438_AlterProcedureGetChildCountForDashboard.Designer.cs" t="Include" />
+          <e p="201604300901438_AlterProcedureGetChildCountForDashboard.resx" t="Include" />
+          <e p="201605252029157_LinkTaskToService.cs" t="Include" />
+          <e p="201605252029157_LinkTaskToService.Designer.cs" t="Include" />
+          <e p="201605252029157_LinkTaskToService.resx" t="Include" />
+          <e p="201606241151221_AddQuestionCodeForCarePlanDomainSupportServices.cs" t="Include" />
+          <e p="201606241151221_AddQuestionCodeForCarePlanDomainSupportServices.Designer.cs" t="Include" />
+          <e p="201606241151221_AddQuestionCodeForCarePlanDomainSupportServices.resx" t="Include" />
+          <e p="201606271436463_AlterProcedureGetCarePlansForChild.cs" t="Include" />
+          <e p="201606271436463_AlterProcedureGetCarePlansForChild.Designer.cs" t="Include" />
+          <e p="201606271436463_AlterProcedureGetCarePlansForChild.resx" t="Include" />
+          <e p="201607192048244_LinkServiceToDomain.cs" t="Include" />
+          <e p="201607192048244_LinkServiceToDomain.Designer.cs" t="Include" />
+          <e p="201607192048244_LinkServiceToDomain.resx" t="Include" />
+          <e p="201607270732019_LinkCarePlanDominSupportServiceWithQuestion.cs" t="Include" />
+          <e p="201607270732019_LinkCarePlanDominSupportServiceWithQuestion.Designer.cs" t="Include" />
+          <e p="201607270732019_LinkCarePlanDominSupportServiceWithQuestion.resx" t="Include" />
+          <e p="201609261235027_Refactor_OrgUnit_Household.cs" t="Include" />
+          <e p="201609261235027_Refactor_OrgUnit_Household.Designer.cs" t="Include" />
+          <e p="201609261235027_Refactor_OrgUnit_Household.resx" t="Include" />
+          <e p="201609261544034_Refactor_Household_allowNullable_registrationdate.cs" t="Include" />
+          <e p="201609261544034_Refactor_Household_allowNullable_registrationdate.Designer.cs" t="Include" />
+          <e p="201609261544034_Refactor_Household_allowNullable_registrationdate.resx" t="Include" />
+          <e p="201609261547255_Refactor_Household_changeType_Block.cs" t="Include" />
+          <e p="201609261547255_Refactor_Household_changeType_Block.Designer.cs" t="Include" />
+          <e p="201609261547255_Refactor_Household_changeType_Block.resx" t="Include" />
+          <e p="201610031142280_Add_Column_NID_Child.cs" t="Include" />
+          <e p="201610031142280_Add_Column_NID_Child.Designer.cs" t="Include" />
+          <e p="201610031142280_Add_Column_NID_Child.resx" t="Include" />
+          <e p="201610031639054_obfuscation.cs" t="Include" />
+          <e p="201610031639054_obfuscation.Designer.cs" t="Include" />
+          <e p="201610031639054_obfuscation.resx" t="Include" />
+          <e p="201610032156043_User_Add_IsOCBUser.cs" t="Include" />
+          <e p="201610032156043_User_Add_IsOCBUser.Designer.cs" t="Include" />
+          <e p="201610032156043_User_Add_IsOCBUser.resx" t="Include" />
+          <e p="201610101930093_RoutineVisitEntities.cs" t="Include" />
+          <e p="201610101930093_RoutineVisitEntities.Designer.cs" t="Include" />
+          <e p="201610101930093_RoutineVisitEntities.resx" t="Include" />
+          <e p="201610131946183_AddRoutineVisitLog.cs" t="Include" />
+          <e p="201610131946183_AddRoutineVisitLog.Designer.cs" t="Include" />
+          <e p="201610131946183_AddRoutineVisitLog.resx" t="Include" />
+          <e p="201610132009481_LinkRoutineVisitWithHousehold.cs" t="Include" />
+          <e p="201610132009481_LinkRoutineVisitWithHousehold.Designer.cs" t="Include" />
+          <e p="201610132009481_LinkRoutineVisitWithHousehold.resx" t="Include" />
+          <e p="201610171312015_ChildExposeHouseholdIDKey.cs" t="Include" />
+          <e p="201610171312015_ChildExposeHouseholdIDKey.Designer.cs" t="Include" />
+          <e p="201610171312015_ChildExposeHouseholdIDKey.resx" t="Include" />
+          <e p="201610171319515_ChildExposeHouseholdIDKeySetNull.cs" t="Include" />
+          <e p="201610171319515_ChildExposeHouseholdIDKeySetNull.Designer.cs" t="Include" />
+          <e p="201610171319515_ChildExposeHouseholdIDKeySetNull.resx" t="Include" />
+          <e p="201611090627221_ReferenceServicesEntities.cs" t="Include" />
+          <e p="201611090627221_ReferenceServicesEntities.Designer.cs" t="Include" />
+          <e p="201611090627221_ReferenceServicesEntities.resx" t="Include" />
+          <e p="201611110453136_ExposeForeignKeyForRoutineEntities.cs" t="Include" />
+          <e p="201611110453136_ExposeForeignKeyForRoutineEntities.Designer.cs" t="Include" />
+          <e p="201611110453136_ExposeForeignKeyForRoutineEntities.resx" t="Include" />
+          <e p="201702150951221_Guid-Timestamp.cs" t="Include" />
+          <e p="201702150951221_Guid-Timestamp.Designer.cs" t="Include" />
+          <e p="201702150951221_Guid-Timestamp.resx" t="Include" />
+          <e p="201702231222230_HIV_SavingGroup_Fields.cs" t="Include" />
+          <e p="201702231222230_HIV_SavingGroup_Fields.Designer.cs" t="Include" />
+          <e p="201702231222230_HIV_SavingGroup_Fields.resx" t="Include" />
+          <e p="201702271154122_Role-Superior-Members.cs" t="Include" />
+          <e p="201702271154122_Role-Superior-Members.Designer.cs" t="Include" />
+          <e p="201702271154122_Role-Superior-Members.resx" t="Include" />
+          <e p="201703041840004_AddNewHouseHoldFields.cs" t="Include" />
+          <e p="201703041840004_AddNewHouseHoldFields.Designer.cs" t="Include" />
+          <e p="201703041840004_AddNewHouseHoldFields.resx" t="Include" />
+          <e p="201703092102462_AddAidEntityAndCollaboratorRole.cs" t="Include" />
+          <e p="201703092102462_AddAidEntityAndCollaboratorRole.Designer.cs" t="Include" />
+          <e p="201703092102462_AddAidEntityAndCollaboratorRole.resx" t="Include" />
+          <e p="201703221015492_KinshipToFamilyHead.cs" t="Include" />
+          <e p="201703221015492_KinshipToFamilyHead.Designer.cs" t="Include" />
+          <e p="201703221015492_KinshipToFamilyHead.resx" t="Include" />
+          <e p="201704120447393_PartnerStateFields.cs" t="Include" />
+          <e p="201704120447393_PartnerStateFields.Designer.cs" t="Include" />
+          <e p="201704120447393_PartnerStateFields.resx" t="Include" />
+          <e p="201704231711068_AddHIVStatus.cs" t="Include" />
+          <e p="201704231711068_AddHIVStatus.Designer.cs" t="Include" />
+          <e p="201704231711068_AddHIVStatus.resx" t="Include" />
+          <e p="201704250203460_AddSiteGoalsTableAndFamilyKitReceivedOnTableRoutineVisit.cs" t="Include" />
+          <e p="201704250203460_AddSiteGoalsTableAndFamilyKitReceivedOnTableRoutineVisit.Designer.cs" t="Include" />
+          <e p="201704250203460_AddSiteGoalsTableAndFamilyKitReceivedOnTableRoutineVisit.resx" t="Include" />
+          <e p="201705141008276_AddQuestionOnSupportServiceType.cs" t="Include" />
+          <e p="201705141008276_AddQuestionOnSupportServiceType.Designer.cs" t="Include" />
+          <e p="201705141008276_AddQuestionOnSupportServiceType.resx" t="Include" />
+          <e p="201705170857516_AddFirstTimeSavingGroupMemberOnRoutineVisit.cs" t="Include" />
+          <e p="201705170857516_AddFirstTimeSavingGroupMemberOnRoutineVisit.Designer.cs" t="Include" />
+          <e p="201705170857516_AddFirstTimeSavingGroupMemberOnRoutineVisit.resx" t="Include" />
+          <e p="201706151408175_Add_NIDNumber_ToAdult.cs" t="Include" />
+          <e p="201706151408175_Add_NIDNumber_ToAdult.Designer.cs" t="Include" />
+          <e p="201706151408175_Add_NIDNumber_ToAdult.resx" t="Include" />
+          <e p="201706201855196_UpdateSupportServiceType.cs" t="Include" />
+          <e p="201706201855196_UpdateSupportServiceType.Designer.cs" t="Include" />
+          <e p="201706201855196_UpdateSupportServiceType.resx" t="Include" />
+          <e p="201706231002134_AddColumn_OrderForRoutineVisit_in_Domain_Table.cs" t="Include" />
+          <e p="201706231002134_AddColumn_OrderForRoutineVisit_in_Domain_Table.Designer.cs" t="Include" />
+          <e p="201706231002134_AddColumn_OrderForRoutineVisit_in_Domain_Table.resx" t="Include" />
+          <e p="201707062206499_Add_Husband_or_Wife_into_KingshipToFamilyHead.cs" t="Include" />
+          <e p="201707062206499_Add_Husband_or_Wife_into_KingshipToFamilyHead.Designer.cs" t="Include" />
+          <e p="201707062206499_Add_Husband_or_Wife_into_KingshipToFamilyHead.resx" t="Include" />
+          <e p="201707062232013_MAC_Reorder.cs" t="Include" />
+          <e p="201707062232013_MAC_Reorder.Designer.cs" t="Include" />
+          <e p="201707062232013_MAC_Reorder.resx" t="Include" />
+          <e p="201707062303085_Add_FHI_AdminUser_for_VPTeam.cs" t="Include" />
+          <e p="201707062303085_Add_FHI_AdminUser_for_VPTeam.Designer.cs" t="Include" />
+          <e p="201707062303085_Add_FHI_AdminUser_for_VPTeam.resx" t="Include" />
+          <e p="201707110708143_ChangeHealthAttendedDateType.cs" t="Include" />
+          <e p="201707110708143_ChangeHealthAttendedDateType.Designer.cs" t="Include" />
+          <e p="201707110708143_ChangeHealthAttendedDateType.resx" t="Include" />
+          <e p="201707170952212_AlterColumn_ReferenceServiceID_To_Nullable.cs" t="Include" />
+          <e p="201707170952212_AlterColumn_ReferenceServiceID_To_Nullable.Designer.cs" t="Include" />
+          <e p="201707170952212_AlterColumn_ReferenceServiceID_To_Nullable.resx" t="Include" />
+          <e p="201707171114135_AlterColumn_ReferenceTypeID_To_Nullable.cs" t="Include" />
+          <e p="201707171114135_AlterColumn_ReferenceTypeID_To_Nullable.Designer.cs" t="Include" />
+          <e p="201707171114135_AlterColumn_ReferenceTypeID_To_Nullable.resx" t="Include" />
+          <e p="201707302315445_AddSiteOnPartnerAndOrgUnitOnSite.cs" t="Include" />
+          <e p="201707302315445_AddSiteOnPartnerAndOrgUnitOnSite.Designer.cs" t="Include" />
+          <e p="201707302315445_AddSiteOnPartnerAndOrgUnitOnSite.resx" t="Include" />
+          <e p="201708082126217_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_RoutineVisit.cs" t="Include" />
+          <e p="201708082126217_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_RoutineVisit.Designer.cs" t="Include" />
+          <e p="201708082126217_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_RoutineVisit.resx" t="Include" />
+          <e p="201708090613000_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_ReferenceService.cs" t="Include" />
+          <e p="201708090613000_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_ReferenceService.Designer.cs" t="Include" />
+          <e p="201708090613000_Add_Columns_CreatedDate_LastUpdatedDate_CreatedUser_LastUpdatedUser_in_ReferenceService.resx" t="Include" />
+          <e p="201708122150097_UpdateSiteOnPartnerAndOrgUnitOnSite.cs" t="Include" />
+          <e p="201708122150097_UpdateSiteOnPartnerAndOrgUnitOnSite.Designer.cs" t="Include" />
+          <e p="201708122150097_UpdateSiteOnPartnerAndOrgUnitOnSite.resx" t="Include" />
+          <e p="201708122240044_CreateRoutineVisitSummaryViews.cs" t="Include" />
+          <e p="201708122240044_CreateRoutineVisitSummaryViews.Designer.cs" t="Include" />
+          <e p="201708122240044_CreateRoutineVisitSummaryViews.resx" t="Include" />
+          <e p="201708122335313_AddOrgUnitIDOnSite.cs" t="Include" />
+          <e p="201708122335313_AddOrgUnitIDOnSite.Designer.cs" t="Include" />
+          <e p="201708122335313_AddOrgUnitIDOnSite.resx" t="Include" />
+          <e p="201710092030507_AlterColumn_HealthAttendedDate_for_string_in_ReferenceService.cs" t="Include" />
+          <e p="201710092030507_AlterColumn_HealthAttendedDate_for_string_in_ReferenceService.Designer.cs" t="Include" />
+          <e p="201710092030507_AlterColumn_HealthAttendedDate_for_string_in_ReferenceService.resx" t="Include" />
+          <e p="201710141559577_AddCSISyncGUIDOnCSI.cs" t="Include" />
+          <e p="201710141559577_AddCSISyncGUIDOnCSI.Designer.cs" t="Include" />
+          <e p="201710141559577_AddCSISyncGUIDOnCSI.resx" t="Include" />
+          <e p="201710141625132_AddUserSyncGUIDOnUser.cs" t="Include" />
+          <e p="201710141625132_AddUserSyncGUIDOnUser.Designer.cs" t="Include" />
+          <e p="201710141625132_AddUserSyncGUIDOnUser.resx" t="Include" />
+          <e p="201710141648359_AddAuditFieldsForUserAndCSI.cs" t="Include" />
+          <e p="201710141648359_AddAuditFieldsForUserAndCSI.Designer.cs" t="Include" />
+          <e p="201710141648359_AddAuditFieldsForUserAndCSI.resx" t="Include" />
+          <e p="201710141700013_AllowNullOnDateFieldsForUserAndCSI.cs" t="Include" />
+          <e p="201710141700013_AllowNullOnDateFieldsForUserAndCSI.Designer.cs" t="Include" />
+          <e p="201710141700013_AllowNullOnDateFieldsForUserAndCSI.resx" t="Include" />
+          <e p="201710141828066_AllowNullCSISyncGUIDEntityCSI.cs" t="Include" />
+          <e p="201710141828066_AllowNullCSISyncGUIDEntityCSI.Designer.cs" t="Include" />
+          <e p="201710141828066_AllowNullCSISyncGUIDEntityCSI.resx" t="Include" />
+          <e p="201710142038494_AllowNullsOnDatesAndAddNewAuditFiels.cs" t="Include" />
+          <e p="201710142038494_AllowNullsOnDatesAndAddNewAuditFiels.Designer.cs" t="Include" />
+          <e p="201710142038494_AllowNullsOnDatesAndAddNewAuditFiels.resx" t="Include" />
+          <e p="201710281742358_AlterGuidAndSyncGuidOnCSITables.cs" t="Include" />
+          <e p="201710281742358_AlterGuidAndSyncGuidOnCSITables.Designer.cs" t="Include" />
+          <e p="201710281742358_AlterGuidAndSyncGuidOnCSITables.resx" t="Include" />
+          <e p="201711251747139_AlterHealthAttendedDateType.cs" t="Include" />
+          <e p="201711251747139_AlterHealthAttendedDateType.Designer.cs" t="Include" />
+          <e p="201711251747139_AlterHealthAttendedDateType.resx" t="Include" />
+          <e p="201711260832468_AuditAndSyncFieldsOnCarePlan.cs" t="Include" />
+          <e p="201711260832468_AuditAndSyncFieldsOnCarePlan.Designer.cs" t="Include" />
+          <e p="201711260832468_AuditAndSyncFieldsOnCarePlan.resx" t="Include" />
+          <e p="201711260912509_PopulateCarePlanDomainGuidOnCarePlanDomain.cs" t="Include" />
+          <e p="201711260912509_PopulateCarePlanDomainGuidOnCarePlanDomain.Designer.cs" t="Include" />
+          <e p="201711260912509_PopulateCarePlanDomainGuidOnCarePlanDomain.resx" t="Include" />
+          <e p="201711300852486_DatabaseGeneratedGuidOnCarePlan.cs" t="Include" />
+          <e p="201711300852486_DatabaseGeneratedGuidOnCarePlan.Designer.cs" t="Include" />
+          <e p="201711300852486_DatabaseGeneratedGuidOnCarePlan.resx" t="Include" />
+          <e p="201712011306567_AddCSIIDonCarePlan.cs" t="Include" />
+          <e p="201712011306567_AddCSIIDonCarePlan.Designer.cs" t="Include" />
+          <e p="201712011306567_AddCSIIDonCarePlan.resx" t="Include" />
+          <e p="201712011403250_AddIDsAndIndexesOnEntities.cs" t="Include" />
+          <e p="201712011403250_AddIDsAndIndexesOnEntities.Designer.cs" t="Include" />
+          <e p="201712011403250_AddIDsAndIndexesOnEntities.resx" t="Include" />
+          <e p="201712031646294_AddAuditFieldsOnEntities.cs" t="Include" />
+          <e p="201712031646294_AddAuditFieldsOnEntities.Designer.cs" t="Include" />
+          <e p="201712031646294_AddAuditFieldsOnEntities.resx" t="Include" />
+          <e p="201712051812193_HouseholdSyncFields.cs" t="Include" />
+          <e p="201712051812193_HouseholdSyncFields.Designer.cs" t="Include" />
+          <e p="201712051812193_HouseholdSyncFields.resx" t="Include" />
+          <e p="201712052218470_Sync_AuditedEntity_for_Household_Adult.cs" t="Include" />
+          <e p="201712052218470_Sync_AuditedEntity_for_Household_Adult.Designer.cs" t="Include" />
+          <e p="201712052218470_Sync_AuditedEntity_for_Household_Adult.resx" t="Include" />
+          <e p="201712052233449_Sync_AuditedEntityForAid.cs" t="Include" />
+          <e p="201712052233449_Sync_AuditedEntityForAid.Designer.cs" t="Include" />
+          <e p="201712052233449_Sync_AuditedEntityForAid.resx" t="Include" />
+          <e p="201712181025207_HouseholdIndexesAndDBGeneratedGuid.cs" t="Include" />
+          <e p="201712181025207_HouseholdIndexesAndDBGeneratedGuid.Designer.cs" t="Include" />
+          <e p="201712181025207_HouseholdIndexesAndDBGeneratedGuid.resx" t="Include" />
+          <e p="201712211050119_ChildSyncChanges.cs" t="Include" />
+          <e p="201712211050119_ChildSyncChanges.Designer.cs" t="Include" />
+          <e p="201712211050119_ChildSyncChanges.resx" t="Include" />
+          <e p="201712211549481_RoutineVisitSyncChanges.cs" t="Include" />
+          <e p="201712211549481_RoutineVisitSyncChanges.Designer.cs" t="Include" />
+          <e p="201712211549481_RoutineVisitSyncChanges.resx" t="Include" />
+          <e p="201712270945122_AddKinshipToFamilyHeadOnChildAndAdult.cs" t="Include" />
+          <e p="201712270945122_AddKinshipToFamilyHeadOnChildAndAdult.Designer.cs" t="Include" />
+          <e p="201712270945122_AddKinshipToFamilyHeadOnChildAndAdult.resx" t="Include" />
+          <e p="201712271834220_DatabaseGeneratedGuidOnChild.cs" t="Include" />
+          <e p="201712271834220_DatabaseGeneratedGuidOnChild.Designer.cs" t="Include" />
+          <e p="201712271834220_DatabaseGeneratedGuidOnChild.resx" t="Include" />
+          <e p="201801021645098_ChangeAnswerIndexOnCSIDomainScore.cs" t="Include" />
+          <e p="201801021645098_ChangeAnswerIndexOnCSIDomainScore.Designer.cs" t="Include" />
+          <e p="201801021645098_ChangeAnswerIndexOnCSIDomainScore.resx" t="Include" />
+          <e p="201801031441247_NewAuditedEntities.cs" t="Include" />
+          <e p="201801031441247_NewAuditedEntities.Designer.cs" t="Include" />
+          <e p="201801031441247_NewAuditedEntities.resx" t="Include" />
+          <e p="201801081026137_RenameQuestionIndexOnCSIDomainScore.cs" t="Include" />
+          <e p="201801081026137_RenameQuestionIndexOnCSIDomainScore.Designer.cs" t="Include" />
+          <e p="201801081026137_RenameQuestionIndexOnCSIDomainScore.resx" t="Include" />
+          <e p="201801090016177_SyncronizationPremisses.cs" t="Include" />
+          <e p="201801090016177_SyncronizationPremisses.Designer.cs" t="Include" />
+          <e p="201801090016177_SyncronizationPremisses.resx" t="Include" />
+          <e p="201801090051117_RenameSupportServiceTypeIDOnCarePlanDomainSupportService.cs" t="Include" />
+          <e p="201801090051117_RenameSupportServiceTypeIDOnCarePlanDomainSupportService.Designer.cs" t="Include" />
+          <e p="201801090051117_RenameSupportServiceTypeIDOnCarePlanDomainSupportService.resx" t="Include" />
+          <e p="201801241225565_AddAudtiFieldsOnSiteGoals.cs" t="Include" />
+          <e p="201801241225565_AddAudtiFieldsOnSiteGoals.Designer.cs" t="Include" />
+          <e p="201801241225565_AddAudtiFieldsOnSiteGoals.resx" t="Include" />
+          <e p="201802151132262_RenameIndexesOnChildTable.cs" t="Include" />
+          <e p="201802151132262_RenameIndexesOnChildTable.Designer.cs" t="Include" />
+          <e p="201802151132262_RenameIndexesOnChildTable.resx" t="Include" />
+          <e p="201802160457362_RenameIndexesOnChildAndAdult.cs" t="Include" />
+          <e p="201802160457362_RenameIndexesOnChildAndAdult.Designer.cs" t="Include" />
+          <e p="201802160457362_RenameIndexesOnChildAndAdult.resx" t="Include" />
+          <e p="Configuration.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Repository" t="Include">
+          <e p="BaseRepository.cs" t="Include" />
+          <e p="ChildRepo.cs" t="Include" />
+          <e p="IRepoChild.cs" t="Include" />
+          <e p="IRepoQuestion.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
+          <e p="QuestionRepo.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="AdultService.cs" t="Include" />
+          <e p="AgreggatedServices" t="Include">
+            <e p="AgreggatedReportService.cs" t="Include" />
+          </e>
+          <e p="BaseService.cs" t="Include" />
+          <e p="CarePlanService.cs" t="Include" />
+          <e p="ChildService.cs" t="Include" />
+          <e p="CSIService.cs" t="Include" />
+          <e p="HIVStatusQueryService.cs" t="Include" />
+          <e p="HIVStatusService.cs" t="Include" />
+          <e p="HouseholdService.cs" t="Include" />
+          <e p="PartnerService.cs" t="Include" />
+          <e p="ReferenceServiceService.cs" t="Include" />
+          <e p="ReportService.cs" t="Include" />
+          <e p="RoutineVisitService.cs" t="Include" />
+          <e p="SiteGoalService.cs" t="Include" />
+          <e p="SiteService.cs" t="Include" />
+          <e p="UserService.cs" t="Include" />
+        </e>
+        <e p="UOW" t="Include">
+          <e p="IUnitOfWork.cs" t="Include" />
+          <e p="UnitOfWork.cs" t="Include" />
+        </e>
+        <e p="Utilities" t="Include">
+          <e p="Encryptor.cs" t="Include" />
+          <e p="FileExporter.cs" t="Include" />
+          <e p="FileImporter.cs" t="Include" />
+          <e p="StringUtils.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Interfaces" t="IncludeRecursive">
+        <e p="ActionCollection.cs" t="Include" />
+        <e p="AdultCollection.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BrokerInterfaces" t="Include">
+          <e p="IActionBroker.cs" t="Include" />
+          <e p="IAdultBroker.cs" t="Include" />
+          <e p="IAdultHouseholdBroker.cs" t="Include" />
+          <e p="IAdultMembershipBroker.cs" t="Include" />
+          <e p="IAdultServiceBroker.cs" t="Include" />
+          <e p="ICareGiverRelationBroker.cs" t="Include" />
+          <e p="ICareGroupMembershipBroker.cs" t="Include" />
+          <e p="ICarePlanBroker.cs" t="Include" />
+          <e p="ICarePlanDomainBroker.cs" t="Include" />
+          <e p="ICarePlanDomainSupportServiceBroker.cs" t="Include" />
+          <e p="ICFMMembershipBroker.cs" t="Include" />
+          <e p="IChildBroker.cs" t="Include" />
+          <e p="IChildDisabilityBroker.cs" t="Include" />
+          <e p="IChildHouseholdBroker.cs" t="Include" />
+          <e p="IChildMembershipBroker.cs" t="Include" />
+          <e p="IChildPartnerBroker.cs" t="Include" />
+          <e p="IChildServiceBroker.cs" t="Include" />
+          <e p="IChildStatusBroker.cs" t="Include" />
+          <e p="IChildStatusHistoryBroker.cs" t="Include" />
+          <e p="ICommunityCouncilBroker.cs" t="Include" />
+          <e p="ICSIBroker.cs" t="Include" />
+          <e p="ICSIContactBroker.cs" t="Include" />
+          <e p="ICSIDomainBroker.cs" t="Include" />
+          <e p="ICSIDomainScoreBroker.cs" t="Include" />
+          <e p="ICSIDomainSourceBroker.cs" t="Include" />
+          <e p="ICSIDomainSupportServiceBroker.cs" t="Include" />
+          <e p="ICSIEventBroker.cs" t="Include" />
+          <e p="IDisabilityBroker.cs" t="Include" />
+          <e p="IDistrictBroker.cs" t="Include" />
+          <e p="IDomainBroker.cs" t="Include" />
+          <e p="IECCDMembershipBroker.cs" t="Include" />
+          <e p="IEventBroker.cs" t="Include" />
+          <e p="IFollowUpBroker.cs" t="Include" />
+          <e p="IGuardianRelationBroker.cs" t="Include" />
+          <e p="IGuidelineBroker.cs" t="Include" />
+          <e p="IHomeEnvironmentBroker.cs" t="Include" />
+          <e p="IHouseholdMembershipBroker.cs" t="Include" />
+          <e p="IHouseholdProjectBroker.cs" t="Include" />
+          <e p="IMembershipBroker.cs" t="Include" />
+          <e p="IOutcomeBroker.cs" t="Include" />
+          <e p="IOVCTypeBroker.cs" t="Include" />
+          <e p="IParticipantRegistration.cs" t="Include" />
+          <e p="IPartnerBroker.cs" t="Include" />
+          <e p="IQuestionBroker.cs" t="Include" />
+          <e p="IRecipientTypeBroker.cs" t="Include" />
+          <e p="IServiceProviderBroker.cs" t="Include" />
+          <e p="IServiceProviderTypeBroker.cs" t="Include" />
+          <e p="ISILCMembershipBroker.cs" t="Include" />
+          <e p="ISiteBroker.cs" t="Include" />
+          <e p="ISourceBroker.cs" t="Include" />
+          <e p="ISupportServiceTypeBroker.cs" t="Include" />
+          <e p="IUserActionBroker.cs" t="Include" />
+          <e p="IUserBroker.cs" t="Include" />
+          <e p="IVGAMembershipBroker.cs" t="Include" />
+          <e p="IVillageBroker.cs" t="Include" />
+          <e p="IWardBroker.cs" t="Include" />
+          <e p="IWBTBroker.cs" t="Include" />
+          <e p="IWBTDomain.cs" t="Include" />
+          <e p="IWBTDomainBroker.cs" t="Include" />
+          <e p="IWBTDomainScoreBroker.cs" t="Include" />
+        </e>
+        <e p="BusinessObjectNames.cs" t="Include" />
+        <e p="CarePlanDomainCollection.cs" t="Include" />
+        <e p="ChildCollection.cs" t="Include" />
+        <e p="IAction.cs" t="Include" />
+        <e p="IAdult.cs" t="Include" />
+        <e p="IAdultHousehold.cs" t="Include" />
+        <e p="IAdultMembership.cs" t="Include" />
+        <e p="IAdultService.cs" t="Include" />
+        <e p="ICareGiverRelation.cs" t="Include" />
+        <e p="ICareGroupMembership.cs" t="Include" />
+        <e p="ICarePlan.cs" t="Include" />
+        <e p="ICarePlanDomain.cs" t="Include" />
+        <e p="ICarePlanDomainSupportService.cs" t="Include" />
+        <e p="ICFMMembership.cs" t="Include" />
+        <e p="IChild.cs" t="Include" />
+        <e p="IChildDisability.cs" t="Include" />
+        <e p="IChildHousehold.cs" t="Include" />
+        <e p="IChildMembership.cs" t="Include" />
+        <e p="IChildPartner.cs" t="Include" />
+        <e p="IChildService.cs" t="Include" />
+        <e p="IChildStatus.cs" t="Include" />
+        <e p="IChildStatusHistory.cs" t="Include" />
+        <e p="ICommunityCouncil.cs" t="Include" />
+        <e p="ICSI.cs" t="Include" />
+        <e p="ICSIContact.cs" t="Include" />
+        <e p="ICSIDomain.cs" t="Include" />
+        <e p="ICSIDomainScore.cs" t="Include" />
+        <e p="ICSIDomainSource.cs" t="Include" />
+        <e p="ICSIDomainSupportService.cs" t="Include" />
+        <e p="ICSIEvent.cs" t="Include" />
+        <e p="IDisability.cs" t="Include" />
+        <e p="IDistrict.cs" t="Include" />
+        <e p="IDomain.cs" t="Include" />
+        <e p="IECCDMembership.cs" t="Include" />
+        <e p="IEvent.cs" t="Include" />
+        <e p="IFollowUp.cs" t="Include" />
+        <e p="IGuardianRelation.cs" t="Include" />
+        <e p="IGuideline.cs" t="Include" />
+        <e p="IHomeEnvironment.cs" t="Include" />
+        <e p="IHouseholdMembership.cs" t="Include" />
+        <e p="IHouseholdProject.cs" t="Include" />
+        <e p="IMembership.cs" t="Include" />
+        <e p="Interfaces.csproj" t="IncludeRecursive" />
+        <e p="IOutcome.cs" t="Include" />
+        <e p="IOVCType.cs" t="Include" />
+        <e p="IParticipantRegistration.cs" t="Include" />
+        <e p="IPartner.cs" t="Include" />
+        <e p="IQuestion.cs" t="Include" />
+        <e p="IRecipientType.cs" t="Include" />
+        <e p="IServiceProvider.cs" t="Include" />
+        <e p="IServiceProviderType.cs" t="Include" />
+        <e p="ISILCMembership.cs" t="Include" />
+        <e p="ISite.cs" t="Include" />
+        <e p="ISource.cs" t="Include" />
+        <e p="ISupportServiceType.cs" t="Include" />
+        <e p="IUser.cs" t="Include" />
+        <e p="IUserAction.cs" t="Include" />
+        <e p="IVGAMembership.cs" t="Include" />
+        <e p="IVillage.cs" t="Include" />
+        <e p="IWard.cs" t="Include" />
+        <e p="IWBT.cs" t="Include" />
+        <e p="IWBTDomainScore.cs" t="Include" />
+        <e p="MembershipCollection.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="UserCollection.cs" t="Include" />
+      </e>
+      <e p="MAC" t="IncludeRecursive">
+        <e p="admin-lte" t="Include">
+          <e p="css" t="Include">
+            <e p="AdminLTE.css" t="Include" />
+            <e p="adminlte.css.map" t="Include" />
+            <e p="AdminLTE.min.css" t="Include" />
+            <e p="adminlte.min.css.map" t="Include" />
+            <e p="alt" t="Include">
+              <e p="AdminLTE-bootstrap-social.css" t="Include" />
+              <e p="AdminLTE-bootstrap-social.min.css" t="Include" />
+              <e p="AdminLTE-fullcalendar.css" t="Include" />
+              <e p="AdminLTE-fullcalendar.min.css" t="Include" />
+              <e p="AdminLTE-select2.css" t="Include" />
+              <e p="AdminLTE-select2.min.css" t="Include" />
+              <e p="AdminLTE-without-plugins.css" t="Include" />
+              <e p="AdminLTE-without-plugins.min.css" t="Include" />
+            </e>
+            <e p="skins" t="Include">
+              <e p="_all-skins.css" t="Include" />
+              <e p="_all-skins.min.css" t="Include" />
+              <e p="skin-black-light.css" t="Include" />
+              <e p="skin-black-light.min.css" t="Include" />
+              <e p="skin-black.css" t="Include" />
+              <e p="skin-black.min.css" t="Include" />
+              <e p="skin-blue-light.css" t="Include" />
+              <e p="skin-blue-light.min.css" t="Include" />
+              <e p="skin-blue.css" t="Include" />
+              <e p="skin-blue.min.css" t="Include" />
+              <e p="skin-green-light.css" t="Include" />
+              <e p="skin-green-light.min.css" t="Include" />
+              <e p="skin-green.css" t="Include" />
+              <e p="skin-green.min.css" t="Include" />
+              <e p="skin-purple-light.css" t="Include" />
+              <e p="skin-purple-light.min.css" t="Include" />
+              <e p="skin-purple.css" t="Include" />
+              <e p="skin-purple.min.css" t="Include" />
+              <e p="skin-red-light.css" t="Include" />
+              <e p="skin-red-light.min.css" t="Include" />
+              <e p="skin-red.css" t="Include" />
+              <e p="skin-red.min.css" t="Include" />
+              <e p="skin-yellow-light.css" t="Include" />
+              <e p="skin-yellow-light.min.css" t="Include" />
+              <e p="skin-yellow.css" t="Include" />
+              <e p="skin-yellow.min.css" t="Include" />
+            </e>
+          </e>
+          <e p="img" t="Include">
+            <e p="avatar.png" t="Include" />
+            <e p="avatar04.png" t="Include" />
+            <e p="avatar2.png" t="Include" />
+            <e p="avatar3.png" t="Include" />
+            <e p="avatar5.png" t="Include" />
+            <e p="boxed-bg.jpg" t="Include" />
+            <e p="boxed-bg.png" t="Include" />
+            <e p="credit" t="Include">
+              <e p="american-express.png" t="Include" />
+              <e p="cirrus.png" t="Include" />
+              <e p="mastercard.png" t="Include" />
+              <e p="mestro.png" t="Include" />
+              <e p="paypal.png" t="Include" />
+              <e p="paypal2.png" t="Include" />
+              <e p="visa.png" t="Include" />
+            </e>
+            <e p="default-50x50.gif" t="Include" />
+            <e p="icons.png" t="Include" />
+            <e p="photo1.png" t="Include" />
+            <e p="photo2.png" t="Include" />
+            <e p="photo3.jpg" t="Include" />
+            <e p="photo4.jpg" t="Include" />
+            <e p="user1-128x128.jpg" t="Include" />
+            <e p="user2-160x160.jpg" t="Include" />
+            <e p="user3-128x128.jpg" t="Include" />
+            <e p="user4-128x128.jpg" t="Include" />
+            <e p="user5-128x128.jpg" t="Include" />
+            <e p="user6-128x128.jpg" t="Include" />
+            <e p="user7-128x128.jpg" t="Include" />
+            <e p="user8-128x128.jpg" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="adminlte.js" t="Include" />
+            <e p="adminlte.min.js" t="Include" />
+            <e p="demo.js" t="Include" />
+            <e p="pages" t="Include">
+              <e p="dashboard.js" t="Include" />
+              <e p="dashboard2.js" t="Include" />
+            </e>
+          </e>
+          <e p="plugins" t="Include">
+            <e p="bootstrap-slider" t="Include">
+              <e p="bootstrap-slider.js" t="Include" />
+              <e p="slider.css" t="Include" />
+            </e>
+            <e p="bootstrap-wysihtml5" t="Include">
+              <e p="bootstrap3-wysihtml5.all.js" t="Include" />
+              <e p="bootstrap3-wysihtml5.all.min.js" t="Include" />
+              <e p="bootstrap3-wysihtml5.css" t="Include" />
+              <e p="bootstrap3-wysihtml5.min.css" t="Include" />
+            </e>
+            <e p="iCheck" t="Include">
+              <e p="all.css" t="Include" />
+              <e p="flat" t="Include">
+                <e p="_all.css" t="Include" />
+                <e p="aero.css" t="Include" />
+                <e p="aero.png" t="Include" />
+                <e p="aero@2x.png" t="Include" />
+                <e p="blue.css" t="Include" />
+                <e p="blue.png" t="Include" />
+                <e p="blue@2x.png" t="Include" />
+                <e p="flat.css" t="Include" />
+                <e p="flat.png" t="Include" />
+                <e p="flat@2x.png" t="Include" />
+                <e p="green.css" t="Include" />
+                <e p="green.png" t="Include" />
+                <e p="green@2x.png" t="Include" />
+                <e p="grey.css" t="Include" />
+                <e p="grey.png" t="Include" />
+                <e p="grey@2x.png" t="Include" />
+                <e p="orange.css" t="Include" />
+                <e p="orange.png" t="Include" />
+                <e p="orange@2x.png" t="Include" />
+                <e p="pink.css" t="Include" />
+                <e p="pink.png" t="Include" />
+                <e p="pink@2x.png" t="Include" />
+                <e p="purple.css" t="Include" />
+                <e p="purple.png" t="Include" />
+                <e p="purple@2x.png" t="Include" />
+                <e p="red.css" t="Include" />
+                <e p="red.png" t="Include" />
+                <e p="red@2x.png" t="Include" />
+                <e p="yellow.css" t="Include" />
+                <e p="yellow.png" t="Include" />
+                <e p="yellow@2x.png" t="Include" />
+              </e>
+              <e p="futurico" t="Include">
+                <e p="futurico.css" t="Include" />
+                <e p="futurico.png" t="Include" />
+                <e p="futurico@2x.png" t="Include" />
+              </e>
+              <e p="icheck.js" t="Include" />
+              <e p="icheck.min.js" t="Include" />
+              <e p="line" t="Include">
+                <e p="_all.css" t="Include" />
+                <e p="aero.css" t="Include" />
+                <e p="blue.css" t="Include" />
+                <e p="green.css" t="Include" />
+                <e p="grey.css" t="Include" />
+                <e p="line.css" t="Include" />
+                <e p="line.png" t="Include" />
+                <e p="line@2x.png" t="Include" />
+                <e p="orange.css" t="Include" />
+                <e p="pink.css" t="Include" />
+                <e p="purple.css" t="Include" />
+                <e p="red.css" t="Include" />
+                <e p="yellow.css" t="Include" />
+              </e>
+              <e p="minimal" t="Include">
+                <e p="_all.css" t="Include" />
+                <e p="aero.css" t="Include" />
+                <e p="aero.png" t="Include" />
+                <e p="aero@2x.png" t="Include" />
+                <e p="blue.css" t="Include" />
+                <e p="blue.png" t="Include" />
+                <e p="blue@2x.png" t="Include" />
+                <e p="green.css" t="Include" />
+                <e p="green.png" t="Include" />
+                <e p="green@2x.png" t="Include" />
+                <e p="grey.css" t="Include" />
+                <e p="grey.png" t="Include" />
+                <e p="grey@2x.png" t="Include" />
+                <e p="minimal.css" t="Include" />
+                <e p="minimal.png" t="Include" />
+                <e p="minimal@2x.png" t="Include" />
+                <e p="orange.css" t="Include" />
+                <e p="orange.png" t="Include" />
+                <e p="orange@2x.png" t="Include" />
+                <e p="pink.css" t="Include" />
+                <e p="pink.png" t="Include" />
+                <e p="pink@2x.png" t="Include" />
+                <e p="purple.css" t="Include" />
+                <e p="purple.png" t="Include" />
+                <e p="purple@2x.png" t="Include" />
+                <e p="red.css" t="Include" />
+                <e p="red.png" t="Include" />
+                <e p="red@2x.png" t="Include" />
+                <e p="yellow.css" t="Include" />
+                <e p="yellow.png" t="Include" />
+                <e p="yellow@2x.png" t="Include" />
+              </e>
+              <e p="polaris" t="Include">
+                <e p="polaris.css" t="Include" />
+                <e p="polaris.png" t="Include" />
+                <e p="polaris@2x.png" t="Include" />
+              </e>
+              <e p="square" t="Include">
+                <e p="_all.css" t="Include" />
+                <e p="aero.css" t="Include" />
+                <e p="aero.png" t="Include" />
+                <e p="aero@2x.png" t="Include" />
+                <e p="blue.css" t="Include" />
+                <e p="blue.png" t="Include" />
+                <e p="blue@2x.png" t="Include" />
+                <e p="green.css" t="Include" />
+                <e p="green.png" t="Include" />
+                <e p="green@2x.png" t="Include" />
+                <e p="grey.css" t="Include" />
+                <e p="grey.png" t="Include" />
+                <e p="grey@2x.png" t="Include" />
+                <e p="orange.css" t="Include" />
+                <e p="orange.png" t="Include" />
+                <e p="orange@2x.png" t="Include" />
+                <e p="pink.css" t="Include" />
+                <e p="pink.png" t="Include" />
+                <e p="pink@2x.png" t="Include" />
+                <e p="purple.css" t="Include" />
+                <e p="purple.png" t="Include" />
+                <e p="purple@2x.png" t="Include" />
+                <e p="red.css" t="Include" />
+                <e p="red.png" t="Include" />
+                <e p="red@2x.png" t="Include" />
+                <e p="square.css" t="Include" />
+                <e p="square.png" t="Include" />
+                <e p="square@2x.png" t="Include" />
+                <e p="yellow.css" t="Include" />
+                <e p="yellow.png" t="Include" />
+                <e p="yellow@2x.png" t="Include" />
+              </e>
+            </e>
+            <e p="input-mask" t="Include">
+              <e p="jquery.inputmask.date.extensions.js" t="Include" />
+              <e p="jquery.inputmask.extensions.js" t="Include" />
+              <e p="jquery.inputmask.js" t="Include" />
+              <e p="jquery.inputmask.numeric.extensions.js" t="Include" />
+              <e p="jquery.inputmask.phone.extensions.js" t="Include" />
+              <e p="jquery.inputmask.regex.extensions.js" t="Include" />
+              <e p="phone-codes" t="Include">
+                <e p="phone-be.json" t="Include" />
+                <e p="phone-codes.json" t="Include" />
+                <e p="readme.txt" t="Include" />
+              </e>
+            </e>
+            <e p="jQueryUI" t="Include">
+              <e p="jquery-ui.js" t="Include" />
+              <e p="jquery-ui.min.js" t="Include" />
+            </e>
+            <e p="jvectormap" t="Include">
+              <e p="jquery-jvectormap-1.2.2.css" t="Include" />
+              <e p="jquery-jvectormap-1.2.2.min.js" t="Include" />
+              <e p="jquery-jvectormap-usa-en.js" t="Include" />
+              <e p="jquery-jvectormap-world-mill-en.js" t="Include" />
+            </e>
+            <e p="pace" t="Include">
+              <e p="pace.css" t="Include" />
+              <e p="pace.js" t="Include" />
+              <e p="pace.min.css" t="Include" />
+              <e p="pace.min.js" t="Include" />
+            </e>
+            <e p="timepicker" t="Include">
+              <e p="bootstrap-timepicker.css" t="Include" />
+              <e p="bootstrap-timepicker.js" t="Include" />
+              <e p="bootstrap-timepicker.min.css" t="Include" />
+              <e p="bootstrap-timepicker.min.js" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="apiapp.json" t="Include" />
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.cs" t="Include" />
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="IdentityConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+          <e p="Startup.Auth.cs" t="Include" />
+          <e p="SwaggerConfig.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="bootstrap-theme.css" t="Include" />
+          <e p="bootstrap-theme.css.map" t="Include" />
+          <e p="bootstrap-theme.min.css" t="Include" />
+          <e p="bootstrap-theme.min.css.map" t="Include" />
+          <e p="bootstrap.css" t="Include" />
+          <e p="bootstrap.css.map" t="Include" />
+          <e p="bootstrap.min.css" t="Include" />
+          <e p="bootstrap.min.css.map" t="Include" />
+          <e p="font-awesome.css" t="Include" />
+          <e p="font-awesome.min.css" t="Include" />
+          <e p="ionicons.css" t="Include" />
+          <e p="PagedList.css" t="Include" />
+          <e p="select2.min.css" t="Include" />
+          <e p="site.css" t="Include" />
+          <e p="tether" t="Include">
+            <e p="tether-theme-arrows-dark.css" t="Include" />
+            <e p="tether-theme-arrows-dark.min.css" t="Include" />
+            <e p="tether-theme-arrows.css" t="Include" />
+            <e p="tether-theme-arrows.min.css" t="Include" />
+            <e p="tether-theme-basic.css" t="Include" />
+            <e p="tether-theme-basic.min.css" t="Include" />
+            <e p="tether.css" t="Include" />
+            <e p="tether.min.css" t="Include" />
+          </e>
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
+          <e p="AdultsController.cs" t="Include" />
+          <e p="AgreggatedControllers" t="Include" />
+          <e p="AgreggatedReportsController.cs" t="Include" />
+          <e p="BaseController.cs" t="Include" />
+          <e p="CarePlansController.cs" t="Include" />
+          <e p="ChildrenController.cs" t="Include" />
+          <e p="CSIsController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+          <e p="HouseholdsController.cs" t="Include" />
+          <e p="ManageController.cs" t="Include" />
+          <e p="PartnersController.cs" t="Include" />
+          <e p="ReferenceServicesController.cs" t="Include" />
+          <e p="ReportsController.cs" t="Include" />
+          <e p="RolesController.cs" t="Include" />
+          <e p="RoutineVisitsController.cs" t="Include" />
+          <e p="SiteGoalsController.cs" t="Include" />
+          <e p="SitesController.cs" t="Include" />
+          <e p="UsersController.cs" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="fonts" t="Include">
+          <e p="fontawesome-webfont.eot" t="Include" />
+          <e p="fontawesome-webfont.svg" t="Include" />
+          <e p="fontawesome-webfont.ttf" t="Include" />
+          <e p="fontawesome-webfont.woff" t="Include" />
+          <e p="fontawesome-webfont.woff2" t="Include" />
+          <e p="FontAwesome.otf" t="Include" />
+          <e p="glyphicons-halflings-regular.eot" t="Include" />
+          <e p="glyphicons-halflings-regular.svg" t="Include" />
+          <e p="glyphicons-halflings-regular.ttf" t="Include" />
+          <e p="glyphicons-halflings-regular.woff" t="Include" />
+          <e p="glyphicons-halflings-regular.woff2" t="Include" />
+          <e p="ionicons.eot" t="Include" />
+          <e p="ionicons.svg" t="Include" />
+          <e p="ionicons.ttf" t="Include" />
+          <e p="ionicons.woff" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="MAC.csproj" t="IncludeRecursive" />
+        <e p="Metadata" t="Include">
+          <e p="deploymentTemplates" t="Include">
+            <e p="apiappconfig.azureresource.json" t="Include" />
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="DateStartAttribute.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Project_Readme.html" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="MAC.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="_references.js" t="Include" />
+          <e p="admin-lte" t="Include">
+            <e p="js" t="Include">
+              <e p="adminlte.js" t="Include" />
+              <e p="adminlte.min.js" t="Include" />
+              <e p="demo.js" t="Include" />
+              <e p="pages" t="Include">
+                <e p="dashboard.js" t="Include" />
+                <e p="dashboard2.js" t="Include" />
+              </e>
+            </e>
+            <e p="plugins" t="Include">
+              <e p="bootstrap-slider" t="Include">
+                <e p="bootstrap-slider.js" t="Include" />
+                <e p="slider.css" t="Include" />
+              </e>
+              <e p="bootstrap-wysihtml5" t="Include">
+                <e p="bootstrap3-wysihtml5.all.js" t="Include" />
+                <e p="bootstrap3-wysihtml5.all.min.js" t="Include" />
+                <e p="bootstrap3-wysihtml5.css" t="Include" />
+                <e p="bootstrap3-wysihtml5.min.css" t="Include" />
+              </e>
+              <e p="iCheck" t="Include">
+                <e p="all.css" t="Include" />
+                <e p="flat" t="Include">
+                  <e p="_all.css" t="Include" />
+                  <e p="aero.css" t="Include" />
+                  <e p="aero.png" t="Include" />
+                  <e p="aero@2x.png" t="Include" />
+                  <e p="blue.css" t="Include" />
+                  <e p="blue.png" t="Include" />
+                  <e p="blue@2x.png" t="Include" />
+                  <e p="flat.css" t="Include" />
+                  <e p="flat.png" t="Include" />
+                  <e p="flat@2x.png" t="Include" />
+                  <e p="green.css" t="Include" />
+                  <e p="green.png" t="Include" />
+                  <e p="green@2x.png" t="Include" />
+                  <e p="grey.css" t="Include" />
+                  <e p="grey.png" t="Include" />
+                  <e p="grey@2x.png" t="Include" />
+                  <e p="orange.css" t="Include" />
+                  <e p="orange.png" t="Include" />
+                  <e p="orange@2x.png" t="Include" />
+                  <e p="pink.css" t="Include" />
+                  <e p="pink.png" t="Include" />
+                  <e p="pink@2x.png" t="Include" />
+                  <e p="purple.css" t="Include" />
+                  <e p="purple.png" t="Include" />
+                  <e p="purple@2x.png" t="Include" />
+                  <e p="red.css" t="Include" />
+                  <e p="red.png" t="Include" />
+                  <e p="red@2x.png" t="Include" />
+                  <e p="yellow.css" t="Include" />
+                  <e p="yellow.png" t="Include" />
+                  <e p="yellow@2x.png" t="Include" />
+                </e>
+                <e p="futurico" t="Include">
+                  <e p="futurico.css" t="Include" />
+                  <e p="futurico.png" t="Include" />
+                  <e p="futurico@2x.png" t="Include" />
+                </e>
+                <e p="icheck.js" t="Include" />
+                <e p="icheck.min.js" t="Include" />
+                <e p="line" t="Include">
+                  <e p="_all.css" t="Include" />
+                  <e p="aero.css" t="Include" />
+                  <e p="blue.css" t="Include" />
+                  <e p="green.css" t="Include" />
+                  <e p="grey.css" t="Include" />
+                  <e p="line.css" t="Include" />
+                  <e p="line.png" t="Include" />
+                  <e p="line@2x.png" t="Include" />
+                  <e p="orange.css" t="Include" />
+                  <e p="pink.css" t="Include" />
+                  <e p="purple.css" t="Include" />
+                  <e p="red.css" t="Include" />
+                  <e p="yellow.css" t="Include" />
+                </e>
+                <e p="minimal" t="Include">
+                  <e p="_all.css" t="Include" />
+                  <e p="aero.css" t="Include" />
+                  <e p="aero.png" t="Include" />
+                  <e p="aero@2x.png" t="Include" />
+                  <e p="blue.css" t="Include" />
+                  <e p="blue.png" t="Include" />
+                  <e p="blue@2x.png" t="Include" />
+                  <e p="green.css" t="Include" />
+                  <e p="green.png" t="Include" />
+                  <e p="green@2x.png" t="Include" />
+                  <e p="grey.css" t="Include" />
+                  <e p="grey.png" t="Include" />
+                  <e p="grey@2x.png" t="Include" />
+                  <e p="minimal.css" t="Include" />
+                  <e p="minimal.png" t="Include" />
+                  <e p="minimal@2x.png" t="Include" />
+                  <e p="orange.css" t="Include" />
+                  <e p="orange.png" t="Include" />
+                  <e p="orange@2x.png" t="Include" />
+                  <e p="pink.css" t="Include" />
+                  <e p="pink.png" t="Include" />
+                  <e p="pink@2x.png" t="Include" />
+                  <e p="purple.css" t="Include" />
+                  <e p="purple.png" t="Include" />
+                  <e p="purple@2x.png" t="Include" />
+                  <e p="red.css" t="Include" />
+                  <e p="red.png" t="Include" />
+                  <e p="red@2x.png" t="Include" />
+                  <e p="yellow.css" t="Include" />
+                  <e p="yellow.png" t="Include" />
+                  <e p="yellow@2x.png" t="Include" />
+                </e>
+                <e p="polaris" t="Include">
+                  <e p="polaris.css" t="Include" />
+                  <e p="polaris.png" t="Include" />
+                  <e p="polaris@2x.png" t="Include" />
+                </e>
+                <e p="square" t="Include">
+                  <e p="_all.css" t="Include" />
+                  <e p="aero.css" t="Include" />
+                  <e p="aero.png" t="Include" />
+                  <e p="aero@2x.png" t="Include" />
+                  <e p="blue.css" t="Include" />
+                  <e p="blue.png" t="Include" />
+                  <e p="blue@2x.png" t="Include" />
+                  <e p="green.css" t="Include" />
+                  <e p="green.png" t="Include" />
+                  <e p="green@2x.png" t="Include" />
+                  <e p="grey.css" t="Include" />
+                  <e p="grey.png" t="Include" />
+                  <e p="grey@2x.png" t="Include" />
+                  <e p="orange.css" t="Include" />
+                  <e p="orange.png" t="Include" />
+                  <e p="orange@2x.png" t="Include" />
+                  <e p="pink.css" t="Include" />
+                  <e p="pink.png" t="Include" />
+                  <e p="pink@2x.png" t="Include" />
+                  <e p="purple.css" t="Include" />
+                  <e p="purple.png" t="Include" />
+                  <e p="purple@2x.png" t="Include" />
+                  <e p="red.css" t="Include" />
+                  <e p="red.png" t="Include" />
+                  <e p="red@2x.png" t="Include" />
+                  <e p="square.css" t="Include" />
+                  <e p="square.png" t="Include" />
+                  <e p="square@2x.png" t="Include" />
+                  <e p="yellow.css" t="Include" />
+                  <e p="yellow.png" t="Include" />
+                  <e p="yellow@2x.png" t="Include" />
+                </e>
+              </e>
+              <e p="input-mask" t="Include">
+                <e p="jquery.inputmask.date.extensions.js" t="Include" />
+                <e p="jquery.inputmask.extensions.js" t="Include" />
+                <e p="jquery.inputmask.js" t="Include" />
+                <e p="jquery.inputmask.numeric.extensions.js" t="Include" />
+                <e p="jquery.inputmask.phone.extensions.js" t="Include" />
+                <e p="jquery.inputmask.regex.extensions.js" t="Include" />
+                <e p="phone-codes" t="Include">
+                  <e p="phone-be.json" t="Include" />
+                  <e p="phone-codes.json" t="Include" />
+                  <e p="readme.txt" t="Include" />
+                </e>
+              </e>
+              <e p="jQueryUI" t="Include">
+                <e p="jquery-ui.js" t="Include" />
+                <e p="jquery-ui.min.js" t="Include" />
+              </e>
+              <e p="jvectormap" t="Include">
+                <e p="jquery-jvectormap-1.2.2.css" t="Include" />
+                <e p="jquery-jvectormap-1.2.2.min.js" t="Include" />
+                <e p="jquery-jvectormap-usa-en.js" t="Include" />
+                <e p="jquery-jvectormap-world-mill-en.js" t="Include" />
+              </e>
+              <e p="pace" t="Include">
+                <e p="pace.css" t="Include" />
+                <e p="pace.js" t="Include" />
+                <e p="pace.min.css" t="Include" />
+                <e p="pace.min.js" t="Include" />
+              </e>
+              <e p="timepicker" t="Include">
+                <e p="bootstrap-timepicker.css" t="Include" />
+                <e p="bootstrap-timepicker.js" t="Include" />
+                <e p="bootstrap-timepicker.min.css" t="Include" />
+                <e p="bootstrap-timepicker.min.js" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="bootstrap.js" t="Include" />
+          <e p="bootstrap.min.js" t="Include" />
+          <e p="echarts.min.js" t="Include" />
+          <e p="jquery-1.10.2.intellisense.js" t="Include" />
+          <e p="jquery-3.1.1.intellisense.js" t="Include" />
+          <e p="jquery-3.1.1.js" t="Include" />
+          <e p="jquery-3.1.1.min.js" t="Include" />
+          <e p="jquery-3.1.1.min.map" t="Include" />
+          <e p="jquery-3.1.1.slim.js" t="Include" />
+          <e p="jquery-3.1.1.slim.min.js" t="Include" />
+          <e p="jquery-3.1.1.slim.min.map" t="Include" />
+          <e p="jquery.validate-vsdoc.js" t="Include" />
+          <e p="jquery.validate.js" t="Include" />
+          <e p="jquery.validate.min.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          <e p="modernizr-2.6.2.js" t="Include" />
+          <e p="respond.js" t="Include" />
+          <e p="respond.min.js" t="Include" />
+          <e p="select2.full.min.js" t="Include" />
+          <e p="tether.js" t="Include" />
+          <e p="tether.min.js" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="ViewModels" t="Include">
+          <e p="AgreggatedReportsViewModel.cs" t="Include" />
+          <e p="AgreggatedRoutineVisitReportsViewModel.cs" t="Include" />
+          <e p="Authentication" t="Include">
+            <e p="AccountViewModels.cs" t="Include" />
+            <e p="CustomPrincipal.cs" t="Include" />
+            <e p="IdentityModels.cs" t="Include" />
+            <e p="ManageViewModels.cs" t="Include" />
+          </e>
+          <e p="ChildStatusViewModel.cs" t="Include" />
+          <e p="CountViewModel.cs" t="Include" />
+          <e p="CSIEditViewModel.cs" t="Include" />
+          <e p="QuestionReportViewModel.cs" t="Include" />
+          <e p="ReferenceServiceReportIntervalViewModel.cs" t="Include" />
+          <e p="ReportIntervalViewModel.cs" t="Include" />
+          <e p="RoutineVisitViewModel.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Account" t="Include">
+            <e p="_ExternalLoginsListPartial.cshtml" t="Include" />
+            <e p="ConfirmEmail.cshtml" t="Include" />
+            <e p="ExternalLoginConfirmation.cshtml" t="Include" />
+            <e p="ExternalLoginFailure.cshtml" t="Include" />
+            <e p="ForgotPassword.cshtml" t="Include" />
+            <e p="ForgotPasswordConfirmation.cshtml" t="Include" />
+            <e p="Login.cshtml" t="Include" />
+            <e p="Register.cshtml" t="Include" />
+            <e p="ResetPassword.cshtml" t="Include" />
+            <e p="ResetPasswordConfirmation.cshtml" t="Include" />
+            <e p="SendCode.cshtml" t="Include" />
+            <e p="VerifyCode.cshtml" t="Include" />
+          </e>
+          <e p="Adults" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="GraduatedAdultReport.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="AgreggatedReports" t="Include">
+            <e p="AgreggatedBeneficiariesAndHIVStatusReport.cshtml" t="Include" />
+            <e p="agreggatedbychiefpartnersAgreggated.cshtml" t="Include" />
+            <e p="agreggatedbypartnersAgreggated.cshtml" t="Include" />
+            <e p="AgreggatedGlobalReport.cshtml" t="Include" />
+            <e p="AgreggatedHIVStatusChangesReport.cshtml" t="Include" />
+            <e p="AgreggatedInitialRecordSummaryReport.cshtml" t="Include" />
+            <e p="AgreggatedMonthlyProgressReport.cshtml" t="Include" />
+            <e p="AgreggatedReferencesSummaryReport.cshtml" t="Include" />
+            <e p="AgreggatedRoutineVisitSummaryReport.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="CarePlans" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Children" t="Include">
+            <e p="AgreggatedBeforeAndActualChildStatusReport.cshtml" t="Include" />
+            <e p="AgreggatedCarePlanChildReport.cshtml" t="Include" />
+            <e p="AgreggatedChildByQuestionReport.cshtml" t="Include" />
+            <e p="AgreggatedChildQuestionSummaryReport.cshtml" t="Include" />
+            <e p="AgreggatedChildrenWithouAssistenceReport.cshtml" t="Include" />
+            <e p="AgreggatedLastChildStatusReport.cshtml" t="Include" />
+            <e p="BeforeAndActualChildStatusReport.cshtml" t="Include" />
+            <e p="CarePlanChildReport.cshtml" t="Include" />
+            <e p="ChildByQuestionReport.cshtml" t="Include" />
+            <e p="ChildQuestionSummaryReport.cshtml" t="Include" />
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="InitialAndActualChildStatusReport.cshtml" t="Include" />
+            <e p="LastChildStatusReport.cshtml" t="Include" />
+          </e>
+          <e p="csi" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Home" t="Include">
+            <e p="About.cshtml" t="Include" />
+            <e p="Contact.cshtml" t="Include" />
+            <e p="ImportAndExportData.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Households" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Manage" t="Include">
+            <e p="AddPhoneNumber.cshtml" t="Include" />
+            <e p="ChangePassword.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="ManageLogins.cshtml" t="Include" />
+            <e p="SetPassword.cshtml" t="Include" />
+            <e p="VerifyPhoneNumber.cshtml" t="Include" />
+          </e>
+          <e p="Partners" t="Include">
+            <e p="ChiefPartnerReport.cshtml" t="Include" />
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="PartnerReport.cshtml" t="Include" />
+          </e>
+          <e p="ReferenceServices" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Reports" t="Include">
+            <e p="BeneficiariesAndHIVStatusReport.cshtml" t="Include" />
+            <e p="HIVStatusChangesReport.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="InitialAndLastHIVStatusReport.cshtml" t="Include" />
+            <e p="InitialRecordSummaryReport.cshtml" t="Include" />
+            <e p="MonthlyProgressReport.cshtml" t="Include" />
+            <e p="ReferencesSummaryReport.cshtml" t="Include" />
+            <e p="RoutineVisitSummaryReport.cshtml" t="Include" />
+          </e>
+          <e p="RoutineVisits" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_LoginPartial.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+            <e p="Lockout.cshtml" t="Include" />
+          </e>
+          <e p="SiteGoals" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Sites" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Users" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="OfficePickers" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ColorPicker" t="Include">
+          <e p="ComboBoxColorPicker.bmp" t="Include" />
+          <e p="ComboBoxColorPicker.cs" t="Include" />
+          <e p="ComboBoxColorPicker.designer.cs" t="Include" />
+          <e p="ComboBoxColorPicker.resx" t="Include" />
+          <e p="OfficeColorPicker.bmp" t="Include" />
+          <e p="OfficeColorPicker.cs" t="Include" />
+          <e p="OfficeColorPicker.designer.cs" t="Include" />
+          <e p="OfficeColorPicker.resx" t="Include" />
+          <e p="SelectableColor.cs" t="Include" />
+          <e p="ToolStripColorPicker.bmp" t="Include" />
+          <e p="ToolStripColorPicker.cs" t="Include" />
+          <e p="ToolStripColorPicker.resx" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="OfficePickers.csproj" t="IncludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Util" t="Include">
+          <e p="ContextMenuForm.cs" t="Include" />
+          <e p="ContextMenuForm.designer.cs" t="Include" />
+          <e p="ContextMenuForm.resx" t="Include" />
+          <e p="CustomColors.cs" t="Include" />
+          <e p="GradientPanel.bmp" t="Include" />
+          <e p="GradientPanel.cs" t="Include" />
+        </e>
+      </e>
+      <e p="OutlookGridApp" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="OutlookGrid" t="Include">
+          <e p="DataSourceManager.cs" t="Include" />
+          <e p="OutlookGrid.cs" t="Include" />
+          <e p="OutlookGrid.Designer.cs" t="Include" />
+          <e p="OutlookGridGroup.cs" t="Include" />
+          <e p="OutlookGridRow.cs" t="Include" />
+        </e>
+        <e p="OutlookGridApp.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ReleaseNotes.md" t="Include" />
+      <e p="Services" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="BaseService.vb" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChildHandler.vb" t="Include" />
+        <e p="EFChildHandler.vb" t="Include" />
+        <e p="General.vb" t="Include" />
+        <e p="InfrastructureDataHandler.vb" t="Include" />
+        <e p="LetterData.vb" t="Include" />
+        <e p="LetterDataItem.vb" t="Include" />
+        <e p="LetterHandler.vb" t="Include" />
+        <e p="My Project" t="Include">
+          <e p="Application.Designer.vb" t="Include" />
+          <e p="Application.myapp" t="Include" />
+          <e p="AssemblyInfo.vb" t="Include" />
+          <e p="Resources.Designer.vb" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.vb" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="PrintHandler.vb" t="Include" />
+        <e p="ReportHandler.vb" t="Include" />
+        <e p="Services.vbproj" t="IncludeRecursive" />
+        <e p="UserHandler.vb" t="Include" />
+      </e>
+      <e p="SqlDataAccess" t="IncludeRecursive">
+        <e p="ActionBroker.cs" t="Include" />
+        <e p="AdultBroker.cs" t="Include" />
+        <e p="AdultHouseholdBroker.cs" t="Include" />
+        <e p="AdultMembershipBroker.cs" t="Include" />
+        <e p="AdultServiceBroker.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BusinessObjectFactory.cs" t="Include" />
+        <e p="CareGiverRelationBroker.cs" t="Include" />
+        <e p="CareGroupMembershipBroker.cs" t="Include" />
+        <e p="CarePlanBroker.cs" t="Include" />
+        <e p="CarePlanDomainBroker.cs" t="Include" />
+        <e p="CarePlanDomainSupportServiceBroker.cs" t="Include" />
+        <e p="CFMMembershipBroker.cs" t="Include" />
+        <e p="ChildBroker.cs" t="Include" />
+        <e p="ChildDisabilityBroker.cs" t="Include" />
+        <e p="ChildHouseholdBroker.cs" t="Include" />
+        <e p="ChildMembershipBroker.cs" t="Include" />
+        <e p="ChildPartnerBroker.cs" t="Include" />
+        <e p="ChildServiceBroker.cs" t="Include" />
+        <e p="ChildStatusBroker.cs" t="Include" />
+        <e p="ChildStatusHistoryBroker.cs" t="Include" />
+        <e p="CommunityCouncilBroker.cs" t="Include" />
+        <e p="CSIBroker.cs" t="Include" />
+        <e p="CSIContactBroker.cs" t="Include" />
+        <e p="CSIDomainBroker.cs" t="Include" />
+        <e p="CSIDomainScoreBroker.cs" t="Include" />
+        <e p="CSIDomainSourceBroker.cs" t="Include" />
+        <e p="CSIDomainSupportServiceBroker.cs" t="Include" />
+        <e p="CSIEventBroker.cs" t="Include" />
+        <e p="DisabilityBroker.cs" t="Include" />
+        <e p="DistrictBroker.cs" t="Include" />
+        <e p="DomainBroker.cs" t="Include" />
+        <e p="ECCDMembershipBroker.cs" t="Include" />
+        <e p="EventBroker.cs" t="Include" />
+        <e p="FollowUpBroker.cs" t="Include" />
+        <e p="GuardianRelationBroker.cs" t="Include" />
+        <e p="GuidelineBroker.cs" t="Include" />
+        <e p="HomeEnvironmentBroker.cs" t="Include" />
+        <e p="HouseholdMembershipBroker.cs" t="Include" />
+        <e p="HouseholdProjectBroker.cs" t="Include" />
+        <e p="MembershipBroker.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="OutcomeBroker.cs" t="Include" />
+        <e p="OVCTypeBroker.cs" t="Include" />
+        <e p="ParticipantRegistrationBroker.cs" t="Include" />
+        <e p="PartnerBroker.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="QuestionBroker.cs" t="Include" />
+        <e p="RecipientTypeBroker.cs" t="Include" />
+        <e p="ServiceProviderBroker.cs" t="Include" />
+        <e p="ServiceProviderTypeBroker.cs" t="Include" />
+        <e p="SILCMembershipBroker.cs" t="Include" />
+        <e p="SiteBroker.cs" t="Include" />
+        <e p="SourceBroker.cs" t="Include" />
+        <e p="SqlDataAccess.csproj" t="IncludeRecursive" />
+        <e p="SupportServiceTypeBroker.cs" t="Include" />
+        <e p="UserActionBroker.cs" t="Include" />
+        <e p="UserBroker.cs" t="Include" />
+        <e p="VGAMembershipBroker.cs" t="Include" />
+        <e p="VillageBroker.cs" t="Include" />
+        <e p="WardBroker.cs" t="Include" />
+        <e p="WBTBroker.cs" t="Include" />
+        <e p="WBTDomainBroker.cs" t="Include" />
+        <e p="WBTDomainScoreBroker.cs" t="Include" />
+      </e>
+      <e p="Utilities" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Check.cs" t="Include" />
+        <e p="ColorContrast.cs" t="Include" />
+        <e p="ColourHelper.cs" t="Include" />
+        <e p="DateUtilities.cs" t="Include" />
+        <e p="Encryptor.cs" t="Include" />
+        <e p="Exceptions" t="Include">
+          <e p="AssertionFailedException.cs" t="Include" />
+        </e>
+        <e p="MessageBoxManager.cs" t="Include" />
+        <e p="NumberHelper.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SavingGroupMemberChoice.cs" t="Include" />
+        <e p="Utilities.csproj" t="IncludeRecursive" />
+        <e p="Utils.cs" t="Include" />
+      </e>
+      <e p="VariableContainer" t="IncludeRecursive">
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="VariableContainer.cs" t="Include" />
+        <e p="VariableContainer.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Child_Child_already_exist" xml:space="preserve">
+    <value>Child already exists</value>
+  </data>
+  <data name="Login_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Login_RememberMe" xml:space="preserve">
+    <value>Remeber Me</value>
+  </data>
+  <data name="Login_Screen_Title" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_Use_Local_Account_to_Login" xml:space="preserve">
+    <value>Use local account</value>
+  </data>
+  <data name="Login_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Layout_LogOff" xml:space="preserve">
+    <value>Logoff</value>
+  </data>
+  <data name="Login_Login" xml:space="preserve">
+    <value>LogIn</value>
+  </data>
+  <data name="Layout_Menu_Manage_Users" xml:space="preserve">
+    <value>Manage Users</value>
+  </data>
+  <data name="Layout_Menu_Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Global_Data_is_locked" xml:space="preserve">
+    <value>Data is locked. More details with the Provincial Officer</value>
+  </data>
+  <data name="Global_Operation_successfully_realized" xml:space="preserve">
+    <value>Successfully performed operation !</value>
+  </data>
+  <data name="Global_Adults" xml:space="preserve">
+    <value>Adults</value>
+  </data>
+  <data name="Global_Children" xml:space="preserve">
+    <value>Children</value>
+  </data>
+  <data name="Global_Households" xml:space="preserve">
+    <value>Households</value>
+  </data>
+  <data name="Global_Partnes" xml:space="preserve">
+    <value>Social Service Workers</value>
+  </data>
+  <data name="Layout_Footer_Application_Name" xml:space="preserve">
+    <value>Sure Track</value>
+  </data>
+  <data name="Layout_Menu_Agreggated_reports" xml:space="preserve">
+    <value>Agreggated Repots</value>
+  </data>
+  <data name="Layout_Menu_Households" xml:space="preserve">
+    <value>Households</value>
+  </data>
+  <data name="Layout_Menu_Manage_Agreggated_Data" xml:space="preserve">
+    <value>Manage Agreggated Data</value>
+  </data>
+  <data name="Layout_Menu_Manage_Data_Lock_And_Unlock" xml:space="preserve">
+    <value>Manage Data Lock</value>
+  </data>
+  <data name="Layout_Menu_Manage_Partners" xml:space="preserve">
+    <value>Manage Partners</value>
+  </data>
+  <data name="Layout_Menu_Manage_Sites" xml:space="preserve">
+    <value>Manage Sites</value>
+  </data>
+  <data name="Layout_Menu_Site_Reports" xml:space="preserve">
+    <value>Site Reports</value>
+  </data>
+  <data name="Layout_Menu_System_Admin" xml:space="preserve">
+    <value>System Administration</value>
+  </data>
+  <data name="Layout_Menu_Verification_Lists" xml:space="preserve">
+    <value>CheckLists</value>
+  </data>
+  <data name="Layout_Site" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="Dashboard_Beneficiaries_By_Age" xml:space="preserve">
+    <value>Beneficiaries By Age</value>
+  </data>
+  <data name="Dashboard_Beneficiaries_By_Sex" xml:space="preserve">
+    <value>Beneficiaries by Sex</value>
+  </data>
+  <data name="Global_Final_Date" xml:space="preserve">
+    <value>Initial Date</value>
+  </data>
+  <data name="Global_Initial_Date" xml:space="preserve">
+    <value>Last Date</value>
+  </data>
+  <data name="Home_Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="Home_Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Dashboard_Filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="Household_Aid" xml:space="preserve">
+    <value>Household receives Aid ?</value>
+  </data>
+  <data name="Household_AnyoneBedridden" xml:space="preserve">
+    <value>Anyone Bedridden</value>
+  </data>
+  <data name="Household_Block" xml:space="preserve">
+    <value>Street Adress</value>
+  </data>
+  <data name="Household_ClosePlaceToHome" xml:space="preserve">
+    <value>Close Place to Home</value>
+  </data>
+  <data name="Household_District" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="Household_FamilyHead" xml:space="preserve">
+    <value>Family Head</value>
+  </data>
+  <data name="Household_FamilyOriginRef" xml:space="preserve">
+    <value>Family Origin Reference</value>
+  </data>
+  <data name="Household_FamilyPhoneNumber" xml:space="preserve">
+    <value>Family Phone Number</value>
+  </data>
+  <data name="Household_HouseholdName" xml:space="preserve">
+    <value>Household Name</value>
+  </data>
+  <data name="Household_HouseNumber" xml:space="preserve">
+    <value>House Number</value>
+  </data>
+  <data name="Household_NeighborhoodName" xml:space="preserve">
+    <value>Neighborhood Name</value>
+  </data>
+  <data name="Household_OrgUnit" xml:space="preserve">
+    <value>Admin. Post</value>
+  </data>
+  <data name="Household_Partner" xml:space="preserve">
+    <value>Social Service Worker</value>
+  </data>
+  <data name="Household_PrincipalChiefName" xml:space="preserve">
+    <value>Community Chief</value>
+  </data>
+  <data name="Household_RegistrationDate" xml:space="preserve">
+    <value>Registration Date</value>
+  </data>
+  <data name="Beneficiary_DateOfBirth" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
+  <data name="Beneficiary_DateOfBirthUnknown" xml:space="preserve">
+    <value>Unknown Birth Date</value>
+  </data>
+  <data name="Beneficiary_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Beneficiary_FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="Beneficiary_Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Beneficiary_HIVStatus" xml:space="preserve">
+    <value>HIV Status</value>
+  </data>
+  <data name="Beneficiary_HIVTracked" xml:space="preserve">
+    <value>HIV Tracked in Initial Registration</value>
+  </data>
+  <data name="Beneficiary_Household" xml:space="preserve">
+    <value>Household</value>
+  </data>
+  <data name="Beneficiary_IsHouseHoldChef" xml:space="preserve">
+    <value>Is Household Chief ?</value>
+  </data>
+  <data name="Beneficiary_IsPartSavingGroup" xml:space="preserve">
+    <value>Is Part of a Saving Group</value>
+  </data>
+  <data name="Beneficiary_KinshipToFamilyHead" xml:space="preserve">
+    <value>Kinship to Family Head</value>
+  </data>
+  <data name="Beneficiary_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Beneficiary_OtherKinshipToFamilyHead" xml:space="preserve">
+    <value>Other Kinshio to Family Head</value>
+  </data>
+  <data name="Beneficiary_OVCType" xml:space="preserve">
+    <value>OVC Type</value>
+  </data>
+  <data name="Beneficiary_RegistrationDate" xml:space="preserve">
+    <value>Registration Date</value>
+  </data>
+  <data name="Beneficiary_RegistrationDateDifferentFromHouseholdDate" xml:space="preserve">
+    <value>Registration Date Diferent from Household</value>
+  </data>
+  <data name="Global_List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Global_Partners" xml:space="preserve">
+    <value>Social Service Workers</value>
+  </data>
+  <data name="Global_Reference" xml:space="preserve">
+    <value>Rererence Service</value>
+  </data>
+  <data name="Global_Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Global_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Global_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Global_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Global_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Global_Action_Plan" xml:space="preserve">
+    <value>Care Plan</value>
+  </data>
+  <data name="Global_Adult" xml:space="preserve">
+    <value>Adult</value>
+  </data>
+  <data name="Global_Child" xml:space="preserve">
+    <value>Child</value>
+  </data>
+  <data name="Global_Confirm_Remove" xml:space="preserve">
+    <value>Sure you want to remover this ?</value>
+  </data>
+  <data name="Global_Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Global_CSI" xml:space="preserve">
+    <value>CSI</value>
+  </data>
+  <data name="Global_Household" xml:space="preserve">
+    <value>Household</value>
+  </data>
+  <data name="Global_RoutineVisit" xml:space="preserve">
+    <value>Routine Visit</value>
+  </data>
+  <data name="Global_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Global_Site" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="Global_SiteGoals" xml:space="preserve">
+    <value>Site Goals</value>
+  </data>
+  <data name="Global_Task" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="Global_User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Global_Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Beneficiary_Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="Beneficiary_Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="RoutineVisit_Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="RoutineVisit_DPI" xml:space="preserve">
+    <value>ECD</value>
+  </data>
+  <data name="RoutineVisit_EconomicDevelopment" xml:space="preserve">
+    <value>Economic Development</value>
+  </data>
+  <data name="Reference_Social_Services" xml:space="preserve">
+    <value>Social Services</value>
+  </data>
+  <data name="Reference_Sanitary_Unit" xml:space="preserve">
+    <value>Sanitary Unit</value>
+  </data>
+  <data name="RoutineVisit_VisitRecordCode" xml:space="preserve">
+    <value>Visit Record Code</value>
+  </data>
+  <data name="RoutineVisit_SocialAndPsychoSupport" xml:space="preserve">
+    <value>Social and Psycho Support</value>
+  </data>
+  <data name="RoutineVisit_VisitDate" xml:space="preserve">
+    <value>Visit Date</value>
+  </data>
+  <data name="RoutineVisit_LegalProtectionAndSupport" xml:space="preserve">
+    <value>Legal Protection and Support</value>
+  </data>
+  <data name="RoutineVisit_Housing" xml:space="preserve">
+    <value>Housing</value>
+  </data>
+  <data name="RoutineVisit_HIVRisk" xml:space="preserve">
+    <value>HIV Tracking</value>
+  </data>
+  <data name="RoutineVisit_Health" xml:space="preserve">
+    <value>Health</value>
+  </data>
+  <data name="RoutineVisit_FoodAndNutrition" xml:space="preserve">
+    <value>Food and Nutrition</value>
+  </data>
+  <data name="RoutineVisit_FamilyKitReceived" xml:space="preserve">
+    <value>FamilyKit Received</value>
+  </data>
+  <data name="RoutineVisit_Education" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="Beneficiary_Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="CSI_IndexDate" xml:space="preserve">
+    <value>Index Date</value>
+  </data>
+  <data name="AuditedEntity_CreatedDate" xml:space="preserve">
+    <value>Created @</value>
+  </data>
+  <data name="AuditedEntity_CreatedUser" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="AuditedEntity_LastUpdatedDate" xml:space="preserve">
+    <value>Updated @</value>
+  </data>
+  <data name="AuditedEntity_LastUpdatedUser" xml:space="preserve">
+    <value>Updated By</value>
+  </data>
+  <data name="AuditedEntity_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="ReferenceService_HealthAttendedDate" xml:space="preserve">
+    <value>Health Attended Date</value>
+  </data>
+  <data name="ReferenceService_HealthUnitName" xml:space="preserve">
+    <value>Health Unit Name</value>
+  </data>
+  <data name="ReferenceService_HealthWorker" xml:space="preserve">
+    <value>Health Worker</value>
+  </data>
+  <data name="ReferenceService_Other_References" xml:space="preserve">
+    <value>Other References</value>
+  </data>
+  <data name="ReferenceService_Partner" xml:space="preserve">
+    <value>Partner</value>
+  </data>
+  <data name="ReferenceService_ReferenceDate" xml:space="preserve">
+    <value>ReferenceDate</value>
+  </data>
+  <data name="ReferenceService_ReferencedBy" xml:space="preserve">
+    <value>Referenced By</value>
+  </data>
+  <data name="ReferenceService_ReferenceNumber" xml:space="preserve">
+    <value>Reference Number</value>
+  </data>
+  <data name="ReferenceService_SocialAttendedDate" xml:space="preserve">
+    <value>Social Attended Date</value>
+  </data>
+  <data name="ReferenceService_SocialWorker" xml:space="preserve">
+    <value>Social Worker</value>
+  </data>
+  <data name="Global_Tasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="Global_Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Global_Partner" xml:space="preserve">
+    <value>Social Service Worker</value>
+  </data>
+  <data name="Global_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Global_Inactivation_Date" xml:space="preserve">
+    <value>Inactivation Date</value>
+  </data>
+  <data name="Global_Care_Plans" xml:space="preserve">
+    <value>Care Plans</value>
+  </data>
+  <data name="Global_Care_Plan" xml:space="preserve">
+    <value>Care Plan</value>
+  </data>
+  <data name="Global_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Global_Activation_Date" xml:space="preserve">
+    <value>Activation Date</value>
+  </data>
+  <data name="CSI_ViewWorkflow" xml:space="preserve">
+    <value>View Flow</value>
+  </data>
+  <data name="CSI_ViewGrid" xml:space="preserve">
+    <value>View Grid</value>
+  </data>
+  <data name="CarePlan_SupportService" xml:space="preserve">
+    <value>Support Service</value>
+  </data>
+  <data name="CarePlan_Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="CarePlan_CarePlan_Date" xml:space="preserve">
+    <value>Care Plan Date</value>
+  </data>
+  <data name="CarePlan_Answer_Score" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="CarePlan_Answer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="Beneficiary_Status" xml:space="preserve">
+    <value>Beneficiary Status</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_History" xml:space="preserve">
+    <value>HIV History</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_Negative" xml:space="preserve">
+    <value>Negative</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_IN_TARV" xml:space="preserve">
+    <value>In Tarv</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_NOT_IN_TARV" xml:space="preserve">
+    <value>Not in Tarv</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_NOT_KNOWN" xml:space="preserve">
+    <value>Not Known</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_NOT_RECOMMENDED" xml:space="preserve">
+    <value>Not Recommended</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_NOT_REVEALED" xml:space="preserve">
+    <value>Not Reveled</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_Positive" xml:space="preserve">
+    <value>Positive</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_Undetermined" xml:space="preserve">
+    <value>Undetermined</value>
+  </data>
+  <data name="Site_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Site_Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Task_Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="User_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="User_Site" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="User_Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="User_LoggedOn" xml:space="preserve">
+    <value>Logged On</value>
+  </data>
+  <data name="User_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="User_LastLogin" xml:space="preserve">
+    <value>Last Login</value>
+  </data>
+  <data name="User_IsOCBUser" xml:space="preserve">
+    <value>Is Site User</value>
+  </data>
+  <data name="User_InactiveDaysExceededDate" xml:space="preserve">
+    <value>InactiveDaysExceededDate</value>
+  </data>
+  <data name="User_FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="User_FirstName" xml:space="preserve">
+    <value>FistName</value>
+  </data>
+  <data name="Task_Finish_Date" xml:space="preserve">
+    <value>Finish Date</value>
+  </data>
+  <data name="Task_Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="Partner_Superior" xml:space="preserve">
+    <value>Superior</value>
+  </data>
+  <data name="Partner_Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="Partner_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Partner_Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Partner_ContactName" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="Partner_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Partner_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Beneficiary_Code" xml:space="preserve">
+    <value>Beneficiary Code</value>
+  </data>
+  <data name="Household_Code" xml:space="preserve">
+    <value>Household Code</value>
+  </data>
+  <data name="Partner_Code" xml:space="preserve">
+    <value>Partner Code</value>
+  </data>
+  <data name="HIV_TARV_Date" xml:space="preserve">
+    <value>Initial Date For TARV State</value>
+  </data>
+  <data name="Global_HouseholdSupportPlan" xml:space="preserve">
+    <value>Household Support Plan</value>
+  </data>
+  <data name="HouseholdSupportPlan_InitialDate" xml:space="preserve">
+    <value>Household Plan Initial Date</value>
+  </data>
+  <data name="HouseholdSupportPlan_FinalDate" xml:space="preserve">
+    <value>Household Plan Final Date</value>
+  </data>
+  <data name="HouseholdSupportPlan_IncompleteStatus" xml:space="preserve">
+    <value>Incomplete</value>
+  </data>
+  <data name="HouseholdSupportPlan_DoneStatus" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="HouseholdSupportPlan_Status" xml:space="preserve">
+    <value>Household Plan Status</value>
+  </data>
+  <data name="Global_HouseholdCaseClosure" xml:space="preserve">
+    <value>Household Case Closure</value>
+  </data>
+  <data name="HouseholdStatus_RegistrationDate" xml:space="preserve">
+    <value>Household Status Registration Date</value>
+  </data>
+  <data name="HouseholdStatus_Description" xml:space="preserve">
+    <value>Household Status Description</value>
+  </data>
+  <data name="Beneficiary_HIVStatus_Date" xml:space="preserve">
+    <value>Beneficiary HIVStatus Date</value>
+  </data>
+  <data name="Global_Beneficiaries" xml:space="preserve">
+    <value>Beneficiary</value>
+  </data>
+  <data name="Global_Beneficiary" xml:space="preserve">
+    <value>Beneficiaries</value>
+  </data>
+  <data name="Global_Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="Global_Province" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="Global_Graphics" xml:space="preserve">
+    <value>Graphics</value>
+  </data>
+  <data name="Global_Transfer" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="HouseholdStatus_Active" xml:space="preserve">
+    <value>Active Household</value>
+  </data>
+  <data name="HouseholdStatus_Inactive" xml:space="preserve">
+    <value>Inactive Household</value>
+  </data>
+  <data name="BeneficiaryStatus_RegistrationDate" xml:space="preserve">
+    <value>Beneficiary Status Registration Date</value>
+  </data>
+  <data name="BeneficiaryStatus_Description" xml:space="preserve">
+    <value>Beneficiary Status Description</value>
+  </data>
+  <data name="Global_BeneficiaryStatusHistory" xml:space="preserve">
+    <value>Beneficiary Status History</value>
+  </data>
+  <data name="RoutineVisit_No_Beneficiaries_Registered" xml:space="preserve">
+    <value>Cannot create Routine Visit because, household has no beneficiaries
+</value>
+  </data>
+  <data name="Beneficiary_Beneficiary_Already_Exists" xml:space="preserve">
+    <value>Beneficiary already exists</value>
+  </data>
+  <data name="DateBeforeCurrentDate" xml:space="preserve">
+    <value>The Date must be before Current Date</value>
+  </data>
+  <data name="ReferenceService_BlankActivistReferences" xml:space="preserve">
+    <value>Must Select one Reference for Activist</value>
+  </data>
+  <data name="Beneficiary_Validation_MaxAdultsNumber" xml:space="preserve">
+    <value>Only 2 Adults per Household is allowed</value>
+  </data>
+  <data name="HIVStatus_Validation_First_HIVStatus_Cannot_Be_Removed" xml:space="preserve">
+    <value>First HIV Status cannot be removed !</value>
+  </data>
+  <data name="HIVStatus_Validation_HIVInTreatment_Required" xml:space="preserve">
+    <value>In Treatment field is required !</value>
+  </data>
+  <data name="HIVStatus_Validation_HIVStatus_Date_Required" xml:space="preserve">
+    <value>HIV Status date is required !</value>
+  </data>
+  <data name="HIVStatus_Validation_HIVUndisclosedReason_Required" xml:space="preserve">
+    <value>HIV Undisclosed is required !</value>
+  </data>
+  <data name="HIVStatus_Validation_INTARV_Date_Required" xml:space="preserve">
+    <value>TARV Start Date is required !</value>
+  </data>
+  <data name="Beneficiary_ScholarityLevel" xml:space="preserve">
+    <value>Scholarity Level</value>
+  </data>
+  <data name="ReferenceService_CounterReferenceDate" xml:space="preserve">
+    <value>Counter Reference Date</value>
+  </data>
+  <data name="Layout_Menu_Site_Overview" xml:space="preserve">
+    <value>Site Overview</value>
+  </data>
+</root>
