@@ -21,12 +21,8 @@ namespace MAC.Controllers
     [Allow(Roles = DATA_CAPTURE)]
     public class BeneficiariesController : BaseController
     {
-        private CSIService csiService = new CSIService(new UnitOfWork());
-        private SiteService siteService = new SiteService(new UnitOfWork());
         private BeneficiaryService beneficiaryService = new BeneficiaryService(new UnitOfWork());
-        private HouseholdService householdService = new HouseholdService(new UnitOfWork());
         private HIVStatusService hivStatusService = new HIVStatusService(new UnitOfWork());
-        private AgreggatedReportService agreggatedReportService = new AgreggatedReportService(new UnitOfWork());
         private BeneficiaryStatusService beneficiaryStatusService = new BeneficiaryStatusService(new UnitOfWork());
 
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page
@@ -114,18 +110,7 @@ namespace MAC.Controllers
 
             if (ModelState.IsValid)
             {
-                if (beneficiaryService.BeneficiaryValidation(Beneficiary.FirstName, Beneficiary.LastName, Beneficiary.DateOfBirth) == true)
-                {
-                    TempData["Error"] = Domain.Resources.LanguageResource.Beneficiary_Beneficiary_Already_Exists;
-                }
-                //else
-                //if (Beneficiary.HIVStatus.TarvInitialDate == null
-                //    && Beneficiary.HIVStatus.HIVInTreatment == HIVStatus.IN_TARV
-                //    && Beneficiary.HIVStatus.HIV == HIVStatus.POSITIVE)
-                //{
-                //    TempData["Error"] = LanguageResource.HIVStatus_Validation_INTARV_Date_Required;
-                //}
-                else if (Beneficiary.HIVStatus.HIV == HIVStatus.POSITIVE && Beneficiary.HIVStatus.HIVInTreatment == null)
+                if (Beneficiary.HIVStatus.HIV == HIVStatus.POSITIVE && Beneficiary.HIVStatus.HIVInTreatment == null)
                 {
                     TempData["Error"] = LanguageResource.HIVStatus_Validation_HIVInTreatment_Required;
                 }
@@ -243,19 +228,7 @@ namespace MAC.Controllers
             }
             else if (ModelState.IsValid)
             {
-
-                if (beneficiaryService.BeneficiaryValidation(Beneficiary.FirstName, Beneficiary.LastName, Beneficiary.DateOfBirth) == true && Beneficiary.BeneficiaryID == 0)
-                {
-                    TempData["Error"] = Domain.Resources.LanguageResource.Beneficiary_Beneficiary_Already_Exists;
-                }
-                //else
-                //if (Beneficiary.HIVStatus.TarvInitialDate == null
-                //    && Beneficiary.HIVStatus.HIVInTreatment == HIVStatus.IN_TARV
-                //    && Beneficiary.HIVStatus.HIV == HIVStatus.POSITIVE)
-                //{
-                //    TempData["Error"] = LanguageResource.HIVStatus_Validation_INTARV_Date_Required;
-                //}
-                else if (Beneficiary.HIVStatus.HIV == HIVStatus.POSITIVE && Beneficiary.HIVStatus.HIVInTreatment == null)
+                if (Beneficiary.HIVStatus.HIV == HIVStatus.POSITIVE && Beneficiary.HIVStatus.HIVInTreatment == null)
                 {
                     TempData["Error"] = LanguageResource.HIVStatus_Validation_HIVInTreatment_Required;
                 }
@@ -263,10 +236,6 @@ namespace MAC.Controllers
                 {
                     TempData["Error"] = LanguageResource.HIVStatus_Validation_HIVUndisclosedReason_Required;
                 }
-                //else if (beneficiaryService.MoreThanOneHouseholdChief("edit", Beneficiary.HouseholdID.Value, Beneficiary.BeneficiaryID, Beneficiary.IsHouseHoldChefInt) == true)
-                //{
-                //    TempData["Error"] = "O Agregado Somente deve ter 1 Chefe da Familia";
-                //}
                 else if (Beneficiary.AgeInYears > 12)
                 {
                     TempData["Error"] = "O grupo de Poupança somente deve ser selecionado caso o Beneficiário tenha idade < 12 anos";

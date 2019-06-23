@@ -21,9 +21,6 @@ namespace MAC.Controllers
     public class HIVStatusController : BaseController
     {
         private HIVStatusService hivStatusService = new HIVStatusService(new UnitOfWork());
-        private ChildService childService = new ChildService(new UnitOfWork());
-        private AdultService adultService = new AdultService(new UnitOfWork());
-        private SiteService siteService = new SiteService(new UnitOfWork());
         private BeneficiaryService beneficiaryService = new BeneficiaryService(new UnitOfWork());
         // GET: SiteGoals
         public ActionResult Index(int? id)

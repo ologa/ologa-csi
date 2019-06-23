@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Beneficiary.cs" />
     <Compile Include="CustomValidations\RequiredIfAttribute .cs" />
+    <Compile Include="Language.cs" />
     <Compile Include="OVCType.cs" />
     <Compile Include="Resources\LanguageResource.Designer.cs">
       <DependentUpon>LanguageResource.resx</DependentUpon>
@@ -61,6 +62,8 @@
     </Compile>
     <Compile Include="Encryptor.cs" />
     <Compile Include="CustomValidations\RestrictedDateAttribute.cs" />
+    <Compile Include="Trimester.cs" />
+    <Compile Include="TrimesterDefinition.cs" />
     <Compile Include="UniqueEntity.cs" />
     <Compile Include="SyncableEntity.cs" />
     <Compile Include="AuditedEntity.cs" />

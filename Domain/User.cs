@@ -76,11 +76,6 @@ namespace VPPS.CSI.Domain
         [Display(Name = "User_FullName", ResourceType = typeof(LanguageResource))]
         public string FullName { get { return String.Format("{0} {1}", FirstName, LastName); } }
 
-        public virtual Language DefaultLanguage { get; set; }
-
-        [Display(Name = "Global_Partner", ResourceType = typeof(LanguageResource))]
-        public virtual Partner Partner { get; set; }
-
         [Display(Name = "User_Role", ResourceType = typeof(LanguageResource))]
         public virtual Role Role { get; set; }
 
@@ -99,10 +94,6 @@ namespace VPPS.CSI.Domain
 
         [Display(Name = "User_Role", ResourceType = typeof(LanguageResource))]
         public int? RoleID { get; set; }
-
-        public int LanguadeID { get { return DefaultLanguage == null ? 0 : DefaultLanguage.LanguageID; } }
-
-        public Guid PartnerGuid { get { return Partner == null ? new Guid() : Partner.partner_guid; } }
 
         // Audit
 

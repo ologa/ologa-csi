@@ -229,6 +229,7 @@
     <Compile Include="ViewModels\Authentication\CustomPrincipal.cs" />
     <Compile Include="ViewModels\Authentication\IdentityModels.cs" />
     <Compile Include="ViewModels\Authentication\ManageViewModels.cs" />
+    <Compile Include="ViewModels\TrimesterIntervalViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin-lte\css\AdminLTE.css" />

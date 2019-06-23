@@ -34,14 +34,6 @@ namespace VPPS.CSI.Domain
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? EffectiveDate { get; set; }
 
-        public virtual Child Child { get; set; }
-
-        public int? ChildID { get; set; }
-
-        public virtual Adult Adult { get; set; }
-
-        public int? AdultID { get; set; }
-
         public virtual Beneficiary Beneficiary { get; set; }
 
         public int? BeneficiaryID { get; set; }
@@ -51,10 +43,6 @@ namespace VPPS.CSI.Domain
         public int? ChildStatusID { get; set; }
 
         // Related data to sync
-
-        public Guid ChildGuid { get { return Child == null ? new Guid() : Child.child_guid; } }
-
-        public Guid AdultGuid { get { return Adult == null ? new Guid() : Adult.AdultGuid; } }
 
         public Guid Beneficiary_guid { get { return Beneficiary == null ? new Guid() : Beneficiary.Beneficiary_guid; } }
     }

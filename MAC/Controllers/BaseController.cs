@@ -52,29 +52,6 @@ namespace MAC.Controllers
             return base.BeginExecuteCore(callback, state);
         }
 
-        public void GenerateNoLayoutReport(List<AgreggatedBaseDataDTO> agreggatedData, string filename)
-        {
-            List<object> csvDataLsit = new List<object>();
-            foreach (var d in agreggatedData)
-            {
-                if (d.summaryReportDTO != null)
-                {
-                    IAgreggatedReportDTO remainData = (IAgreggatedReportDTO) d.summaryReportDTO;
-                    remainData.Province = d.Province;
-                    remainData.District = d.District;
-                    remainData.SiteName = d.SiteName;
-                    csvDataLsit.Add(remainData);
-                }
-            }
-
-            GridView gv = new System.Web.UI.WebControls.GridView();
-            gv.DataSource = csvDataLsit; gv.DataBind();
-            StringWriter sw = new StringWriter();
-            HtmlTextWriter htw = new HtmlTextWriter(sw);
-            gv.RenderControl(htw);
-            DownloadXlsStringWriter(filename, sw);
-        }
-
         public void DownloadXlsxFile(string FilePath)
         {
             PrepareResponseToDownload(FilePath);
@@ -109,47 +86,34 @@ namespace MAC.Controllers
         public void SetAgreggatedReportFiltersOnViewBag(int ProvinceID, int DistrictID, int LocationID, int SiteID)
         {
             List<SelectListItem> ProvinceList = new List<SelectListItem>();
-            ProvinceList.AddRange(new SelectList(db.OrgUnits.Where(x => x.OrgUnitType.OrgUnitTypeID == 2).SortBy("Name"), "OrgUnitID", "Name"));
             ProvinceList.Insert(0, new SelectListItem { Text = "", Value = "" });
             if (ProvinceID > 0) ProvinceList.Where(x => x.Value == ProvinceID.ToString()).FirstOrDefault().Selected = true;
             ViewBag.ProvID = ProvinceList;
 
             List<SelectListItem> DistrictList = new List<SelectListItem>();
-            DistrictList.AddRange(new SelectList(db.OrgUnits.Where(x => x.OrgUnitType.OrgUnitTypeID == 3).SortBy("Name"), "OrgUnitID", "Name"));
             DistrictList.Insert(0, new SelectListItem { Text = "", Value = "" });
             if (DistrictID > 0) DistrictList.Where(x => x.Value == DistrictID.ToString()).FirstOrDefault().Selected = true;
             ViewBag.DistID = DistrictList;
 
             List<SelectListItem> LocationList = new List<SelectListItem>();
-            LocationList.AddRange(new SelectList(db.OrgUnits.Where(x => x.OrgUnitType.OrgUnitTypeID == 4).SortBy("Name"), "OrgUnitID", "Name"));
             LocationList.Insert(0, new SelectListItem { Text = "", Value = "" });
             if (LocationID > 0) LocationList.Where(x => x.Value == LocationID.ToString()).FirstOrDefault().Selected = true;
             ViewBag.LocationID = LocationList;
 
             List<SelectListItem> SiteList = new List<SelectListItem>();
-            SiteList.AddRange(new SelectList(db.Sites, "SiteID", "SiteName"));
-            SiteList.Insert(0, new SelectListItem { Text = "", Value = "" });
             if (SiteID > 0) SiteList.Where(x => x.Value == SiteID.ToString()).FirstOrDefault().Selected = true;
             ViewBag.SiteID = SiteList;
-
-            ViewBag.Provinces = db.OrgUnits.Where(x => x.OrgUnitType.OrgUnitTypeID == 2).SortBy("Name").ToList();
-            ViewBag.Districts = db.OrgUnits.Where(x => x.OrgUnitType.OrgUnitTypeID == 3).SortBy("Name").ToList();
-            ViewBag.AdminPosts = db.OrgUnits.Where(x => x.OrgUnitType.OrgUnitTypeID == 4).SortBy("Name").ToList();
-            ViewBag.Sites = db.Sites.SortBy("SiteName").ToList();
-
         }
 
         public void SetPartnerAndChildAndStatusFiltersOnViewBag(int? PartnerID, int? ChildID, int? ChildStatusID)
         {
             List<SelectListItem> PartnerList = new List<SelectListItem>();
             PartnerList.Insert(0, new SelectListItem { Text = "", Value = "" });
-            PartnerList.AddRange(new SelectList(from p in db.Partners where p.CollaboratorRole.Code == "ACTIVIST" orderby p.Name select p, "PartnerID", "Name"));
             if (PartnerID > 0) PartnerList.Where(x => x.Value == PartnerID.ToString()).FirstOrDefault().Selected = true;
             ViewBag.PartnerID = PartnerList;
 
             List<SelectListItem> ChildList = new List<SelectListItem>();
             ChildList.Insert(0, new SelectListItem { Text = "", Value = "" });
-            ChildList.AddRange(new SelectList(db.Children, "ChildID", "FirstName"));
             if (ChildID > 0) ChildList.Where(x => x.Value == ChildID.ToString()).FirstOrDefault().Selected = true;
             ViewBag.ChildID = ChildList;
 

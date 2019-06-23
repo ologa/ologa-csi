@@ -64,7 +64,6 @@ namespace MAC.Controllers
             }
 
             ViewBag.Roles = db.Roles.ToList();
-            ViewBag.Sites = db.Sites.ToList();
             return View(user);
         }
 
@@ -73,7 +72,6 @@ namespace MAC.Controllers
         {
             Session["roles"] = new List<UserRole>();
             ViewBag.Roles = db.Roles.ToList();
-            ViewBag.Sites = db.Sites.ToList();
             return View(new User());
         }
 
@@ -93,7 +91,6 @@ namespace MAC.Controllers
 
             user.UserRoles = (List<UserRole>)Session["roles"];
             ViewBag.Roles = db.Roles.ToList();
-            ViewBag.Sites = db.Sites.ToList();
 
             return RedirectToAction("Edit",new { id = user.UserID });
         }
@@ -111,7 +108,6 @@ namespace MAC.Controllers
 
             Session["roles"] = user.UserRoles.ToList();
             ViewBag.Roles = db.Roles.ToList();
-            ViewBag.Sites = db.Sites.ToList();
             return View(user);
         }
 
@@ -162,7 +158,6 @@ namespace MAC.Controllers
 
             user.UserRoles = db.UserRoles.Where(x => x.UserID == user.UserID).ToList();
             ViewBag.Roles = db.Roles.ToList();
-            ViewBag.Sites = db.Sites.ToList();
             return View(user);
         }
 
@@ -171,18 +166,6 @@ namespace MAC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            if (db.Households.Where(x => x.CreatedUser.UserID == id).Any() ||
-                db.Adults.Where(x => x.CreatedUser.UserID == id).Any() ||
-                db.Children.Where(x => x.CreatedUser.UserID == id).Any() ||
-                db.RoutineVisits.Where(x => x.CreatedUser.UserID == id).Any() ||
-                db.CSIs.Where(x => x.CreatedUser.UserID == id).Any() ||
-                db.CarePlans.Where(x => x.CreatedUser.UserID == id).Any() ||
-                db.ReferenceServices.Where(x => x.CreatedUser.UserID == id).Any())
-            {
-                TempData["warning"] = "O Usuário não pode ser removido, pois já efectuou registos no sistema.";
-                return RedirectToAction("Index");
-            }
-
             User user = UserService.findByID(id);
             UserService.Delete(user);
             UserService.Commit();

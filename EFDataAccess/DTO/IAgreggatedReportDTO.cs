@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EFDataAccess.DTO
 {
-    public interface IAgreggatedReportDTO : IPartnerNameReportDTO
+    public interface IAgreggatedReportDTO
     {
         string Province { get; set; }
         string District { get; set; }

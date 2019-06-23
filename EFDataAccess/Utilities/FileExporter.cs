@@ -32,18 +32,6 @@ public class FileExporter
             }
         }
         sw.Close();
-
-        DataSyncService dataSync = new DataSyncService();
-
-
-        if (CSVType == "OCBData")
-        {
-            dataSync.GetService(fileName, CSVType);
-        }
-        else if (CSVType == "MEReport")
-        {
-            dataSync.GetService(fileName, CSVType);
-        }
     }
     
     public void ExportToExcel<T>(string fileName, List<T> list)

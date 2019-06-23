@@ -15,12 +15,8 @@ namespace EFDataAccess.Services
 {
     public class UserService : BaseService
     {
-        private PartnerService PartnerService;
-
         public UserService(UnitOfWork uow) : base(uow)
-        {
-            PartnerService = new PartnerService(uow);
-        }
+        {}
 
         public UserService()
         {
@@ -164,43 +160,6 @@ namespace EFDataAccess.Services
         public void CacheUserInfo(User user)
         {
             UnitOfWork.CacheUserInfo(user);
-        }
-
-        public int ImportData(string path)
-        {
-            _logger.Information("IMPORTACAO DE USUARIOS ...");
-
-            FileImporter imp = new FileImporter();
-            string fullPah = path + @"\Users.csv";
-            DataTable dt1 = imp.ImportFromCSV(fullPah);
-
-            List<User> usersToPersist = new List<User>();
-            UsersDB = ConvertListToHashtableUsers(findAllUsersUniqueEntities());
-            foreach (DataRow row in dt1.Rows)
-            {
-                Guid User_guid = new Guid(row["User_guid"].ToString());
-                User user = (UsersDB[User_guid] == null) ? new User() : findBySyncGuid(User_guid);
-                user.SyncGuid = User_guid;
-                user.Username = row["Username"].ToString();
-                user.Password =  Convert.FromBase64String(row["PasswordBase64"].ToString());
-                user.FirstName = row["FirstName"].ToString();
-                user.LastName = row["LastName"].ToString();
-                user.Admin = row["AdminInt"].ToString().Equals("1") ? true : false;
-                user.IsOCBUser = row["IsOCBUserInt"].ToString().Equals("1") ? true : false;
-                user.LoggedOn = row["LoggedOnInt"].ToString().Equals("1") ? true : false;
-                user.DefSite = int.Parse(row["DefSite"].ToString().Length == 0 ? "0" : row["DefSite"].ToString());
-                user.LastLoginDate = (row["LastLoginDate"].ToString()).Length == 0 ? user.LastLoginDate : DateTime.Parse(row["LastLoginDate"].ToString());
-                user.InactiveDaysExceededDate = (row["InactiveDaysExceededDate"].ToString()).Length == 0 ? user.InactiveDaysExceededDate : DateTime.Parse(row["InactiveDaysExceededDate"].ToString());
-                user.SyncDate = DateTime.Now;
-                user.DefaultLanguage = findLanguage(int.Parse(row["LanguadeID"].ToString().Length == 0 ? "0" : row["LanguadeID"].ToString()));
-                user.Partner = PartnerService.findBySyncGuid(new Guid(row["PartnerGuid"].ToString()));
-                usersToPersist.Add(user);
-            }
-            usersToPersist.ForEach(user => SaveOrUpdate(user));
-            UnitOfWork.Commit();
-            Rename(fullPah, fullPah + IMPORTED);
-
-            return usersToPersist.Count();
         }
 
         /*

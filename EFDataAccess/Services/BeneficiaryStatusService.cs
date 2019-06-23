@@ -21,10 +21,6 @@ namespace EFDataAccess.Services
 
         public ChildStatus FindChildStatusByDescription(string name) => ChildStatusRepository.GetAll().Where(cs => cs.Description.Equals(name)).FirstOrDefault();
 
-        public List<ChildStatusHistory> FetchChildStatusHistory(Child child) => ChildStatusHistoryRepository.GetAll().Where(x => x.ChildID == child.ChildID).Include(x => x.ChildStatus).ToList();
-
-        public List<ChildStatusHistory> FetchAdultStatusHistory(Adult adult) => ChildStatusHistoryRepository.GetAll().Where(x => x.AdultID == adult.AdultId).Include(x => x.ChildStatus).ToList();
-
         public List<ChildStatus> FindAllChildStatuses() => ChildStatusRepository.GetAll().ToList();
 
         public List<UniqueEntity> FindAllBeneficiaryUniqueEntities() => UnitOfWork.DbContext.Database.SqlQuery<UniqueEntity>("Select ISNULL(SyncGuid, cast(cast(0 as binary) as uniqueidentifier)) As SyncGuid, BeneficiaryID As ID from Beneficiary").ToList();
@@ -32,8 +28,6 @@ namespace EFDataAccess.Services
         public List<UniqueEntity> FindAllChildStatusHistoryUniqueEntities() => UnitOfWork.DbContext.Database.SqlQuery<UniqueEntity>("Select ISNULL(SyncGuid, cast(cast(0 as binary) as uniqueidentifier)) As SyncGuid, ChildStatusHistoryID As ID from ChildStatusHistory").ToList();
 
         public ChildStatusHistory findChildStatusHistoryBySyncGuid(Guid ChildStatusHistoryGuid) { return UnitOfWork.Repository<ChildStatusHistory>().GetAll().Where(c => c.SyncGuid == ChildStatusHistoryGuid).FirstOrDefault(); }
-
-        public List<ChildStatusHistory> FetchChildStatusHistoryByChild(Child child) => UnitOfWork.Repository<ChildStatusHistory>().GetAll().Where(x => x.ChildID == child.ChildID).Include(x => x.ChildStatus).ToList();
 
         public List<ChildStatusHistory> FetchChildStatusHistoryByBeneficiary(Beneficiary beneficiary) => UnitOfWork.Repository<ChildStatusHistory>().GetAll().Where(x => x.BeneficiaryID == beneficiary.BeneficiaryID).Include(x => x.ChildStatus).ToList();
 

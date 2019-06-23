@@ -15,8 +15,6 @@ namespace MAC.Controllers
     public class BeneficiaryStatusController : BaseController
     {
         private BeneficiaryStatusService beneficiaryStatusService = new BeneficiaryStatusService(new UnitOfWork());
-        private ChildService childService = new ChildService(new UnitOfWork());
-        private AdultService adultService = new AdultService(new UnitOfWork());
         private BeneficiaryService beneficiaryService = new BeneficiaryService(new UnitOfWork());
 
         // GET: SiteGoals
@@ -55,19 +53,7 @@ namespace MAC.Controllers
 
             }
 
-            if (csh.ChildID != null && csh.BeneficiaryID == null)
-            {
-                return RedirectToAction("Edit", "Children", new { id = csh.ChildID });
-            }
-            else if (csh.AdultID != null && csh.BeneficiaryID == null)
-            {
-                return RedirectToAction("Edit", "Adults", new { id = csh.AdultID });
-            }
-            else
-            {
-                return RedirectToAction("Edit", "Beneficiaries", new { id = csh.BeneficiaryID });
-            }
-
+            return RedirectToAction("Edit", "Beneficiaries", new { id = csh.BeneficiaryID });
         }
 
 
@@ -96,18 +82,7 @@ namespace MAC.Controllers
                 beneficiaryStatusService.SaveOrUpdate(csh);
             }
 
-            if (csh.ChildID != null && csh.BeneficiaryID == null)
-            {
-                return RedirectToAction("Edit", "Children", new { id = csh.ChildID });
-            }
-            else if (csh.AdultID != null && csh.BeneficiaryID == null)
-            {
-                return RedirectToAction("Edit", "Adults", new { id = csh.AdultID });
-            }
-            else
-            {
-                return RedirectToAction("Edit", "Beneficiaries", new { id = csh.BeneficiaryID });
-            }
+            return RedirectToAction("Edit", "Beneficiaries", new { id = csh.BeneficiaryID });
         }
 
 

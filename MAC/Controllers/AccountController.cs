@@ -23,7 +23,6 @@ namespace Authentication.Controllers
         private ApplicationUserManager _userManager;
         private ApplicationSignInManager _signInManager;
         private UserService UserService = new UserService(new UnitOfWork());
-        private ChildService childService = new ChildService(new UnitOfWork());
 
         public AccountController()
         {}
@@ -62,8 +61,6 @@ namespace Authentication.Controllers
         public ActionResult Login(string returnUrl)
         {
             Session["username"] = User.Identity.Name;
-            Session["ocb"] = db.Sites.First().SiteName;
-
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
@@ -90,18 +87,12 @@ namespace Authentication.Controllers
                 string encryptedTicket = FormsAuthentication.Encrypt(authTicket);
                 var authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket);
                 HttpContext.Response.Cookies.Add(authCookie);
-                Site site = db.Sites.Where(s => s.SiteID == userFound.DefSite).Single();
 
                 Session["user"] = userFound;
-                Session["siteName"] = site.SiteName;
-                Session["orgUnitID"] = site.orgUnitID;
-
                 Session["userInfo"] = new UserInfo
                 {
                     UserID = userFound.UserID,
                     UserName = userFound.Username,
-                    OrgUnitID = site.orgUnitID.Value,
-                    SiteName = site.SiteName
                 };
 
                 user.LastLoginDate = DateTime.Now;
